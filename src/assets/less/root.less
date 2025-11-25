@@ -13,9 +13,9 @@
 @media only screen and (min-width: 0px) {
 	/* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
 	:root {
-		--primary: #ff6a3e;
-		--primaryLight: #ffba43;
-		--secondary: #ffba43;
+		--primary: #165ca0;
+		--primaryLight: #df2529;
+		--secondary: #df2529;
 		--secondaryLight: #ffba43;
 		--headerColor: #1a1a1a;
 		--bodyTextColor: #4e4b66;
@@ -34,8 +34,8 @@
 		/* 60px - 100px top and bottom */
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-		--headerFont: "Roboto", Arial, sans-serif;
-		--bodyFont: "Roboto", Arial, sans-serif;
+		--headerFont: "Quicksand", Arial, sans-serif;
+		--bodyFont: "Quicksand", Arial, sans-serif;
 	}
 
 	html,
@@ -116,7 +116,7 @@
 		font-size: (16/16rem);
 		line-height: (16/16em);
 		font-weight: bold;
-		border-radius: (4/16rem);
+		border-radius: (16/16rem);
 		overflow: hidden;
 
 		// Transition Properties
@@ -322,6 +322,26 @@
 		font-display: swap;
 		src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 	}
+	@font-face {
+  font-family: "Quicksand";
+  src: url("/assets/fonts/Quicksand-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/assets/fonts/Quicksand-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/assets/fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 }
 
 /*-- -------------------------- -->

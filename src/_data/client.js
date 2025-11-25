@@ -1,6 +1,6 @@
 module.exports = {
-    name: "Code Stitch Web Designs",
-    email: "help@codestitch.app",
+    name: "Squad V Plumbing Inc.",
+    email: "SQUADV726@gmail.com",
     phoneForTel: "555-779-4407",
     phoneFormatted: "(555) 779-4407",
     address: {

@@ -6,7 +6,7 @@
     <div class="cs-container">
         <!--Nav Logo-->
         <a href="/" class="cs-logo" aria-label="Company Name Home page">
-            <img src="/assets/svgs/logo-black.svg" alt="" width="210" height="29" aria-hidden="true" decoding="async">
+            <img src="/assets/svgs/squadVlogo.png" alt="" width="210" height="29" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" aria-label="main navigation">
@@ -31,6 +31,11 @@
                             About
                         </a>
                     </li>
+                    <li class="cs-li">
+                        <a href="/services/" class="cs-li-link {% if page.url == "/services/" %} cs-active {% endif %}" {% if page.url == "/services/" %} aria-current="page" {% endif %}>
+                            Services
+                        </a>
+                    </li>
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
                     <li class="cs-li cs-dropdown">
@@ -47,16 +52,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="cs-li">
-                        <a href="/reviews/" class="cs-li-link {% if page.url == "/reviews/" %} cs-active {% endif %}" {% if page.url == "/reviews/" %} aria-current="page" {% endif %}>
-                            Reviews
-                        </a>
-                    </li>
-                    <li class="cs-li">
+                    
+                    <!-- <li class="cs-li">
                         <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" %} aria-current="page" {% endif %}>
                             Blog
                         </a>
-                    </li>
+                    </li> -->
                     <li class="cs-li cs-hide-on-desktop">
                         <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>
                             Contact
