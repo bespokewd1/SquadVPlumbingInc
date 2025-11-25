@@ -52,6 +52,33 @@
             {% block body %}{% endblock %}
         </main>
         {% include "sections/footer.html" %}
+        <script src="/assets/js/accordion.js"></script>
+        <script>
+    // Accordion functionality
+    const toggles = document.querySelectorAll('.cs-accordion-toggle');
 
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const content = toggle.nextElementSibling;
+
+            // Optional: close other open accordions
+            toggles.forEach(t => {
+                if (t !== toggle) {
+                    t.nextElementSibling.style.maxHeight = null;
+                    t.classList.remove('active');
+                }
+            });
+
+            // Toggle this accordion
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                toggle.classList.remove('active');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                toggle.classList.add('active');
+            }
+        });
+    });
+</script>
     </body>
 </html>
