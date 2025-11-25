@@ -1,0 +1,12 @@
+[build]
+  publish = "public/"
+  command = "npm run build"
+
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [
+    "public/assets/images", # Processed images - adjust to match your outputDir
+    ".cache" # Remote Assets
+  ]
