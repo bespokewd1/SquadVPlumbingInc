@@ -141,12 +141,13 @@
 			content: "";
 			opacity: 1;
 			display: block;
-			background-color: #000;
+			background-color: #df2529;
 			height: 100%;
 
 			//Transition properties
 			width: 0;
 			transition: width 0.3s;
+			color: var(--bodyTextColor);
 		}
 	}
 
@@ -1537,3 +1538,50 @@
 		}
 	}
 }
+  .cs-services-accordion {
+            margin-top: 30px;
+        }
+        .cs-service-category {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .cs-accordion-toggle {
+            width: 100%;
+            padding: 15px 20px;
+            text-align: left;
+            background-color: var(--primary);
+            border: none;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+        .cs-accordion-toggle:hover {
+            background-color:#df2529;
+            color: white;
+        }
+        .cs-accordion-toggle.active {
+            font-weight: bold;
+			background-color: #df2529;
+        }
+        .cs-accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: #fff;
+            padding-left: 20px;
+        }
+        .cs-accordion-content li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .cs-accordion-content li:last-child {
+            border-bottom: none;
+        }
+        // #reviews-67 {
+        //     display: none;
+        // }
+    
