@@ -2,89 +2,93 @@
 <!--                     FAQ                    -->
 <!-- ============================================ -->
 
-<section id="RPsbs-313">
-        <div class="cs-container" style="display: flex; justify-content: start; align-items: flex-start;">
-            
-            <!-- Left Image Section -->
-            <div class="cs-content" >
-    <span class="cs-topper">FAQ</span>
-    <h2 class="cs-title">Frequently Asked Questions</h2>
-                <!-- <p class="cs-text">
-                    Squad V Plumbing Inc. has proudly served Edmonton for over 7 years,
-                     providing dependable plumbing and gasfitting for homes, renovations,
-                      commercial facilities, property managers, and builders. Led by Eugene
-                       Vista, a Journeyman Plumber and Certified Gasfitter, our team ensures
-                        every project is completed safely, efficiently, and up to code.
-                    We handle everything from new-build rough-ins to basement improvements and hot water 
-                    systems. Known for honesty, availability, and flexibility, we’ve worked with Wilvicson 
-                    Global, Ardeco Design, Sehra Homes, and Weidner Apartments.
+<section id="RPsbs-313" class="py-12">
+  <div class="cs-container flex flex-col lg:flex-row items-start justify-between gap-8">
 
-                </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        Eugene is passionate about mentoring young plumbers and staying ahead of industry innovations. His commitment to quality and customer satisfaction drives the company’s reputation for excellence.
-                    </span>
-                    <span class="cs-name">Eugene Vista</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/about/" class="cs-button-solid">About Us</a> -->
-            </div>
-            
-            <!-- Right Content Section-->
-             <section id="services-01" class="w-[80%] lg:w-[50%]" style="margin: 24px auto 32px auto;">
-        <div class="cs-container">
-            
+    <!-- Left Image Section -->
+    <div class="cs-content lg:w-1/2 flex flex-col items-start">
+      <span class="cs-topper">FAQ</span>
+      <h2 class="cs-title mb-6">Frequently Asked Questions</h2>
 
-            <div class="cs-services-accordion" >
+      <div class="cs-image-group flex flex-wrap gap-4">
+        <!-- Picture 1 -->
+        <picture class="cs-picture cs-picture1">
+          <!-- Mobile -->
+          <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
+          <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
+          <!-- Tablet -->
+          <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
+          <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
+          <!-- Desktop -->
+          <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
+          <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
+          <img src="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" class="w-full h-auto" loading="lazy" decoding="async">
+        </picture>
 
-                <!-- Plumbing -->
-                <div class="cs-service-category">
-                    <button class="cs-accordion-toggle" >How do I know if I need a new water heater or repair?</button>
-                    <ul class="cs-accordion-content">
-                        <li>If your hot water tank or tankless heater isn’t heating properly, 
-                            is leaking, or making unusual noises, we can inspect it and recommend repair or replacement.</li>
-                    </ul>
-                </div>
+        <!-- Picture 2 -->
+        <picture class="cs-picture cs-picture2">
+          <!-- Mobile -->
+          <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
+          <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
+          <!-- Tablet -->
+          <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
+          <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
+          <!-- Desktop -->
+          <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
+          <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
+          <img src="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" class="w-full h-auto" loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </div>
 
-                <!-- Renovation -->
-                <div class="cs-service-category">
-                    <button class="cs-accordion-toggle">Do you handle emergency plumbing services?</button>
-                    <ul class="cs-accordion-content">
-                        <li>Yes! We offer 24/7 emergency plumbing for residential and 
-                            commercial properties, including leaks, broken pipes, and water heater issues.</li>
-                    </ul>
-                </div>
+    <!-- Right FAQ Accordion -->
+    <div class="lg:w-1/2 w-full">
+      <div class="cs-services-accordion">
 
-                <!-- Concrete -->
-                <div class="cs-service-category">
-                    <button class="cs-accordion-toggle">Can you do basement rough-ins during renovations?</button>
-                    <ul class="cs-accordion-content">
-                        <li>Absolutely. We handle full basement plumbing rough-ins, 
-                            tub/shower installations, and fixture setup for renovations or new construction.</li>
-                    </ul>
-                </div>
-
-                <!-- Optional Highlighted Sections -->
-                <div class="cs-service-category">
-                    <button class="cs-accordion-toggle">Do you provide plumbing for new construction homes?</button>
-                    <ul class="cs-accordion-content">
-                        <li>Yes, we offer complete plumbing services for new builds, including
-                             water supply, drainage, fixtures, and water heater installation.</li>
-                    </ul>
-                </div>
-                <div class="cs-service-category">
-                    <button class="cs-accordion-toggle">Are your plumbers certified and insured?</button>
-                    <ul class="cs-accordion-content">
-                        <li>Yes, we offer complete plumbing services for new builds, including
-                             Yes. All our plumbers are licensed, certified, and insured, ensuring 
-                             safe and professional work every time.</li>
-                    </ul>
-                </div>
-
-            </div>
+        <!-- Example Accordion Item -->
+        <div class="cs-service-category">
+          <button class="cs-accordion-toggle">How do I know if I need a new water heater or repair?</button>
+          <ul class="cs-accordion-content">
+            <li>If your hot water tank or tankless heater isn’t heating properly, is leaking, or making unusual noises, we can inspect it and recommend repair or replacement.</li>
+          </ul>
         </div>
-    </section>
-            
+
+        <div class="cs-service-category">
+          <button class="cs-accordion-toggle">Do you handle emergency plumbing services?</button>
+          <ul class="cs-accordion-content">
+            <li>Yes! We offer 24/7 emergency plumbing for residential and commercial properties, including leaks, broken pipes, and water heater issues.</li>
+          </ul>
         </div>
-    </section>
+
+        <div class="cs-service-category">
+          <button class="cs-accordion-toggle">Can you do basement rough-ins during renovations?</button>
+          <ul class="cs-accordion-content">
+            <li>Absolutely. We handle full basement plumbing rough-ins, tub/shower installations, and fixture setup for renovations or new construction.</li>
+          </ul>
+        </div>
+
+        <div class="cs-service-category">
+          <button class="cs-accordion-toggle">Do you provide plumbing for new construction homes?</button>
+          <ul class="cs-accordion-content">
+            <li>Yes, we offer complete plumbing services for new builds, including water supply, drainage, fixtures, and water heater installation.</li>
+          </ul>
+        </div>
+
+        <div class="cs-service-category">
+          <button class="cs-accordion-toggle">Are your plumbers certified and insured?</button>
+          <ul class="cs-accordion-content">
+            <li>Yes. All our plumbers are licensed, certified, and insured, ensuring safe and professional work every time.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

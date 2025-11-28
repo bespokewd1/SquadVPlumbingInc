@@ -31,10 +31,30 @@
                             About
                         </a>
                     </li>
-                    <li class="cs-li">
+                    <!-- <li class="cs-li">
                         <a href="/services/" class="cs-li-link {% if page.url == "/services/" %} cs-active {% endif %}" {% if page.url == "/services/" %} aria-current="page" {% endif %}>
                             Services
                         </a>
+                    </li> -->
+                    <li class="cs-li cs-dropdown">
+                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
+                            Services
+                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
+                        </button>
+                        <ul class="cs-drop-ul" aria-labelledby="projects-dropdown-toggle">
+                            <li class="cs-drop-li">
+                                <a href="/services/" class="cs-li-link cs-drop-link">Plumbing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/services/" class="cs-li-link cs-drop-link">Renovation & Improvement</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/services/" class="cs-li-link cs-drop-link">Concrete & Support Work</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/services/" class="cs-li-link cs-drop-link">All Services </a>
+                            </li>
+                        </ul>
                     </li>
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
@@ -68,9 +88,9 @@
         </nav>
         <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
             <img class="cs-moon" aria-hidden="true" src="/assets/svgs/moon.svg" decoding="async" alt="" width="15" height="15">
             <img class="cs-sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="" width="15" height="15">
-        </button>
+        </button> -->
     </div>
 </header>
