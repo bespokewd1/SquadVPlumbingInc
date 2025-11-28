@@ -9,69 +9,76 @@
             <a aria-label="go back to home" class="cs-logo" href="/">
                 <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/squadVlogo.png" alt="logo" width="240" height="32">
             </a>
-            <p class="cs-text">
+            <p class="cs-text" style="color: black;">
                 Squad V Plumbing Inc. has proudly served Edmonton for over 7 years, providing dependable plumbing and gasfitting for homes, renovations, commercial facilities, property managers, and builders. 
             </p>
             <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit google profile" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
-                </a>
                 <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.socials.facebook }}" target="_blank" rel="noopener">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="6" height="11">
                 </a>
-                <a class="cs-social-link" aria-label="visit instagram profile" href="{{ client.socials.instagram }}" target="_blank" rel="noopener">
+                 <a class="cs-social-link" aria-label="visit instagram profile" href="{{ client.socials.instagram }}" target="_blank" rel="noopener">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit tiktok profile" href="{{ client.socials.tiktok }}" target="_blank" rel="noopener">
+    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/tiktok.svg" alt="tiktok" width="11" height="11">
+</a>
+
+                <a class="cs-social-link" aria-label="visit google profile" href=" https://maps.app.goo.gl/bgxAMTNBtFAxm4H47" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
+                </a>
+                
+               
                 </a>
             </div>
         </div>
         <!-- Links -->
-        <ul class="cs-nav">
-            <li class="cs-nav-li">
-                <span class="cs-header">Sitemap</span>
+        <ul class="cs-nav" >
+            <li class="cs-nav-li"  >
+                <span class="cs-header" style="color: black;">Sitemap</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/">Home</a>
+                <a class="cs-nav-link" href="/" style="color: black;">Home</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/about/">About</a>
+                <a class="cs-nav-link" href="/about/" style="color: black;">About</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/services/">Services</a>
+                <a class="cs-nav-link" href="/services/" style="color: black;">Services</a>
             </li>
             <!-- <li class="cs-nav-li">
                 <a class="cs-nav-link" href="/blog/">Blog</a>
             </li> -->
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/contact/">Contact</a>
+                <a class="cs-nav-link" href="/contact/" style="color: black;">Contact</a>
             </li>
         </ul>
         <ul class="cs-nav">
             <li class="cs-nav-li">
-                <span class="cs-header">Projects</span>
+                <span class="cs-header" style="color: black;">Projects</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/project-one/">Project One</a>
+                <a class="cs-nav-link" href="/project-one/" style="color: black;">Project One</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/project-two/">Project Two</a>
+                <a class="cs-nav-link" href="/project-two/" style="color: black;">Project Two</a>
             </li>
         </ul>
         <!-- Contact Info -->
         <ul class="cs-contact">
             <li class="cs-nav-li">
-                <span class="cs-header">Contact</span>
+                <span class="cs-header" style="color: black;">Contact</span>
             </li>
             <li class="cs-contact-li">
                 <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    <p style="color: white;">432 Dunluce Rd. </p> <br>
-                    <p style="color: white;">NW, Edmonton, AB</p> <br>
+                    <p style="color: black;">432 Dunluce Rd. </p> <br>
+                    <p style="color: black;">NW, Edmonton, AB</p> <br>
                     <!-- {{ client.address.lineTwo }}, <br>
                     {{ client.address.city }}, {{ client.address.state }}
                     {{ client.address.zip }} -->
                 </a>
             </li>
             <li class="cs-contact-li">
-                <a class="cs-contact-link" href="tel:{{ client.phoneForTel }}">(780) 667-7169</a>
+                <a class="cs-contact-link" href="tel:{{ client.phoneForTel }}" style="color: black;">(780) 667-7169</a>
             </li>
             <li class="cs-contact-li">
                 <a class="cs-contact-link" href="mailto:{{ client.email }}">SQUADV726@gmail.com</a>
