@@ -3,94 +3,134 @@
 <!-- ============================================ -->
 
 <header id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
-        <a href="/" class="cs-logo" aria-label="Company Name Home page">
+<div class="w-full bg-[var(--primary)] text-white py-4 overflow-hidden" style="padding: .8rem;margin-bottom: 4px;">
+    <div class="flex flex-row items-cente justify-between md:w-[70%] md:animate-none animate-[slide-horizontal_10s_linear_infinite] whitespace-nowrap" style="margin: auto;">
+        <h2 class="text-xl font-semibold px-4" style="color:white;">Welcome to our new website!</h2>
+        <p id="weather" class="text-sm opacity-90 px-4" style="color:white;">Loading weather...</p>
+    </div>
+</div>
+    <div class="hidden justify-between lg:flex lg:w-[70%]" style="margin: auto;">
+        <a href="/" class="cs-logo " aria-label="Company Name Home page">
             <img src="/assets/svgs/squadVlogo.png" alt="" width="210" height="29" aria-hidden="true" decoding="async">
         </a>
-        <!--Navigation List-->
-        <nav class="cs-nav" aria-label="main navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" id="cs-toggle" aria-expanded="false" aria-controls="cs-ul-wrapper" aria-label="mobile menu toggle" aria-haspopup="menu">
-                <span class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
-                </span>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper" id="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul">
-                    <li class="cs-li">
-                        <a href="/" class="cs-li-link {% if page.url == "/" %} cs-active {% endif %}" {% if page.url == "/" %} aria-current="page" {% endif %}>
-                            Home
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/about/" class="cs-li-link {% if page.url == "/about/" %} cs-active {% endif %}" {% if page.url == "/about/" %} aria-current="page" {% endif %}>
-                            About
-                        </a>
-                    </li>
-                    <!-- <li class="cs-li">
-                        <a href="/services/" class="cs-li-link {% if page.url == "/services/" %} cs-active {% endif %}" {% if page.url == "/services/" %} aria-current="page" {% endif %}>
-                            Services
-                        </a>
-                    </li> -->
-                    <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
-                            Services
-                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
-                        </button>
-                        <ul class="cs-drop-ul" aria-labelledby="projects-dropdown-toggle">
-                            <li class="cs-drop-li">
-                                <a href="/services/" class="cs-li-link cs-drop-link">Plumbing</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/services/" class="cs-li-link cs-drop-link">Renovation & Improvement</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/services/" class="cs-li-link cs-drop-link">Concrete & Support Work</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/services/" class="cs-li-link cs-drop-link">All Services </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
-                    <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
-                            Projects
-                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
-                        </button>
-                        <ul class="cs-drop-ul" aria-labelledby="projects-dropdown-toggle">
-                            <li class="cs-drop-li">
-                                <a href="/project-one/" class="cs-li-link cs-drop-link">Project One</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/project-two/" class="cs-li-link cs-drop-link">Project Two</a>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <!-- <li class="cs-li">
-                        <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" %} aria-current="page" {% endif %}>
-                            Blog
-                        </a>
-                    </li> -->
-                    <li class="cs-li cs-hide-on-desktop">
-                        <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+        <div class="flex flex-row gap-8">
+             <div class="flex-row flex items-center gap-4">
+                <a href="email:"><img src="/assets/favicons/icons8-email-50.png" alt="Email Icon" width="24" height="24"></a>
+                <div class=" flex flex-col">
+                    <h1>Send a Message</h1>
+                    <p>SQUADV726@gmail.com</p>
+                </div>
             </div>
-        </nav>
-        <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
-            <img class="cs-moon" aria-hidden="true" src="/assets/svgs/moon.svg" decoding="async" alt="" width="15" height="15">
-            <img class="cs-sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="" width="15" height="15">
-        </button> -->
+            <div class="flex-row flex items-center bg-[var(--primary)] gap-4" style="padding: 12px;">
+                <a class="text-white">Schedule Appointment</a>
+                
+            </div>
+        </div>
+       
     </div>
+    <div>
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!--Navigation List-->
+            <!-- <nav class="cs-nav" aria-label="main navigation">
+                <a href="/" class="cs-logo " aria-label="Company Name Home page">
+            <img src="/assets/svgs/squadVlogo.png" alt="" width="210" height="29" aria-hidden="true" decoding="async">
+        </a> -->
+                <!--Mobile Nav Toggle-->
+                <div class="lg:hidden">
+            <a href="/" class="cs-logo " aria-label="Company Name Home page">
+                <img src="/assets/svgs/squadVlogo.png" alt="" width="210" height="100" aria-hidden="true" decoding="async">
+            </a>
+            </div>
+                <button class="cs-toggle" id="cs-toggle" aria-expanded="false" aria-controls="cs-ul-wrapper" aria-label="mobile menu toggle" aria-haspopup="menu">
+                    <span class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </span>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper" id="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul">
+                        <li class="cs-li">
+                            <a href="/" class="cs-li-link {% if page.url == "/" %} cs-active {% endif %}" {% if page.url == "/" %} aria-current="page" {% endif %}>
+                                Home
+                            </a>
+                        </li>
+                        <li class="relative group hidden lg:block cs-li">
+                            <a href="/services" class="cs-li-link flex items-center gap-1">
+                                Services
+                                <span class="transition-transform duration-200 group-hover:rotate-180">&#9656;</span>
+                            </a>
+
+                            <!-- Dropdown Items -->
+                            <ul class="absolute left-0 mt-2 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 min-w-[200px]" style="padding: .5rem;">
+                                <li><a href="/plumbing/" class="block px-4 py-2 hover:bg-gray-100 " style="color: var(--headerColor);padding: .5rem;">Plumbing Services</a></li>
+                                <li><a href="/renovation/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Renovation & Improvement</a></li>
+                                <li><a href="/concrete/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Concrete & Support Work</a></li>
+                            </ul>
+                            </li>
+                        <li class="cs-li lg:hidden">
+                            <a href="/plumbing/" class="cs-li-link {% if page.url == "/plumbing/" %} cs-active {% endif %}" {% if page.url == "/plumbing/" %} aria-current="page" {% endif %}>
+                                Plumbing Services
+                            </a>
+                        </li>
+                        <li class="cs-li lg:hidden">
+                            <a href="/renovation/" class="cs-li-link {% if page.url == "/renovation/" %} cs-active {% endif %}" {% if page.url == "/renovation/" %} aria-current="page" {% endif %}>
+                                Renovation & Improvement
+                            </a>
+                        </li>
+                        <li class="cs-li lg:hidden">
+                            <a href="/concrete/" class="cs-li-link {% if page.url == "/concrete/" %} cs-active {% endif %}" {% if page.url == "/concrete/" %} aria-current="page" {% endif %}>
+                                Concrete & Support Work
+                            </a>
+                        </li>
+                        <li class="cs-li hidden lg:block" >
+                            <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/gallery/" class="cs-li-link {% if page.url == "/gallery/" %} cs-active {% endif %}" {% if page.url == "/gallery/" %} aria-current="page" {% endif %}>
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="lg:hidden">
+                            <a href="/contact/" class="mobile-button cs-nav-button"><p class="text-sm" style="color: white;">Call for Service</p>
+                            <h2 style="color: white;">(780) 667-7169</h2></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+            <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
+                <img class="cs-moon" aria-hidden="true" src="/assets/svgs/moon.svg" decoding="async" alt="" width="15" height="15">
+                <img class="cs-sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="" width="15" height="15">
+            </button> -->
+        </div>
+    </div>
+    
+   <script>
+    async function loadWeather() {
+        const apiKey = "d1ce37947713b76408122f28038b18af"; // Replace with real key
+        const city = "Edmonton"; // Change the city here
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            const temp = Math.round(data.main.temp);
+
+            document.getElementById("weather").textContent =
+                `Current Weather: ${temp}°C in ${city}`;
+        } catch (error) {
+            document.getElementById("weather").textContent =
+                "Unable to load weather";
+        }
+    }
+
+    loadWeather();
+</script>
 </header>

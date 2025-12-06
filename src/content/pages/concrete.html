@@ -1,0 +1,95 @@
+---
+title: "About | Squad V Plumbing Inc."
+description: "Meta description for the page"
+permalink: "/concrete/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Concrete & Support Work</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home > Services</a>
+                <a href="/concrete/" class="cs-link cs-active">Concrete & Support Work</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+<section>
+  <div class="cs-container w-full" style="margin: 3rem auto;">
+    <div class="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style="margin: 3rem auto;">
+
+      <!-- Service 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="/assets/images/cutting.png" alt="Concrete Cutting & Breaking" class="w-full h-48 object-cover">
+        <div class="p-4" style="padding: 1rem;">
+          <h3 class="font-semibold text-lg mb-2">Concrete Cutting & Breaking</h3>
+          <p class="text-gray-600 text-sm">
+            Safe and precise concrete cutting for plumbing access, renovations, and structural adjustments.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="/assets/images/excavation.png" alt="Excavation & Digging" class="w-full h-48 object-cover">
+        <div class="p-4" style="padding: 1rem;">
+          <h3 class="font-semibold text-lg mb-2">Excavation & Digging</h3>
+          <p class="text-gray-600 text-sm">
+            Small- and medium scale excavation for drainage, sewer lines, and underground plumbing replacements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="/assets/images/paving.png" alt="Cementing / Paving" class="w-full h-48 object-cover">
+        <div class="p-4" style="padding: 1rem;">
+          <h3 class="font-semibold text-lg mb-2">Cementing / Paving</h3>
+          <p class="text-gray-600 text-sm">
+            Clean restoration of concrete areas after plumbing work. Smooth, durable, and ready for foot or vehicle traffic.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+ 
+
+    {% include 'sections/cta2.html' %}
+
+{% endblock %}
