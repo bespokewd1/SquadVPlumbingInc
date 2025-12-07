@@ -1730,14 +1730,12 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				transition: all 0.3s ease;
 				h3{
 					font-weight: 600;
 				}
 				ul{
 					visibility: hidden;
-					height: 0;
-					transition: all 0.3s ease;
+					max-height: 0;
 				}
 			}
 			.img{
@@ -1746,11 +1744,7 @@
 				object-fit: cover;
 			}
 			&:hover{
-				ul{
-					visibility: visible;
-					height: auto;
-					transition: all 0.3s ease;
-				}
+				
 			}
 		}
 		.reverse{
