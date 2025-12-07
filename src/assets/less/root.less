@@ -1705,20 +1705,24 @@
 		
 	}
 	.container{
-		display: 100%;
-		.sub-container{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		.services-card{
+			flex-basis: 50%;
+			box-sizing: border-box; 
+			border: 1px solid gray;
+
 			display: flex;
-			width: 100%;
-			.services-card{
-				display: flex;
-				height: 70vh;
-				.services-info{
-					width: 50%;
-				}
-				.services-img{
-					width: 50%;
-					background-color: gray;
-				}
+			height: 70vh;
+			.services-info{
+				flex-basis: 50%;
+				box-sizing: border-box; 
+				padding: 24px;
+			}
+			.services-img{
+				flex-basis: 50%;
+				background-color: gray;
 			}
 		}
 	}
