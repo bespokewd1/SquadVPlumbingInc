@@ -1714,7 +1714,7 @@
 		.services-card{
 			flex-basis: 50%;
 			box-sizing: border-box; 
-			border: 1px solid gray;
+			transition: all 0.3s ease;
 
 			display: flex;
 			height: 70vh;
@@ -1723,10 +1723,21 @@
 				box-sizing: border-box; 
 				padding: 24px;
 			}
+			.services-bullets {
+				opacity: 0;
+				max-height: 0;
+				overflow: hidden;
+				transition: opacity 0.3s ease, max-height 0.3s ease;
+			}
+
 			.services-img{
 				flex-basis: 50%;
 				background-color: gray;
 			}
+		}
+		.services-card:hover .services-bullets {
+			opacity: 1;
+			max-height: 500px; /* Just needs to be big enough for the list */
 		}
 	}
 }
