@@ -1718,6 +1718,12 @@
 
 			display: flex;
 			height: 70vh;
+
+			transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
 			.services-info{
 				flex-basis: 50%;
 				box-sizing: border-box; 
@@ -1727,10 +1733,8 @@
 				opacity: 0;
 				max-height: 0;
 				overflow: hidden;
-				transition: opacity 0.3s ease, max-height 0.3s ease;
-				.list{
-					opacity: 0;
-				}
+				transition: opacity 0.4s ease, max-height 0.4s ease;
+
 			}
 
 			.services-img{
@@ -1738,12 +1742,9 @@
 				background-color: gray;
 			}
 		}
-		.services-card:hover .services-bullets {
-			opacity: 1;
-			max-height: 500px; /* Just needs to be big enough for the list */
-			.list{
-				opacity: 1;
-			}
-		}
+		.services-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
 	}
 }
