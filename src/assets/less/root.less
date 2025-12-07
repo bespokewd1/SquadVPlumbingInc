@@ -1728,6 +1728,9 @@
 				max-height: 0;
 				overflow: hidden;
 				transition: opacity 0.3s ease, max-height 0.3s ease;
+				.list{
+					opacity: 0;
+				}
 			}
 
 			.services-img{
@@ -1737,7 +1740,7 @@
 		}
 		.services-card:hover .services-bullets {
 			opacity: 1;
-			// max-height: 500px; /* Just needs to be big enough for the list */
+			max-height: 500px; /* Just needs to be big enough for the list */
 		}
 	}
 }
