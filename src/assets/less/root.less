@@ -1733,11 +1733,21 @@
 				h3{
 					font-weight: 600;
 				}
+				ul{
+					visibility: hidden;
+					height: 0;
+				}
 			}
 			.img{
 				width: 50%;
 				background-color: gray;
 				object-fit: cover;
+			}
+			&:hover{
+				ul{
+					visibility: visible;
+					height: auto;
+				}
 			}
 		}
 		.reverse{
