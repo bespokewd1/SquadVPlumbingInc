@@ -1746,4 +1746,34 @@
 			}
 		}
 	}
+	.services-card-solo{
+		flex-basis: 100%;
+		height: 70vh;
+
+		display: flex;
+		.info{
+			flex-basis: 50%;
+			box-sizing: border-box;
+			padding: 32px;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			h3{
+				font-weight: 600;
+			}
+		}
+		.img{
+			flex-basis: 50%;
+			background-color: gray;
+		}
+	}
+	.reverse{
+		.info{
+			order: 1;
+		}
+		.img{
+			order: 0;
+		}
+	}
 }
