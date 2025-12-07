@@ -1711,8 +1711,19 @@
 		display: grid;
  		grid-template-columns: 1fr 1fr; /* Creates two columns of equal width */
   		grid-template-rows: 1fr 1fr;    /* Creates two rows of equal height */
- 		gap: 20px; /* Optional: Adds space between grid items */
+ 		gap: 0px; /* Optional: Adds space between grid items */
   		width: 100%; /* Optional: Sets the grid to full width */
-  		height: 400px; /* Optional: Sets a specific height for the grid */
+  		min-height: 400px; /* Optional: Sets a specific height for the grid */
+		.services-card{
+			display: flex;
+			height: 60vh;
+			.service-info{
+				width: 50%;
+			}
+			.service-img{
+				width: 50%;
+				background-color: gray;
+			}
+		}
 	}
 }
