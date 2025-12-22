@@ -152,7 +152,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <img class="hover-white-image" loading="lazy" decoding="async" src="/assets/svgs/renovation.png" alt="icon" width="52" height="52" aria-hidden="true">
                 </picture>
                 </div>
-                <h3 class="font-bold text-lg mb-2 group-hover:text-blue-600">Renovation & Improvement</h3>
+                <h3 class="font-bold md:text-lg mb-2 group-hover:text-blue-600">Renovation & Improvement</h3>
                 <p class="text-gray-500 text-sm hover:text-white">
                     Full range of shipping disputes such as charter party disputes, demurrage claims, purchase agreements, trade finance, carriage and claims.
                 </p>
@@ -193,23 +193,23 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
       <!-- OUR SERVICE MOBILE ACCORDION       -->
 
-    <div class="max-w-6xl px-4 py-12 mx-auto w-[80%] lg:hidden" style="margin: 3rem auto 2rem auto;">
+    <div class="max-w-6xl home-services  px-4 py-12 mx-auto w-[80%] lg:hidden" style="margin: 3rem auto 2rem auto;">
         <span class="cs-topper">Our Services</span>
         <h2 class="text-3xl font-semibold mb-8 text-left">Our Plumbing Services</h2>
 
         <div class=" lg:hidden"> <!-- Mobile Accordion -->
 
             <!-- Accordion Item 1: Plumbing Services -->
-            <div class=" rounded-lg overflow-hidden" style="margin: 1rem auto;padding:20px">
-                <button class="w-full flex items-center justify-between px-4 py-3 bg-white hover:bg-blue-100 focus:outline-none" onclick="toggleAccordion(this)">
+            <div class=" rounded-lg card overflow-hidden" style="margin: 1rem auto;padding:20px">
+                <button class=" w-full flex items-center justify-between px-4! py-3! bg-white hover:bg-blue-100 focus:outline-none" onclick="toggleAccordion(this)">
                     <div class="flex items-center gap-4">
                         <img src="/assets/svgs/plumbing.png" alt="Plumbing" class="w-10 h-10">
-                        <span class="font-semibold text-lg">Plumbing Services</span>
+                        <span class="font-semibold text-lg card__title">Plumbing Services</span>
                     </div>
                     <span class="text-xl transition-transform transform">&#9656;</span>
                 </button>
                 <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 px-4 py-0 bg-gray-50">
-                    <ul class="space-y-2 text-gray-700 py-3" style="padding-left: 20px;">
+                    <ul class="text-gray-700! flex flex-col gap-3 py-3! " style="padding-left: 20px;">
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586l-3.293-3.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
                             Leak detection & repair
@@ -239,16 +239,16 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             </div>
 
             <!-- Accordion Item 2: Renovation & Improvement -->
-            <div class=" rounded-lg overflow-hidden" style="margin: 1rem auto;padding:20px"">
-                <button class="w-full flex items-center justify-between px-4 py-3 bg-white hover:bg-blue-100 focus:outline-none" onclick="toggleAccordion(this)">
+            <div class="card rounded-lg overflow-hidden" style="margin: 1rem auto;padding:20px"">
+                <button class="w-full flex items-center justify-between px-4! py-3! bg-white hover:bg-blue-100 focus:outline-none" onclick="toggleAccordion(this)">
                     <div class="flex items-center gap-4">
                         <img src="/assets/svgs/renovation.png" alt="Renovation" class="w-10 h-10">
-                        <span class="font-semibold text-lg">Renovation & Improvement</span>
+                        <span class="font-semibold card__title text-lg">Renovation & Improvement</span>
                     </div>
                     <span class="text-xl transition-transform transform">&#9656;</span>
                 </button>
                 <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 px-4 py-0 bg-gray-50">
-                    <ul class="space-y-2 text-gray-700 py-3" style="padding-left: 20px;">
+                    <ul class="text-gray-700! flex flex-col gap-3 py-3! " style="padding-left: 20px;">
                         <li class="flex items-start gap-2">
                             <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586l-3.293-3.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
                             Bathroom renovation plumbing
@@ -887,7 +887,10 @@ he responded soon. We got it replaced in 30 minutes. Thank you so much for the a
                     </div>
                 </li>
             </ul>
-            <a href="https://maps.app.goo.gl/VtEDBALDnB9wpTke6" class="cs-button-solid" style="border-radius: 20px;">Click here for more Reviews</a>
+            <a href="https://maps.app.goo.gl/VtEDBALDnB9wpTke6" class="cs-button-solid" style="border-radius: 20px;">
+             <span class="hidden md:inline"> Click here for more Reviews </span>
+             <span class="md:hidden">See More Reviews</span>
+            </a>
         </div>
     </section>
     
