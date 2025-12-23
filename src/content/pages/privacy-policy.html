@@ -1,0 +1,230 @@
+---
+title: "Privacy Policy | Squad V Plumbing Inc."
+description: |
+  Squad V Plumbing Inc. – Providing efficient, reliable plumbing,
+  heating, and gas services with 15+ years of experience.
+  Trusted solutions for homes and businesses in Edmonton.
+permalink: "privacy-policy/"
+eleventyNavigation:
+---
+
+{% block head %}
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta
+  property="og:image"
+  content="{{ client.domain }}/assets/images/og_image.jpg"
+/>
+
+    <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+    {% if client.isProduction %}
+        <link rel="preload" href="/assets/css/terms.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/terms.css">
+        </noscript>
+    {% else %}
+        <link rel="stylesheet" href="/assets/css/terms.css"/>
+    {% endif %}
+
+{% endblock %} {% extends 'layouts/base.html' %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106-1112">
+  <div class="cs-container">
+    <span class="cs-int-title">Privacy Policy</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="/privacy-policy/" class="cs-link cs-active">Privacy Policy</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/heater.png"
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/heater.png"
+    />
+    <img
+      decoding="async"
+      src="/assets/images/heater.png"
+      alt="mechanic"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                  Content                     -->
+<!-- ============================================ -->
+
+<section id="content-1450">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper"></span>
+      <h2 class="cs-title">Privacy Policy</h2>
+      <p class="cs-text">
+        squadvplumbing.com (the “Website”) is a website owned by Squad V Plumbing Inc., 
+        located in Edmonton, AB (the “We”, “Us” or “our”).
+      </p>
+      <p class="cs-text">
+        We want you to understand how we use the information that you provide to
+        us. This Privacy Policy sets out how we obtain and use the “Personal
+        Information” which you provide us. Personal Information may include your
+        name, address, telephone number, email address, and other
+        data which may directly or indirectly identify you.
+      </p>
+      <p class="cs-text">
+        As the legal environment, technology, and operations change, it may
+        become necessary for us to make changes to this Privacy Policy and all
+        such changes will be posted on the Website.
+      </p>
+      <h3 class="cs-subtitle">How We Gather Information</h3>
+      <p class="cs-text">
+        We may gather Personal Information through the Website in several
+        different ways:
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">Through our Website contact forms and quote requests;</li>
+        <li class="cs-li">Through your orders of products and/or services;</li>
+        <li class="cs-li">
+          Through providing support to our customers and/or potential customers;
+        </li>
+        <li class="cs-li">
+          Through your payment to third-party payment processors which we use.
+        </li>
+      </ul>
+      <h3 class="cs-subtitle">Other Information</h3>
+      <p class="cs-text">
+        We also gather other information (“Other Information”), which cannot
+        identify you unless it is used in conjunction with actual Personal
+        Information. For example, we may collect your computer's Internet
+        Protocol address (i.e. IP address), browser type, browser version, the
+        pages of our Website that you visit, and the time and date of your visit. 
+        We use this information to help diagnose problems and administer the Website.
+      </p>
+      
+      <h3 class="cs-subtitle">Use of Personal Information</h3>
+      <p class="cs-text">
+        We may use the collected Personal Information for various purposes
+        including:
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          To provide and maintain our Website and to provide you with our plumbing, 
+          heating, and gas services.
+        </li>
+        <li class="cs-li">To notify you about changes to our services.</li>
+        <li class="cs-li">To provide customer support.</li>
+        <li class="cs-li">
+          To detect, prevent and address technical issues.
+        </li>
+        <li class="cs-li">
+          To provide you with news, special offers and general information about
+          other services similar to those you have already enquired about.
+        </li>
+      </ul>
+
+      <h3 class="cs-subtitle">Service Providers</h3>
+      <p class="cs-text">
+        We may employ third party companies and individuals to facilitate our
+        Website and business ("Service Providers"), such as Google Analytics, 
+        to assist us in analyzing how our Website is used. These agents have access 
+        to user and customer information as required in order to help them perform 
+        their functions on our behalf, but they are not allowed to use that 
+        information for any other purpose.
+      </p>
+
+      <h3 class="cs-subtitle">Analytics & Advertising</h3>
+      <p class="cs-text">
+        We may use third-party Service Providers to monitor and analyze the use
+        of our Website, such as Google Analytics. Google uses the data collected 
+        to track and monitor the use of the Website. You can opt-out of having 
+        made your activity available to Google Analytics by installing the Google 
+        Analytics opt-out browser add-on.
+      </p>
+
+      <h3 class="cs-subtitle">Users Must be Age of Majority</h3>
+      <p class="cs-text">
+        Persons under the age of majority in their jurisdiction must ask their
+        parents or legal guardians for permission before sending any information
+        about themselves to us via the Website.
+      </p>
+
+      <h3 class="cs-subtitle">
+        Use of Personal Information for Marketing
+      </h3>
+      <p class="cs-text">
+        We may use your Personal Information to contact you with newsletters or 
+        promotional materials. You may opt out of receiving these communications 
+        at any time by following the unsubscribe link or by emailing us at 
+        <a href="mailto:info@squadvplumbing.com">info@squadvplumbing.com</a>.
+      </p>
+
+      <h3 class="cs-subtitle">Cookies</h3>
+      <p class="cs-text">
+        We use cookies and similar tracking technologies to track the activity 
+        on our Website. Cookies are files with a small amount of data which 
+        may include an anonymous unique identifier. You can instruct your 
+        browser to refuse all cookies, however, some portions of our Service 
+        may become unavailable.
+      </p>
+
+      <h3 class="cs-subtitle">Transfer of Customer Information</h3>
+      <p class="cs-text">
+        If Squad V Plumbing Inc. transfers or divests its business assets, customer 
+        information may be transferred as one of these business assets. We will 
+        provide notice before your Personal Information is transferred and becomes 
+        subject to a different privacy policy.
+      </p>
+
+      <h3 class="cs-subtitle">Release of Information When Required</h3>
+      <p class="cs-text">
+        We may be required to disclose your Personal Data if required to do so 
+        by law or in response to valid requests by public authorities (e.g. a 
+        court or a government agency).
+      </p>
+
+      <h3 class="cs-subtitle">Security of Data</h3>
+      <p class="cs-text">
+        The security of your data is important to us, but remember that no
+        method of transmission over the Internet is 100% secure. While we 
+        strive to use commercially acceptable means to protect your Personal 
+        Information, we cannot guarantee its absolute security.
+      </p>
+
+      <h3 class="cs-subtitle">Changes to This Privacy Policy</h3>
+      <p class="cs-text">
+        We may update our Privacy Policy from time to time. We will notify you
+        of any changes by posting the new Privacy Policy on this page and 
+        updating the "Last updated" date below.
+      </p>
+
+      <h3 class="cs-subtitle">How to Contact Us</h3>
+      <p class="cs-text">
+        If you have any questions about this privacy statement, please contact us at:
+        <br />
+        <b>Squad V Plumbing Inc.</b><br />
+        Email: <a href="mailto:info@squadvplumbing.com">info@squadvplumbing.com</a>
+      </p>
+
+      <p class="cs-text">
+        The foregoing policies are effective as of February 2025. 
+      </p>
+
+      <p class="cs-text">Last updated: February 2025</p>
+    </div>
+  </div>
+</section>
+
+    {% include 'sections/cta.html' %}
+ {% endblock %}

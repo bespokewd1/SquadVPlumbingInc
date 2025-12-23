@@ -1,0 +1,175 @@
+---
+title: "Terms Of Service | Squad V Plumbing Inc."
+description: |
+  Squad V Plumbing Inc. - Providing efficient, reliable plumbing, heating, and gas services with 15+ years of experience. Trusted solutions for homes and businesses in Edmonton.
+permalink: "terms-of-service/"
+eleventyNavigation:
+---
+
+{% block head %}
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta
+  property="og:image"
+  content="{{ client.domain }}/assets/images/og_image.jpg"
+/>
+
+    <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+    {% if client.isProduction %}
+        <link rel="preload" href="/assets/css/terms.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/terms.css">
+        </noscript>
+    {% else %}
+        <link rel="stylesheet" href="/assets/css/terms.css"/>
+    {% endif %}
+{% endblock %} {% extends 'layouts/base.html' %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106-1112">
+  <div class="cs-container">
+    <span class="cs-int-title">Terms of Service</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="/terms-of-service/" class="cs-link cs-active"
+        >Terms of Service</a
+      >
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/plumbingInAction.png"
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/plumbingInAction.png"
+    />
+    <img
+      decoding="async"
+      src="/assets/images/plumbingInAction.png"
+      alt="mechanic"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                  Content                     -->
+<!-- ============================================ -->
+
+<section id="content-1450">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper"></span>
+      <h2 class="cs-title">Terms of Service</h2>
+      <p class="cs-text">
+        <i>Effective February 2025 </i>
+        Welcome to the Squad V Plumbing Inc. website. By accessing our website
+        and using our services, you agree to the following Terms of Service
+        (&quot;Terms&quot;). If you do not agree to these Terms, please do not
+        use our website or services.
+      </p>
+      <p class="cs-text"><b>1. Introduction</b></p>
+      <p class="cs-text">
+        Squad V Plumbing Inc. (&quot;we&quot;, &quot;our&quot;,
+        &quot;us&quot;) provides professional plumbing, heating, gas, and
+        renovation services in Edmonton, Alberta. These Terms govern your access
+        to and use of our website and services.
+      </p>
+      <p class="cs-text"><b>2. Services</b></p>
+      <p class="cs-text">
+        Our services include, but are not limited to, plumbing repairs,
+        heating maintenance, gas installations, and renovations. Service
+        availability may vary based on location and project scope. For specific
+        terms related to a project, a written service agreement will be
+        provided.
+      </p>
+      <p class="cs-text"><b>3. Use of the Website</b></p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <b>Eligibility</b>: Our website is intended for users who are at least 18 years 
+          of age or the legal age of majority in their jurisdiction.
+        </li>
+        <li class="cs-li">
+          <b>Prohibited Activities</b>: You may not use our website for any
+          illegal activities, to disrupt our services, or interfere with other
+          users.
+        </li>
+      </ul>
+      <p class="cs-text"><b>4. Estimates and Payments</b></p>
+      <p class="cs-text">
+        All service estimates provided through the website or via email are
+        non-binding until confirmed by a signed contract or work order. Payments 
+        are required as per the terms of the service agreement.
+      </p>
+      <p class="cs-text"><b>5. Intellectual Property</b></p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <b>Ownership of Website Design and Content</b>: The design, layout,
+          and content of this website are the property of Bespoke Web Design
+          Edmonton, except for materials specifically provided by Squad V Plumbing Inc.
+        </li>
+        <li class="cs-li">
+          <b>Client Content</b>: Any materials, such as images or project descriptions
+          provided by Squad V Plumbing Inc. remain their property.
+        </li>
+        <li class="cs-li">
+          <b>License to Use</b>: While interacting with our brand, you are
+          granted a limited, non-exclusive, revocable license to use the website
+          and its content for personal, non-commercial purposes.
+        </li>
+        <li class="cs-li">
+          <b>Hosting and Subscription-Based Access</b>: The website is hosted
+          and managed by Bespoke Draft Edmonton. If the hosting subscription is
+          canceled or terminated, the website will be taken offline.
+        </li>
+      </ul>
+      <p class="cs-text"><b>6. Limitation of Liability</b></p>
+      <p class="cs-text">
+        We are not responsible for any direct or indirect damages resulting from
+        the use of our website or services, including loss of data, profits, or
+        business interruption. Our liability for any claims will be limited to
+        the amount paid by you for the services in question.
+      </p>
+      <p class="cs-text"><b>7. Warranties and Disclaimers</b></p>
+      <p class="cs-text">
+        Our digital services are provided "as is" without warranties of any kind. While
+        we aim to provide accurate and reliable information, we do not guarantee
+        the accuracy, reliability, or completeness of any content on our
+        website.
+      </p>
+      <p class="cs-text"><b>8. Changes to Terms</b></p>
+      <p class="cs-text">
+        We reserve the right to modify these Terms at any time. Changes will be
+        posted on this page, and your continued use of the website or services
+        after any changes will indicate your acceptance of the updated Terms.
+      </p>
+      <p class="cs-text"><b>9. Governing Law</b></p>
+      <p class="cs-text">
+        These Terms will be governed by and interpreted in accordance with the
+        laws of Alberta, Canada.
+      </p>
+      <p class="cs-text"><b>10. Contact Us</b></p>
+      <p class="cs-text">
+        If you have any questions or concerns about these Terms of Service, 
+        please contact us at:
+      </p>
+      <p class="cs-text"><b>Squad V Plumbing Inc.</b><br /></p>
+      <p class="cs-text">
+        <a href="mailto:info@squadvplumbing.com">info@squadvplumbing.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+    {% include 'sections/cta.html' %}
+{% endblock %}
