@@ -1,8 +1,8 @@
 module.exports = {
     name: "Squad V Plumbing Inc.",
     email: "SQUADV726@gmail.com",
-    phoneForTel: "555-779-4407",
-    phoneFormatted: "(555) 779-4407",
+    phoneForTel: "780-667-7169",
+    phoneFormatted: "(780)-667-7169",
     address: {
         lineOne: "First Address Line",
         lineTwo: "Second Address Line",
@@ -13,7 +13,7 @@ module.exports = {
         mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
     },
     socials: {
-        facebook: "https://www.facebook.com/",
+        facebook: "https://www.facebook.com/squadvplumbing/",
         instagram: "https://www.instagram.com/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
