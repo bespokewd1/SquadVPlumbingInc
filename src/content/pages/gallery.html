@@ -3,48 +3,70 @@ title: "About | Squad V Plumbing Inc."
 description: "Meta description for the page"
 permalink: "/gallery/"
 
+imageWidth: 504
+
 commercialGallery:
   - src: "/assets/images/gallery/commercial/1.webp"
+    srcSm: "/assets/images/gallery/commercial/1-sm.webp"
     alt: "Commercial mechanical room with boilers, pipes, and equipment"
   - src: "/assets/images/gallery/commercial/2.webp"
+    srcSm: "/assets/images/gallery/commercial/2-sm.webp"
     alt: "Mechanical room aisle with storage tanks and piping"
   - src: "/assets/images/gallery/commercial/3.webp"
+    srcSm: "/assets/images/gallery/commercial/3-sm.webp"
     alt: "Water treatment tanks and plumbing manifold in utility room"
   - src: "/assets/images/gallery/commercial/4.webp"
+    srcSm: "/assets/images/gallery/commercial/4-sm.webp"
     alt: "Equipment room with multiple tanks and boxed materials"
   - src: "/assets/images/gallery/commercial/5.webp"
+    srcSm: "/assets/images/gallery/commercial/5-sm.webp"
     alt: "Technician working near large equipment cabinets in utility room"
   - src: "/assets/images/gallery/commercial/6.webp"
+    srcSm: "/assets/images/gallery/commercial/6-sm.webp"
     alt: "Row of large insulated tanks with overhead copper piping"
   - src: "/assets/images/gallery/commercial/7.webp"
+    srcSm: "/assets/images/gallery/commercial/7-sm.webp"
     alt: "Jobsite selfie in front of large insulated tanks in mechanical room"
   - src: "/assets/images/gallery/commercial/8.webp"
+    srcSm: "/assets/images/gallery/commercial/8-sm.webp"
     alt: "Wide view of mechanical room with insulated tanks and materials"
   - src: "/assets/images/gallery/commercial/9.webp"
+    srcSm: "/assets/images/gallery/commercial/9-sm.webp"
     alt: "Mechanical room corner with large insulated tank and piping"
   - src: "/assets/images/gallery/commercial/10.webp"
+    srcSm: "/assets/images/gallery/commercial/10-sm.webp"
     alt: "Water treatment tanks and storage barrels in utility room"
   - src: "/assets/images/gallery/commercial/11.webp"
+    srcSm: "/assets/images/gallery/commercial/11-sm.webp"
     alt: "Large insulated tanks with ladder in mechanical room"
 
 residentialGallery:
   - src: "/assets/images/gallery/residential/1.webp"
+    srcSm: "/assets/images/gallery/residential/1-sm.webp"
     alt: "Bright modern bathroom with freestanding tub and double vanity"
   - src: "/assets/images/gallery/residential/2.webp"
+    srcSm: "/assets/images/gallery/residential/2-sm.webp"
     alt: "Compact bathroom vanity with toilet and mirror"
   - src: "/assets/images/gallery/residential/3.webp"
+    srcSm: "/assets/images/gallery/residential/3-sm.webp"
     alt: "Newly built home exterior with driveway and sidewalk"
   - src: "/assets/images/gallery/residential/4.webp"
+    srcSm: "/assets/images/gallery/residential/4-sm.webp"
     alt: "Residential furnace and ductwork installation"
   - src: "/assets/images/gallery/residential/5.webp"
+    srcSm: "/assets/images/gallery/residential/5-sm.webp"
     alt: "Bathroom framing with rough-in plumbing in progress"
   - src: "/assets/images/gallery/residential/6.webp"
+    srcSm: "/assets/images/gallery/residential/6-sm.webp"
     alt: "Finished bathroom with tub, toilet, and vanity"
   - src: "/assets/images/gallery/residential/7.webp"
+    srcSm: "/assets/images/gallery/residential/7-sm.webp"
     alt: "In-wall plumbing rough-in with black piping"
   - src: "/assets/images/gallery/residential/8.webp"
+    srcSm: "/assets/images/gallery/residential/8-sm.webp"
     alt: "Basement renovation in progress with framing and materials"
   - src: "/assets/images/gallery/residential/9.webp"
+    srcSm: "/assets/images/gallery/residential/9-sm.webp"
     alt: "Small bathroom with toilet and wall-mounted sink"
 ---
 
@@ -190,10 +212,14 @@ residentialGallery:
           >
             <div class="cs-masonry" id="masonry-commercial">
               {% for img in commercialGallery %}
-                <figure class="cs-card">
+                <figure
+                  class="cs-card cs-blur-up"
+                  style="background-image: url('{{ img.srcSm }}');"
+                >
                   <img
                     src="{{ img.src }}"
                     alt="{{ img.alt }}"
+                    width="{{ imageWidth }}"
                     loading="lazy"
                     decoding="async"
                   />
@@ -212,14 +238,18 @@ residentialGallery:
           >
             <div class="cs-masonry" id="masonry-residential">
               {% for img in residentialGallery %}
-                <figure class="cs-card">
-                  <img
-                    src="{{ img.src }}"
-                    alt="{{ img.alt }}"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
+              <figure
+                class="cs-card cs-blur-up"
+                style="background-image: url('{{ img.srcSm }}');"
+              >
+                <img
+                  src="{{ img.src }}"
+                  alt="{{ img.alt }}"
+                  width="{{ imageWidth }}"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
               {% endfor %}
             </div>
           </section>

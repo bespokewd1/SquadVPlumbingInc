@@ -1811,3 +1811,27 @@
   height: auto;
   display: block;
 }
+
+.cs-blur-up {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0);
+  filter: blur(1px);
+}
+
+.cs-blur-up img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.cs-blur-up.is-loaded {
+  filter: none;
+}
+
+.cs-blur-up.is-loaded img {
+  opacity: 1;
+}

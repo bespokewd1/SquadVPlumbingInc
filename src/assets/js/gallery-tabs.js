@@ -56,3 +56,27 @@
   );
   if (initiallyActive) activate(initiallyActive);
 })();
+
+(() => {
+  function markLoaded(img) {
+    const card = img.closest(".cs-blur-up");
+    if (!card) return;
+    card.classList.add("is-loaded");
+  }
+
+  document.addEventListener(
+    "load",
+    (e) => {
+      const el = e.target;
+      if (el && el.tagName === "IMG" && el.closest(".cs-blur-up")) {
+        markLoaded(el);
+      }
+    },
+    true,
+  );
+
+  // If some images load from cache before the event listener runs
+  document.querySelectorAll(".cs-blur-up img").forEach((img) => {
+    if (img.complete) markLoaded(img);
+  });
+})();
