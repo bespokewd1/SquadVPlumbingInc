@@ -3,6 +3,7 @@ title: "Squad V Plumbing Inc. | Trusted Plumbing & Gasfitting in Edmonton"
 description: "Meta description for the page"
 permalink: "/"
 tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+ctaImg: "/assets/images/gallery/residential/6.webp"
 ---
 
 {% extends "layouts/base.html" %}
@@ -22,6 +23,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <link rel="stylesheet" href="/assets/css/local.css"/>
     {% endif %}
 
+    <link rel="preload" as="image" href="/assets/images/gallery/commercial/5.webp"/>
     <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
     <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
     <!-- {% include "components/home-schema.html" %} -->
@@ -48,22 +50,22 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <!-- Background Image -->
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
             <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1, height: 1 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="eager" decoding="async">
+            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 1, height: 1 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/gallery/commercial/5.webp" | resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="eager" decoding="async">
         </picture>
     </section>
 
@@ -119,19 +121,19 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             </li>
         </ul>
     </section> -->
-   
+
 
    <!-- ============================================ -->
     <!--                   OUR SERVICES               -->
     <!-- ============================================ -->
         <div class="hidden max-w-6xl px-4 py-12 lg:flex flex-col w-[80%]" style="margin: 2rem auto 80px auto;">
-            
+
             <span class="cs-topper">Our Services</span>
                 <h2 class="text-3xl font-semibold mb-12" style="margin: 0 0 60px 0; text-align:left;">
                 Our Plumbing Services
                 </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                
+
                 <!-- Card 1 -->
                 <a href="/services" class="group block bg-white rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#165ca0]" style="padding:20px;">
                     <div class="text-blue-900 mb-4">
@@ -188,7 +190,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <div style="margin: 2rem auto 0 auto;">
                     <a href="tel:+17806677169" class="cs-button-solid">Call for Service</a>
             </div>
-            
+
             </div>
 
       <!-- OUR SERVICE MOBILE ACCORDION       -->
@@ -334,14 +336,14 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     </ul>
                 </div>
             </div> -->
-       
+
         </div>
-        
+
        <div class="w-[80%] lg:hidden" style="margin:auto;">
              <a href="tel:+17806677169" class="mobile-button"> Call for Service</a>
         </div>
     </div>
-     
+
     <script>
     function toggleAccordion(button) {
         const allContents = document.querySelectorAll('.accordion-content');
@@ -436,31 +438,35 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <!-- Background Image-->
     <picture class="cs-picture">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 812 }) | avif %}" type="image/avif">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 812 }) | webp %}" type="image/webp">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 812 }) | jpeg %}" type="image/jpeg">
+        <source media="(max-width: 600px)" srcset="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 640, height: 812 }) | avif %}" type="image/avif">
+        <source media="(max-width: 600px)" srcset="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 640, height: 812 }) | webp %}" type="image/webp">
+        <source media="(max-width: 600px)" srcset="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 640, height: 812 }) | jpeg %}" type="image/jpeg">
         <!--Tablet Image-->
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 750 }) | avif %}" type="image/avif">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 750 }) | webp %}" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 750 }) | jpeg %}" type="image/jpeg">
+        <source media="(max-width: 1024px)" srcset="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 2048, height: 750 }) | avif %}" type="image/avif">
+        <source media="(max-width: 1024px)" srcset="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 2048, height: 750 }) | webp %}" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 2048, height: 750 }) | jpeg %}" type="image/jpeg">
         <!--Desktop Image-->
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 555 }) | avif %}" type="image/avif">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 555 }) | webp %}" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 555 }) | jpeg %}" type="image/jpeg">
-        <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 555 }) | jpeg %}" alt="cabinets" width="1920" height="426" loading="lazy" decoding="async">
+        <source media="(min-width: 1024px)" srcset="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 2500, height: 555 }) | avif %}" type="image/avif">
+        <source media="(min-width: 1024px)" srcset="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 2500, height: 555 }) | webp %}" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 2500, height: 555 }) | jpeg %}" type="image/jpeg">
+        <img src="{% getUrl  "/assets/images/gallery/residential/6.webp" | resize({ width: 2500, height: 555 }) | jpeg %}" alt="cabinets" width="1920" height="426" loading="lazy" decoding="async">
     </picture>
+
+
+
+
 </section>
 
      <!-- TRUST BADGES -->
      <section class="" style="margin-top: 40px;">
         <div class="max-w-6xl px-4 py-12 flex flex-col w-[80%]" style="margin: auto auto 80px auto;">
-            
+
             <span class="cs-topper">Our Trust Badges</span>
             <h2 class="text-3xl font-semibold mb-12" style="margin: 0 0 60px 0; text-align:left;">
             Quality You Can Trust
             </h2>
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
+
                 <!-- Card 1 -->
                 <a href="/services" class="group block bg-white rounded-xl flex flex-col items-center justify-evenly" style="padding:20px;">
                     <div class="text-blue-900 mb-4">
@@ -468,7 +474,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                         <img loading="lazy" decoding="async" src="/assets/images/redSeal.png" alt="icon" width="250" height="250" aria-hidden="true">
                     </picture>
                     </div>
-                    
+
                 </a>
 
                 <!-- Card 2 -->
@@ -478,7 +484,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                         <img loading="lazy" decoding="async" src="/assets/images/licensed.png" alt="icon" width="250" height="250" aria-hidden="true">
                     </picture>
                     </div>
-                    
+
                 </a>
 
 
@@ -489,7 +495,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                         <img loading="lazy" decoding="async" src="/assets/images/warranty.png" alt="icon" width="250" height="250" aria-hidden="true">
                     </picture>
                     </div>
-                    
+
                 </a>
 
 
@@ -500,7 +506,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                         <img loading="lazy" decoding="async" src="/assets/images/satisfaction (2).png" alt="icon" width="250" height="250" aria-hidden="true">
                     </picture>
                     </div>
-                 
+
                 </a>
 
 
@@ -517,33 +523,33 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <div class="cs-image-group">
                 <picture class="cs-picture cs-picture1">
                     <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
                     <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
                     <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/gasfittingInAction.png" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/gallery/residential/9.webp" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
                 </picture>
                 <picture class="cs-picture cs-picture2">
                     <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
                     <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
                     <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
                 </picture>
             </div>
             <!-- Right Content Section-->
@@ -558,8 +564,8 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                       commercial facilities, property managers, and builders. Led by Eugene
                        Vista, a Journeyman Plumber and Certified Gasfitter, our team ensures
                         every project is completed safely, efficiently, and up to code.
-                    We handle everything from new-build rough-ins to basement improvements and hot water 
-                    systems. Known for honesty, availability, and flexibility, we’ve worked with Wilvicson 
+                    We handle everything from new-build rough-ins to basement improvements and hot water
+                    systems. Known for honesty, availability, and flexibility, we’ve worked with Wilvicson
                     Global, Ardeco Design, Sehra Homes, and Weidner Apartments.
 
                 </p>
@@ -635,8 +641,8 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </div>
     </section> -->
 
- 
-    
+
+
     <!-- ============================================ -->
     <!--                   Gallery                    -->
     <!-- ============================================ -->
@@ -654,48 +660,48 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <!-- Row 1-->
                     <picture class="cs-picture cs-picture-1">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 182, height: 250 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 182, height: 250 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 182, height: 250 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 182, height: 250 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 182, height: 250 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 182, height: 250 }) | jpeg %}" type="image/jpeg">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 634, height: 798 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 634, height: 798 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 634, height: 798 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 634, height: 798 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 634, height: 798 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 634, height: 798 }) | jpeg %}" type="image/jpeg">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 826, height: 1134 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 826, height: 1134 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 826, height: 1134 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/1.png" | resize({ width: 826, height: 1134 }) | jpeg %}" alt="new hallway" width="413" height="567" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 826, height: 1134 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 826, height: 1134 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 826, height: 1134 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/gallery/commercial/1.webp" | resize({ width: 826, height: 1134 }) | jpeg %}" alt="new hallway" width="413" height="567" loading="lazy" decoding="async">
                     </picture>
                     <picture class="cs-picture cs-picture-2">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/2.png" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="new home construction" width="413" height="629" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/gallery/commercial/2.webp" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="new home construction" width="413" height="629" loading="lazy" decoding="async">
                     </picture>
                     <picture class="cs-picture cs-picture-3">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 182, height: 226 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 182, height: 226 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 182, height: 226 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 182, height: 226 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 182, height: 226 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 182, height: 226 }) | jpeg %}" type="image/jpeg">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 634, height: 720 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 634, height: 720 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 634, height: 720 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 634, height: 720 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 634, height: 720 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 634, height: 720 }) | jpeg %}" type="image/jpeg">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 826, height: 1024 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 826, height: 1024 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 826, height: 1024 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/3.png" | resize({ width: 826, height: 1024 }) | jpeg %}" alt="building a new wall" width="413" height="512" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 826, height: 1024 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 826, height: 1024 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 826, height: 1024 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/gallery/commercial/3.webp" | resize({ width: 826, height: 1024 }) | jpeg %}" alt="building a new wall" width="413" height="512" loading="lazy" decoding="async">
                     </picture>
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
@@ -703,49 +709,49 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <div class="cs-row cs-row-2">
                     <picture class="cs-picture cs-picture-1">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 182, height: 216 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 182, height: 216 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 182, height: 216 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 182, height: 216 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 182, height: 216 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 182, height: 216 }) | jpeg %}" type="image/jpeg">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 634, height: 692 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 634, height: 692 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 634, height: 692 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 634, height: 692 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 634, height: 692 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 634, height: 692 }) | jpeg %}" type="image/jpeg">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 826, height: 984 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 826, height: 984 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 826, height: 984 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/4.png" | resize({ width: 826, height: 984 }) | jpeg %}" alt="new kitchen" width="413" height="492" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 826, height: 984 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 826, height: 984 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 826, height: 984 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/gallery/commercial/4.webp" | resize({ width: 826, height: 984 }) | jpeg %}" alt="new kitchen" width="413" height="492" loading="lazy" decoding="async">
                     </picture>
                     <picture class="cs-picture cs-picture-2">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 182, height: 228 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 182, height: 228 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 182, height: 228 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 182, height: 228 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 182, height: 228 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 182, height: 228 }) | jpeg %}" type="image/jpeg">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 634, height: 728 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 634, height: 728 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 634, height: 728 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 634, height: 728 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 634, height: 728 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 634, height: 728 }) | jpeg %}" type="image/jpeg">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 826, height: 1034 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 826, height: 1034 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 826, height: 1034 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/5.png" | resize({ width: 826, height: 1034 }) | jpeg %}" alt="apartment addition" width="413" height="517" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 826, height: 1034 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 826, height: 1034 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 826, height: 1034 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 826, height: 1034 }) | jpeg %}" alt="apartment addition" width="413" height="517" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-picture cs-picture-3">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/6.png" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="kew kitchen cabinets" width="413" height="629" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="kew kitchen cabinets" width="413" height="629" loading="lazy" decoding="async">
                     </picture>
 
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
@@ -754,49 +760,49 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <div class="cs-row cs-row-3">
                     <picture class="cs-picture cs-picture-1">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 634, height: 880 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 634, height: 880 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 634, height: 880 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 634, height: 880 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 634, height: 880 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 634, height: 880 }) | jpeg %}" type="image/jpeg">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 826, height: 1250 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 826, height: 1250 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 826, height: 1250 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/7.png" | resize({ width: 826, height: 1250 }) | jpeg %}" alt="new black window structure" width="413" height="625" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 826, height: 1250 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 826, height: 1250 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 826, height: 1250 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/gallery/residential/2.webp" | resize({ width: 826, height: 1250 }) | jpeg %}" alt="new black window structure" width="413" height="625" loading="lazy" decoding="async">
                     </picture>
                     <picture class="cs-picture cs-picture-2">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 182, height: 198 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 182, height: 198 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 182, height: 198 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 182, height: 198 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 182, height: 198 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 182, height: 198 }) | jpeg %}" type="image/jpeg">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 634, height: 636 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 634, height: 636 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 634, height: 636 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 634, height: 636 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 634, height: 636 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 634, height: 636 }) | jpeg %}" type="image/jpeg">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 826, height: 904 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 826, height: 904 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 826, height: 904 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/8.png" | resize({ width: 826, height: 904 }) | jpeg %}" alt="kitchen rebovation" width="413" height="452" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 826, height: 904 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 826, height: 904 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 826, height: 904 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 826, height: 904 }) | jpeg %}" alt="kitchen rebovation" width="413" height="452" loading="lazy" decoding="async">
                     </picture>
 
                     <picture class="cs-picture cs-picture-3">
                         <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
                         <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
                         <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/9.png" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="bathroom renovation" width="413" height="629" loading="lazy" decoding="async">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/gallery/residential/4.webp" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="bathroom renovation" width="413" height="629" loading="lazy" decoding="async">
                     </picture>
 
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
@@ -821,22 +827,22 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <!-- Background Image-->
     <picture class="cs-picture">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 812 }) | avif %}" type="image/avif">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 812 }) | webp %}" type="image/webp">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 812 }) | jpeg %}" type="image/jpeg">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 640, height: 812 }) | avif %}" type="image/avif">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 640, height: 812 }) | webp %}" type="image/webp">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 640, height: 812 }) | jpeg %}" type="image/jpeg">
         <!--Tablet Image-->
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 750 }) | avif %}" type="image/avif">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 750 }) | webp %}" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 750 }) | jpeg %}" type="image/jpeg">
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 2048, height: 750 }) | avif %}" type="image/avif">
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 2048, height: 750 }) | webp %}" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 2048, height: 750 }) | jpeg %}" type="image/jpeg">
         <!--Desktop Image-->
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 555 }) | avif %}" type="image/avif">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 555 }) | webp %}" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 555 }) | jpeg %}" type="image/jpeg">
-        <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 555 }) | jpeg %}" alt="cabinets" width="1920" height="426" loading="lazy" decoding="async">
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 2500, height: 555 }) | avif %}" type="image/avif">
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 2500, height: 555 }) | webp %}" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 2500, height: 555 }) | jpeg %}" type="image/jpeg">
+        <img src="{% getUrl "/assets/images/gallery/residential/1.webp" | resize({ width: 2500, height: 555 }) | jpeg %}" alt="cabinets" width="1920" height="426" loading="lazy" decoding="async">
     </picture>
 </section>
 
-    
+
     {% include 'sections/reviews.html' %}
     {% include 'sections/faq.html' %}
     {% include 'sections/cta.html' %}

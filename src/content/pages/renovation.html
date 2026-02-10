@@ -7,8 +7,8 @@ permalink: "/renovation/"
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 482, height: 536 }) | avif %}"/>
     <link rel="stylesheet" href="/assets/css/about.css">
 {% endblock %}
 
@@ -29,18 +29,18 @@ permalink: "/renovation/"
         <!--Background Image-->
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/gallery/commercial/9.webp" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="tanks with pipes" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
 
@@ -49,7 +49,7 @@ permalink: "/renovation/"
     <div class="flex flex-col items-start justify-start w-[90%] lg:w-[80%]" style="margin: 0 auto;">
         <!-- SEO Topper: Uses keywords like "Modernization" and "Licensed" -->
         <span class="cs-topper" style="color: var(--secondary);">Expert Home Renovation & Modernization Services</span>
-        
+
         <!-- H1: Essential for SEO - Focuses on your core renovation pillars -->
         <h1 class="cs-title mb-3!" style="margin: 0;text-align: start;">
             Professional Kitchen, Bathroom & Basement Renovations
@@ -57,19 +57,19 @@ permalink: "/renovation/"
 
         <!-- Description: Built to improve time-on-page and SEO relevance -->
         <p class="cs-text mb-4!" style="text-align: start;font-size: 16px;">
-            Transform your living space with Squad V Plumbing Inc. We specialize in high-quality 
-            kitchen and bathroom remodeling, basement improvements, and professional rough-ins. 
-            From concept to completion, we deliver modern craftsmanship and code-compliant 
+            Transform your living space with Squad V Plumbing Inc. We specialize in high-quality
+            kitchen and bathroom remodeling, basement improvements, and professional rough-ins.
+            From concept to completion, we deliver modern craftsmanship and code-compliant
             installations that add lasting value to your home.
         </p>
 
         <!-- CTA Buttons -->
         <div class="flex-col lg:flex-row flex gap-8" style="margin: 1rem 0 2rem 0;">
-            <a href="tel:(780) 667-7169" 
-               class="cs-button-solid whatsapp-btn" 
-               target="_blank" 
+            <a href="tel:(780) 667-7169"
+               class="cs-button-solid whatsapp-btn"
+               target="_blank"
                rel="noopener">
-               <i class="fab fa-whatsapp"></i>Request a Quote 
+               <i class="fab fa-whatsapp"></i>Request a Quote
             </a>
             <a href="tel:(780) 667-7169" class="cs-button-solid">Call Now </a>
         </div>
@@ -80,7 +80,7 @@ permalink: "/renovation/"
 
       <!-- Service 1 -->
       <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="/assets/images/basement.png" alt="Basement Improvements" class="w-full h-48 object-cover">
+        <img src="/assets/images/gallery/residential/1.webp" alt="Basement Improvements" class="w-full h-48 object-cover">
         <div class="p-4" style="padding: 1rem;">
           <h2 class="font-semibold text-lg mb-3!">Basement Improvements (Tub/Shower Replacement, Rough ins)</h2>
           <p class="text-gray-600 text-sm">
@@ -91,7 +91,7 @@ permalink: "/renovation/"
 
       <!-- Service 2 -->
       <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="/assets/images/bathroom.png" alt="Kitchen & Bathroom Renovation" class="w-full h-48 object-cover">
+        <img src="/assets/images/gallery/residential/9.webp" alt="Kitchen & Bathroom Renovation" class="w-full h-48 object-cover">
         <div class="p-4" style="padding: 1rem;">
           <h2 class="font-semibold text-lg mb-3!">Kitchen & Bathroom Renovation</h2>
           <p class="text-gray-600 text-sm">
@@ -102,7 +102,7 @@ permalink: "/renovation/"
 
       <!-- Service 3 -->
       <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="/assets/images/new.png" alt="New Construction Plumbing" class="w-full h-48 object-cover">
+        <img src="/assets/images/gallery/residential/3.webp" alt="New Construction Plumbing" class="w-full h-48 object-cover">
         <div class="p-4" style="padding: 1rem;">
           <h2 class="font-semibold text-lg mb-3!">New Construction Plumbing</h2>
           <p class="text-gray-600 text-sm">
@@ -117,7 +117,7 @@ permalink: "/renovation/"
 
 
 
- 
+
 
     {% include 'sections/reviews.html' %}
     {% include 'sections/cta2.html' %}
