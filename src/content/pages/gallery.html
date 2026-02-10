@@ -147,51 +147,87 @@ residentialGallery:
         >
         <h2 class="text-3xl font-bold mt-2 mb-8">Proofs of Work</h2>
       </div>
-
-      <!-- Commercial -->
+      <!-- Tabs -->
       <div class="w-[80%]" style="margin: 2rem auto 0;">
-        <h3 class="text-2xl font-bold mb-6">Commercial</h3>
+        <div class="cs-tabs" data-tabs>
+          <div
+            class="cs-tablist"
+            role="tablist"
+            aria-label="Gallery categories"
+          >
+            <button
+              class="cs-tab is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-commercial"
+              id="tab-commercial"
+              data-tab="commercial"
+            >
+              Commercial
+            </button>
 
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          style="margin: 0 auto;"
-        >
-          {% for img in commercialGallery %}
-            <div class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img
-                src="{{ img.src }}"
-                alt="{{ img.alt }}"
-                class="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
+            <button
+              class="cs-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-residential"
+              id="tab-residential"
+              data-tab="residential"
+            >
+              Residential
+            </button>
+          </div>
+
+          <!-- Panels -->
+          <section
+            id="panel-commercial"
+            role="tabpanel"
+            aria-labelledby="tab-commercial"
+            class="cs-tabpanel"
+            data-panel="commercial"
+          >
+            <div class="cs-masonry" id="masonry-commercial">
+              {% for img in commercialGallery %}
+                <figure class="cs-card">
+                  <img
+                    src="{{ img.src }}"
+                    alt="{{ img.alt }}"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              {% endfor %}
             </div>
-          {% endfor %}
-        </div>
-      </div>
+          </section>
 
-      <!-- Residential -->
-      <div class="w-[80%]" style="margin: 3rem auto 0;">
-        <h3 class="text-2xl font-bold mb-6">Residential</h3>
-
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          style="margin: 0 auto;"
-        >
-          {% for img in residentialGallery %}
-            <div class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img
-                src="{{ img.src }}"
-                alt="{{ img.alt }}"
-                class="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
+          <section
+            id="panel-residential"
+            role="tabpanel"
+            aria-labelledby="tab-residential"
+            class="cs-tabpanel"
+            data-panel="residential"
+            hidden
+          >
+            <div class="cs-masonry" id="masonry-residential">
+              {% for img in residentialGallery %}
+                <figure class="cs-card">
+                  <img
+                    src="{{ img.src }}"
+                    alt="{{ img.alt }}"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              {% endfor %}
             </div>
-          {% endfor %}
+          </section>
         </div>
       </div>
     </section>
+    {# load JS at end of body block #}
+    <script src="/assets/js/gallery-tabs.js" defer></script>
 
     {% include "sections/cta2.html" %}
   </section>
