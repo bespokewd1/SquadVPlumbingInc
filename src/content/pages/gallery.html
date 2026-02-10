@@ -2,128 +2,197 @@
 title: "About | Squad V Plumbing Inc."
 description: "Meta description for the page"
 permalink: "/gallery/"
+
+commercialGallery:
+  - src: "/assets/images/gallery/commercial/1.webp"
+    alt: "Commercial mechanical room with boilers, pipes, and equipment"
+  - src: "/assets/images/gallery/commercial/2.webp"
+    alt: "Mechanical room aisle with storage tanks and piping"
+  - src: "/assets/images/gallery/commercial/3.webp"
+    alt: "Water treatment tanks and plumbing manifold in utility room"
+  - src: "/assets/images/gallery/commercial/4.webp"
+    alt: "Equipment room with multiple tanks and boxed materials"
+  - src: "/assets/images/gallery/commercial/5.webp"
+    alt: "Technician working near large equipment cabinets in utility room"
+  - src: "/assets/images/gallery/commercial/6.webp"
+    alt: "Row of large insulated tanks with overhead copper piping"
+  - src: "/assets/images/gallery/commercial/7.webp"
+    alt: "Jobsite selfie in front of large insulated tanks in mechanical room"
+  - src: "/assets/images/gallery/commercial/8.webp"
+    alt: "Wide view of mechanical room with insulated tanks and materials"
+  - src: "/assets/images/gallery/commercial/9.webp"
+    alt: "Mechanical room corner with large insulated tank and piping"
+  - src: "/assets/images/gallery/commercial/10.webp"
+    alt: "Water treatment tanks and storage barrels in utility room"
+  - src: "/assets/images/gallery/commercial/11.webp"
+    alt: "Large insulated tanks with ladder in mechanical room"
+
+residentialGallery:
+  - src: "/assets/images/gallery/residential/1.webp"
+    alt: "Bright modern bathroom with freestanding tub and double vanity"
+  - src: "/assets/images/gallery/residential/2.webp"
+    alt: "Compact bathroom vanity with toilet and mirror"
+  - src: "/assets/images/gallery/residential/3.webp"
+    alt: "Newly built home exterior with driveway and sidewalk"
+  - src: "/assets/images/gallery/residential/4.webp"
+    alt: "Residential furnace and ductwork installation"
+  - src: "/assets/images/gallery/residential/5.webp"
+    alt: "Bathroom framing with rough-in plumbing in progress"
+  - src: "/assets/images/gallery/residential/6.webp"
+    alt: "Finished bathroom with tub, toilet, and vanity"
+  - src: "/assets/images/gallery/residential/7.webp"
+    alt: "In-wall plumbing rough-in with black piping"
+  - src: "/assets/images/gallery/residential/8.webp"
+    alt: "Basement renovation in progress with framing and materials"
+  - src: "/assets/images/gallery/residential/9.webp"
+    alt: "Small bathroom with toilet and wall-mounted sink"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
-    <link rel="stylesheet" href="/assets/css/gallery.less">
+  <link
+    rel="preload"
+    as="image"
+    href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"
+  />
+  <link
+    rel="preload"
+    as="image"
+    href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"
+  />
+
+  <link rel="stylesheet" href="/assets/css/gallery.css" />
 {% endblock %}
 
 {% block body %}
+  <!-- ============================================ -->
+  <!--                   Gallery                    -->
+  <!-- ============================================ -->
 
-       <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-48">
-         <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">Gallery</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/gallery/" class="cs-link cs-active">Gallery</a>
-            </div>
+  <section id="gallery-48">
+    <div id="banner-310">
+      <div class="cs-container">
+        <span class="cs-int-title">Gallery</span>
+        <div class="cs-breadcrumbs">
+          <a href="/" class="cs-link">Home</a>
+          <a href="/gallery/" class="cs-link cs-active">Gallery</a>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
+      </div>
+      <!--Background Image-->
+      <picture class="cs-background">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | avif %}"
+          type="image/avif"
+        />
+        <source
+          media="(max-width: 600px)"
+          srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | webp %}"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 600px)"
+          srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 600 }) | jpeg %}"
+          type="image/jpeg"
+        />
+        <!--Tablet Image-->
+        <source
+          media="(max-width: 1024px)"
+          srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | avif %}"
+          type="image/avif"
+        />
+        <source
+          media="(max-width: 1024px)"
+          srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | webp %}"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 1024px)"
+          srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 942 }) | jpeg %}"
+          type="image/jpeg"
+        />
+        <!--Desktop Image-->
+        <source
+          media="(min-width: 1024px)"
+          srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | avif %}"
+          type="image/avif"
+        />
+        <source
+          media="(min-width: 1024px)"
+          srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | webp %}"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1024px)"
+          srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | jpeg %}"
+          type="image/jpeg"
+        />
+        <img
+          src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2500, height: 628 }) | jpeg %}"
+          alt="Gallery banner"
+          width="1920"
+          height="482"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
     </div>
 
-<section style="margin: 4rem auto 4rem auto;">
-    <div class="w-[80%]" style="margin: auto;">
-                <span class="cs-topper text-blue-600 font-semibold uppercase">Our Porfolio</span>
-  <h2 class="text-3xl font-bold mt-2 mb-8">Proofs of Work</h2>
-    </div>
- 
-    <div class="cs-container w-full" style="margin: 3rem auto;">
-  <!-- <span class="cs-topper text-blue-600 font-semibold uppercase">Our Services</span>
-  <h2 class="text-3xl font-bold mt-2 mb-8">Plumbing Services</h2> -->
-
-  <div class="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style="margin: 3rem auto;">
-
-    <!-- Service 1 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden">
-      <img src="/assets/images/residential.png" alt="Residential & Commercial Plumbing" class="w-full h-full object-cover">
-    </div>
-
-    <!-- Service 2 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden">
-      <img src="/assets/images/leak.png" alt="Leak Repair & Pipe Maintenance" class="w-full h-full object-cover">
-
-    </div>
-
-    <!-- Service 3 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden">
-      <img src="/assets/images/fixture.png" alt="Fixture Installation" class="w-full h-full object-cover">
-      
-    </div>
-
-    <!-- Service 4 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden">
-      <img src="/assets/images/heater.png" alt="Hot Water Tanks & Tankless Heaters" class="w-full h-full object-cover">
-      
-    </div>
-
-    <!-- Service 5 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden">
-      <img src="/assets/images/furnace.png" alt="Furnace Replacement & Repair" class="w-full h-full object-cover">
-      
-    </div>
-    <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="/assets/images/basement.png" alt="Basement Improvements" class="w-full h-full object-cover">
-        
+    <section style="margin: 4rem auto 4rem auto;">
+      <div class="w-[80%]" style="margin: auto;">
+        <span class="cs-topper text-blue-600 font-semibold uppercase"
+          >Our Portfolio</span
+        >
+        <h2 class="text-3xl font-bold mt-2 mb-8">Proofs of Work</h2>
       </div>
 
-      <!-- Service 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="/assets/images/bathroom.png" alt="Kitchen & Bathroom Renovation" class="w-full h-full object-cover">
-        
+      <!-- Commercial -->
+      <div class="w-[80%]" style="margin: 2rem auto 0;">
+        <h3 class="text-2xl font-bold mb-6">Commercial</h3>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          style="margin: 0 auto;"
+        >
+          {% for img in commercialGallery %}
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <img
+                src="{{ img.src }}"
+                alt="{{ img.alt }}"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          {% endfor %}
+        </div>
       </div>
 
-      <!-- Service 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="/assets/images/new.png" alt="New Construction Plumbing" class="w-full h-full object-cover">
-        
-      </div>
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="/assets/images/cutting.png" alt="Concrete Cutting & Breaking" class="w-full h-full object-cover">
-        
-      </div>
+      <!-- Residential -->
+      <div class="w-[80%]" style="margin: 3rem auto 0;">
+        <h3 class="text-2xl font-bold mb-6">Residential</h3>
 
-      <!-- Service 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="/assets/images/excavation.png" alt="Excavation & Digging" class="w-full h-full object-cover">
-       
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          style="margin: 0 auto;"
+        >
+          {% for img in residentialGallery %}
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <img
+                src="{{ img.src }}"
+                alt="{{ img.alt }}"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          {% endfor %}
+        </div>
       </div>
-
-      <!-- Service 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="/assets/images/paving.png" alt="Cementing / Paving" class="w-full h-full object-cover">
-       
-      </div>
-
-  </div>
-</div>
     </section>
 
-    {% include 'sections/cta2.html' %}
-<style>
-    @import "/assets/css/gallery.less";
-</style>
+    {% include "sections/cta2.html" %}
+  </section>
 {% endblock %}
