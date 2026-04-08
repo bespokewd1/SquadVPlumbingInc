@@ -1,103 +1,146 @@
 <!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NLZ33VG3");
+    </script>
+    <!-- End Google Tag Manager -->
 
+    <!-- Standard meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ description }}" />
+    <link rel="canonical" href="{{ client.domain }}{{ page.url }}" />
+    <meta name="generator" content="{{ eleventy.generator }}" />
 
-      <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NLZ33VG3');</script>
-      <!-- End Google Tag Manager -->
+    <!--Social Media Display-->
+    <meta
+      property="og:title"
+      content="Squadv Plumbing Inc. | Reliable Residential, Commercial & Construction Plumbing in Edmonton"
+    />
+    <meta
+      property="og:description"
+      content="Professional plumbing, gasfitting, renovations, water heater installation, and new construction services. 7+ years trusted by Edmonton homeowners, builders and property managers. Fast, honest and flexible service. Call now: (780) 667-7169."
+    />
+    <meta property="og:url" content="https://www.squadvplumbing.ca" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Squadv Plumbing Inc. offers certified plumbing, gasfitting, water heater installation, renovations, and new construction services in Edmonton. Call (780) 667-7169 for fast and reliable service."
+    />
+    <meta property="og:image" content="/assets/images/OG.webp" />
 
-        <!-- Standard meta tags -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ description }}">
-        <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
-        <meta name="generator" content="{{ eleventy.generator }}">
+    <!--Favicons-->
+    <!-- https://realfavicongenerator.net/ -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicons/squadVlogo.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/favicons/squadVlogo.png"
+    />
+    <link rel="shortcut icon" href="/assets/favicons/squadVlogo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/squadVlogo.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Squad V Plumbing Inc" />
+    <link rel="manifest" href="/assets/favicons/squadVlogo.png" />
 
-        <!--Social Media Display-->
-       <meta property="og:title" content="Squadv Plumbing Inc. | Reliable Residential, Commercial & Construction Plumbing in Edmonton" />
-<meta property="og:description" content="Professional plumbing, gasfitting, renovations, water heater installation, and new construction services. 7+ years trusted by Edmonton homeowners, builders and property managers. Fast, honest and flexible service. Call now: (780) 667-7169." />
-<meta property="og:url" content="https://www.squadvplumbing.ca" />
-<meta property="og:type" content="website" />
-<meta name="description" content="Squadv Plumbing Inc. offers certified plumbing, gasfitting, water heater installation, renovations, and new construction services in Edmonton. Call (780) 667-7169 for fast and reliable service." />
-<meta property="og:image" content="/assets/images/OG.webp" />
+    <!-- Preloads -->
+    <link rel="preload" as="image" href="/assets/svgs/logo-black.svg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-700.woff2"
+      crossorigin
+    />
 
-        <!--Favicons-->
-        <!-- https://realfavicongenerator.net/ -->
-        <link rel="icon" type="image/png" href="/assets/favicons/squadVlogo.png" sizes="96x96"/>
-        <link rel="icon" type="image/svg+xml" href="/assets/favicons/squadVlogo.png"/>
-        <link rel="shortcut icon" href="/assets/favicons/squadVlogo.png"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/squadVlogo.png"/>
-        <meta name="apple-mobile-web-app-title" content="Squad V Plumbing Inc"/>
-        <link rel="manifest" href="/assets/favicons/squadVlogo.png"/>
+    <!-- Sitewide Stylesheets and Scripts -->
+    <link rel="stylesheet" href="/assets/css/root.css" />
+    <script defer src="/assets/js/dark.js"></script>
+    <script defer src="/assets/js/nav.js"></script>
 
-        <!-- Preloads -->
-        <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" href="/assets/css/tailwind.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NLZ33VG3"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-        <!-- Sitewide Stylesheets and Scripts -->
-        <link rel="stylesheet" href="/assets/css/root.css">
-        <script defer src="/assets/js/dark.js"></script>
-        <script defer src="/assets/js/nav.js"></script>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main"
+      >Click To Skip To Main Content</a
+    >
 
-        {% block head %}{% endblock %}
-        <link rel="stylesheet" href="/assets/css/tailwind.css">
+    {% include "sections/header.html" %}
+    <main id="main">{% block body %}{% endblock %}</main>
+    {% include "sections/footer.html" %}
+    <script src="/assets/js/accordion.js"></script>
+    <script>
+      // Accordion functionality
+      const toggles = document.querySelectorAll(".cs-accordion-toggle");
 
-        <title>{{ title }}</title>
-    </head>
-    <body>
+      toggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          const content = toggle.nextElementSibling;
 
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLZ33VG3"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-
-        <!--Screen reader skip main nav-->
-        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
-
-        {% include "sections/header.html" %}
-        <main id="main">
-            {% block body %}{% endblock %}
-        </main>
-        {% include "sections/footer.html" %}
-        <script src="/assets/js/accordion.js"></script>
-        <script>
-    // Accordion functionality
-    const toggles = document.querySelectorAll('.cs-accordion-toggle');
-
-    toggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-            const content = toggle.nextElementSibling;
-
-            // Optional: close other open accordions
-            toggles.forEach(t => {
-                if (t !== toggle) {
-                    t.nextElementSibling.style.maxHeight = null;
-                    t.classList.remove('active');
-                }
-            });
-
-            // Toggle this accordion
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                toggle.classList.remove('active');
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                toggle.classList.add('active');
+          // Optional: close other open accordions
+          toggles.forEach((t) => {
+            if (t !== toggle) {
+              t.nextElementSibling.style.maxHeight = null;
+              t.classList.remove("active");
             }
-        });
-    });
-    
-</script>
+          });
 
-{% include 'sections/floating-buttons.html' %}
-    </body>
+          // Toggle this accordion
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            toggle.classList.remove("active");
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            toggle.classList.add("active");
+          }
+        });
+      });
+    </script>
+
+    {% include 'sections/floating-buttons.html' %}
+  </body>
 </html>

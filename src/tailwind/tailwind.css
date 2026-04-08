@@ -1,3 +1,27 @@
 @layer theme, base, components, utilities;
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities) source("../");
+
+@layer base {
+*, ::after, ::before, ::backdrop, ::file-selector-buttona {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+}
+
+button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button{
+appearance: button;
+}
+
+button, input, select, optgroup, textarea, ::file-selector-button{
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+}
+}
