@@ -1387,7 +1387,7 @@
   #cs-footer-275 {
     padding: var(--sectionPadding);
     background-color: white;
-    margin-bottom: 48px;
+    margin-bottom: 0;
 
     .cs-container {
       width: 100%;
@@ -1686,53 +1686,6 @@
 .cs-social-img {
   filter: brightness(0) invert(1);
 }
-/* Hide by default */
-.floating-buttons {
-  display: none;
-}
-
-/* Show only on mobile */
-@media (max-width: 768px) {
-  .floating-buttons {
-    min-width: 80vw;
-    justify-content: center;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 9999;
-  }
-
-  .float-btn {
-    background: #1e1e1e;
-    color: #fff;
-    padding: 12px 18px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: 0.3s ease;
-    line-height: 32px;
-  }
-
-  .float-btn:hover {
-    transform: translateY(-3px);
-    opacity: 0.9;
-  }
-
-  .whatsapp {
-    background: #25d366;
-    padding: 12px;
-  }
-  .whatsapp-img {
-    filter: brightness(0) invert(1);
-    height: 32px;
-  }
-}
-
 @keyframes slide-horizontal {
   0% {
     transform: translateX(100%);
