@@ -110,6 +110,24 @@ residentialGallery:
   - src: "/assets/images/gallery/residential/9.webp"
     srcSm: "/assets/images/gallery/residential/9-sm.webp"
     alt: "Small bathroom with toilet and wall-mounted sink"
+  - src: "/assets/images/gallery/renovation/1.jpg"
+    alt: "Renovation project photo 1"
+  - src: "/assets/images/gallery/renovation/2.jpg"
+    alt: "Renovation project photo 2"
+  - src: "/assets/images/gallery/renovation/3.jpg"
+    alt: "Renovation project photo 3"
+  - src: "/assets/images/gallery/renovation/4.jpg"
+    alt: "Renovation project photo 4"
+  - src: "/assets/images/gallery/renovation/5.jpg"
+    alt: "Renovation project photo 5"
+  - src: "/assets/images/gallery/renovation/6.jpg"
+    alt: "Renovation project photo 6"
+  - src: "/assets/images/gallery/renovation/7.jpg"
+    alt: "Renovation project photo 7"
+  - src: "/assets/images/gallery/renovation/8.jpg"
+    alt: "Renovation project photo 8"
+  - src: "/assets/images/gallery/renovation/9.jpg"
+    alt: "Renovation project photo 9"
 ---
 
 {% extends "layouts/base.html" %}
@@ -256,7 +274,7 @@ residentialGallery:
               {% for img in commercialGallery %}
                 <figure
                   class="cs-card cs-blur-up"
-                  style="background-image: url('{{ img.srcSm }}');"
+                  style="background-image: url('{{ img.srcSm or img.src }}');"
                 >
                   <img
                     src="{{ img.src }}"
@@ -282,7 +300,7 @@ residentialGallery:
               {% for img in residentialGallery %}
               <figure
                 class="cs-card cs-blur-up"
-                style="background-image: url('{{ img.srcSm }}');"
+                style="background-image: url('{{ img.srcSm or img.src }}');"
               >
                 <img
                   src="{{ img.src }}"

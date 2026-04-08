@@ -10,6 +10,12 @@
     border: 0 solid;
 }
 
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+
 button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button{
 appearance: button;
 }
