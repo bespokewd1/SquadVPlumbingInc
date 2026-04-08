@@ -16,6 +16,7 @@ const configImages = require("./src/config/plugins/images");
 // 🔧 Processing Functions
 const less = require("./src/config/processors/less");
 const javascript = require("./src/config/processors/javascript");
+const tailwind = require("./src/config/processors/tailwind");
 
 // 🛠️ Utilities
 const filterPostDate = require("./src/config/filters/postDate");
@@ -37,6 +38,7 @@ module.exports = function (eleventyConfig) {
      */
     eleventyConfig.on("eleventy.after", javascript);
     eleventyConfig.on("eleventy.after", less);
+    eleventyConfig.on("eleventy.after", tailwind);
 
     // ═════════════════════════════════════════════════════════════════════════
     // PLUGINS
@@ -77,6 +79,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets"); // Static assets
     eleventyConfig.addPassthroughCopy("./src/admin"); // CMS admin files
     eleventyConfig.addPassthroughCopy("./src/_redirects"); // Redirect rules
+    eleventyConfig.addWatchTarget("./src/tailwind/**/*.css");
 
     // ═════════════════════════════════════════════════════════════════════════
     // FILTERS
