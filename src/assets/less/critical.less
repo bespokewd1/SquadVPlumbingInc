@@ -170,22 +170,49 @@
     min-height: clamp(42rem, 72vw, 56rem);
     padding-top: clamp(12rem, 18vw, 13.5rem);
     padding-bottom: clamp(6rem, 8vw, 8rem);
+    padding-left: clamp(2rem, 6vw, 6rem);
+    padding-right: clamp(1rem, 5vw, 4rem);
+    text-align: left;
+    justify-content: flex-start;
+
+    .cs-background {
+      &:before {
+        background: linear-gradient(
+          90deg,
+          rgba(7, 13, 24, 0.82) 0%,
+          rgba(7, 13, 24, 0.58) 38%,
+          rgba(7, 13, 24, 0.28) 68%,
+          rgba(7, 13, 24, 0.42) 100%
+        );
+      }
+
+      img {
+        object-position: center center;
+      }
+    }
+
+    .cs-content {
+      margin: 0;
+      align-items: flex-start;
+    }
 
     .cs-title {
       font-size: clamp(4rem, 5vw, 4.5rem);
-      max-width: 100%;
+      max-width: 12ch;
+      text-align: left;
     }
 
     .cs-text {
       font-size: clamp(1.25rem, 1.6vw, 1.625rem);
       max-width: 36ch;
+      text-align: left;
     }
 
     .cs-button-group {
       width: auto;
       max-width: none;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     .cs-button-solid {

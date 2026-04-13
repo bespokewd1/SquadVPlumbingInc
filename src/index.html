@@ -23,7 +23,8 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
         <link rel="stylesheet" href="/assets/css/local.css"/>
     {% endif %}
 
-    <link rel="preload" as="image" href="/assets/images/hero-img.jpg"/>
+    <link rel="preload" as="image" href="/assets/images/hero-img.jpg" media="(max-width: 1023px)"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | avif %}" type="image/avif" media="(min-width: 1024px)"/>
     <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
     <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
     <!-- {% include "components/home-schema.html" %} -->
@@ -56,18 +57,14 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 640, height: 1112 }) | webp %}" type="image/webp">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 640, height: 1112 }) | jpeg %}" type="image/jpeg">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | jpeg %}" type="image/jpeg">
-            <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/hero-img.jpg" | resize({ width: 704, height: 1223 }) | jpeg %}" alt="Bathroom renovation" width="704" height="1223" loading="eager" decoding="async">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | jpeg %}" alt="" width="1920" height="1080" loading="eager" decoding="async">
         </picture>
     </section>
 
@@ -167,7 +164,7 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
                 </a>
 
                 <!-- Card 3 -->
-                <a href="/services/" class="group block bg-white rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#165ca0] p-4!" >
+                <a href="/gasfitting/" class="group block bg-white rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#165ca0] p-4!" >
 
                     <img src="/assets/images/gallery/commercial/20.webp" alt="Residential & Commercial Plumbing" width="225" height="192" class="w-full h-48! object-cover rounded-sm! mb-4!">
                 <!-- <div class="text-blue-900 mb-4">
