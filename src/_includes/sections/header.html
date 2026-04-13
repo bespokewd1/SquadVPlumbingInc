@@ -4,9 +4,9 @@
 
 <header id="cs-navigation" style="padding: 0;">
 <div class="w-full bg-[var(--primary)] text-white py-4 overflow-hidden" style="padding: .8rem;margin-bottom: 4px;">
-    <div class="flex flex-row items-center justify-between  md:animate-none animate-[slide-horizontal_10s_linear_infinite] whitespace-nowrap" style="margin: auto;">
-        <p class="text-xl! font-semibold px-4!" style="color:#e6cf98;">Residential & Commercial service across Edmonton.</p>
-        <p id="weather" class="text-sm opacity-90 px-4" style="color:white;">Loading weather...</p>
+    <div class="flex flex-row items-center justify-center md:justify-between whitespace-nowrap" style="margin: auto;">
+        <p class="text-xl! font-semibold px-4!" style="color:#e6cf98;">Residential | Commercial</p>
+        <p id="weather" class="hidden md:block text-sm opacity-90 px-4" style="color:white;">Loading weather...</p>
     </div>
 </div>
     <div class="hidden justify-between lg:flex lg:border-b-2 border-[var(--primary)] " style="margin: auto; padding-inline: 0.8rem;">
@@ -108,6 +108,11 @@
                                 Renovation & Improvement
                             </a>
                         </li>
+                        <li class="cs-li lg:hidden">
+                            <a href="/services/" class="cs-li-link {% if page.url == "/services/" %} cs-active {% endif %}" {% if page.url == "/services/" %} aria-current="page" {% endif %}>
+                                Gasfitting
+                            </a>
+                        </li>
                         <!-- <li class="cs-li lg:hidden">
                             <a href="/concrete/" class="cs-li-link {% if page.url == "/concrete/" %} cs-active {% endif %}" {% if page.url == "/concrete/" %} aria-current="page" {% endif %}>
                                 Concrete & Support Work
@@ -121,6 +126,11 @@
                         <li class="cs-li">
                             <a href="/gallery/" class="cs-li-link {% if page.url == "/gallery/" %} cs-active {% endif %}" {% if page.url == "/gallery/" %} aria-current="page" {% endif %}>
                                 Gallery
+                            </a>
+                        </li>
+                        <li class="cs-li lg:hidden">
+                            <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" %} aria-current="page" {% endif %}>
+                                Latest News
                             </a>
                         </li>
                         <li class="lg:hidden">
@@ -142,6 +152,9 @@
 
    <script>
     async function loadWeather() {
+        const weather = document.getElementById("weather");
+        if (!weather || !window.matchMedia("(min-width: 768px)").matches) return;
+
         const apiKey = "d1ce37947713b76408122f28038b18af"; // Replace with real key
         const city = "Edmonton"; // Change the city here
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
@@ -151,12 +164,10 @@
             const data = await response.json();
             const temp = Math.round(data.main.temp);
 
-            document.getElementById("weather").textContent =
-                `Current Weather: ${temp}°C in ${city}`;
+            weather.textContent = `Current Weather: ${temp}°C in ${city}`;
         } catch (error) {
-            document.getElementById("weather").textContent =
-                "Unable to load weather";
-        }
+            weather.textContent = "Unable to load weather";
+       }
     }
 
     loadWeather();

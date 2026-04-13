@@ -242,11 +242,11 @@ residentialGallery:
               type="button"
               role="tab"
               aria-selected="true"
-              aria-controls="panel-commercial"
-              id="tab-commercial"
-              data-tab="commercial"
+              aria-controls="panel-residential"
+              id="tab-residential"
+              data-tab="residential"
             >
-              Commercial
+              Residential
             </button>
 
             <button
@@ -254,47 +254,21 @@ residentialGallery:
               type="button"
               role="tab"
               aria-selected="false"
-              aria-controls="panel-residential"
-              id="tab-residential"
-              data-tab="residential"
+              aria-controls="panel-commercial"
+              id="tab-commercial"
+              data-tab="commercial"
             >
-              Residential
+              Commercial
             </button>
           </div>
 
           <!-- Panels -->
-          <section
-            id="panel-commercial"
-            role="tabpanel"
-            aria-labelledby="tab-commercial"
-            class="cs-tabpanel"
-            data-panel="commercial"
-          >
-            <div class="cs-masonry" id="masonry-commercial">
-              {% for img in commercialGallery %}
-                <figure
-                  class="cs-card cs-blur-up"
-                  style="background-image: url('{{ img.srcSm or img.src }}');"
-                >
-                  <img
-                    src="{{ img.src }}"
-                    alt="{{ img.alt }}"
-                    width="{{ imageWidth }}"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-              {% endfor %}
-            </div>
-          </section>
-
           <section
             id="panel-residential"
             role="tabpanel"
             aria-labelledby="tab-residential"
             class="cs-tabpanel"
             data-panel="residential"
-            hidden
           >
             <div class="cs-masonry" id="masonry-residential">
               {% for img in residentialGallery %}
@@ -310,6 +284,32 @@ residentialGallery:
                   decoding="async"
                 />
               </figure>
+              {% endfor %}
+            </div>
+          </section>
+
+          <section
+            id="panel-commercial"
+            role="tabpanel"
+            aria-labelledby="tab-commercial"
+            class="cs-tabpanel"
+            data-panel="commercial"
+            hidden
+          >
+            <div class="cs-masonry" id="masonry-commercial">
+              {% for img in commercialGallery %}
+                <figure
+                  class="cs-card cs-blur-up"
+                  style="background-image: url('{{ img.srcSm or img.src }}');"
+                >
+                  <img
+                    src="{{ img.src }}"
+                    alt="{{ img.alt }}"
+                    width="{{ imageWidth }}"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
               {% endfor %}
             </div>
           </section>
