@@ -3,6 +3,100 @@
 <!-- ============================================ -->
 
 <header id="cs-navigation" style="padding: 0;">
+<style>
+    #cs-navigation .sv-header-phone {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        #cs-navigation .sv-header-nav-shell {
+            width: 100%;
+        }
+
+        #cs-navigation .sv-header-nav-shell .cs-container {
+            max-width: none;
+            padding-inline: 2rem;
+            gap: 3rem;
+        }
+
+        #cs-navigation .cs-ul-wrapper {
+            flex: 1 1 auto;
+            min-width: 0;
+            width: 100%;
+        }
+
+        #cs-navigation .cs-ul {
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        #cs-navigation .cs-li {
+            flex: 0 1 auto;
+        }
+
+        #cs-navigation .cs-li-link {
+            white-space: nowrap;
+        }
+
+        #cs-navigation .sv-header-phone {
+            flex: 0 0 auto;
+            min-width: 10rem;
+            padding: 0;
+            color: var(--primary);
+            text-align: right;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        #cs-navigation .sv-header-phone-number {
+            font-size: 1.4rem;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: 0;
+            color: var(--primary);
+        }
+
+        #cs-navigation .sv-header-phone-label {
+            margin-top: .25rem;
+            font-size: .75rem;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            color: var(--bodyTextColor);
+        }
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
+        #cs-navigation .sv-header-nav-shell .cs-container {
+            padding-inline: 1rem;
+            gap: 1.5rem;
+        }
+
+        #cs-navigation .cs-ul {
+            gap: .75rem;
+        }
+
+        #cs-navigation .cs-li-link {
+            font-size: .875rem;
+        }
+
+        #cs-navigation .sv-header-phone {
+            min-width: 8.5rem;
+        }
+
+        #cs-navigation .sv-header-phone-number {
+            font-size: 1.05rem;
+        }
+
+        #cs-navigation .sv-header-phone-label {
+            font-size: .7rem;
+        }
+    }
+</style>
 <div class="w-full bg-[var(--primary)] text-white py-4 overflow-hidden" style="padding: .8rem;margin-bottom: 4px;">
     <div class="flex flex-row items-center justify-center md:justify-between whitespace-nowrap" style="margin: auto;">
         <p class="text-xl! font-semibold px-4!" style="color:#ffe1a3;">Residential | Commercial</p>
@@ -28,7 +122,7 @@
         </div>
 
     </div>
-    <div>
+    <div class="sv-header-nav-shell">
         <div class="cs-container ">
             <!--Nav Logo-->
             <!--Navigation List-->
@@ -151,7 +245,10 @@
                     </ul>
                 </div>
             </nav>
-            <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <a href="tel:+17806677169" class="sv-header-phone" aria-label="Call Squad V Plumbing at (780) 667-7169">
+                <span class="sv-header-phone-number">(780) 667-7169</span>
+                <span class="sv-header-phone-label">Call for Service</span>
+            </a>
             <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
             <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
                 <img class="cs-moon" aria-hidden="true" src="/assets/svgs/moon.svg" decoding="async" alt="" width="15" height="15">
