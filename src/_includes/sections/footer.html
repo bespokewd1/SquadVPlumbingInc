@@ -5,11 +5,11 @@
 <footer id="cs-footer-275">
     <div class="footer-container w-full flex flex-col justify-center items-center gap-6  md:flex-row md:justify-evenly md:items-start ">
         <div class="w-full flex flex-col justify-center items-start gap-4 md:items-start md:w-[25%]">
-            <a href="/" class="cs-logo " aria-label="Company Name Home page">
-                <img src="/assets/svgs/squadVlogo.png" alt="" width="210" height="29" aria-hidden="true" decoding="async">
+            <a href="/" class="cs-logo  max-w-47.5" aria-label="Squad V Plumbing home page">
+                <img src="{% getUrl "/assets/svgs/squadVlogo.png" | resize({ width: 210 }) | webp %}" alt="" width="210" height="79" aria-hidden="true" decoding="async">
             </a>
             <div class="cs-logo-group">
-           
+
                 <div class="cs-social">
                     <a class="cs-social-link" aria-label="visit facebook profile"
                     href="https://www.facebook.com/profile.php?id=61584653242384"
@@ -41,7 +41,7 @@
                  <p class="cs-text" style="color: black;">
                 Squad V Plumbing and Heating Trusted Since 2018</p>
             </div>
-           
+
         </div>
 
         <div class="w-full md:w-[25%]">
@@ -62,34 +62,42 @@
                 <li class="cs-nav-li"><a class="cs-nav-link" href="/contact/" style="color: black;">Contact</a></li>
             </ul>
         </div>
-    
+
         <div class="w-full md:w-[25%]">
             <ul class="">
                         <li class="cs-nav-li">
                             <span class="cs-header" style="color: black;">Contact</span>
                         </li>
 
-                    <a class="flex gap-2 justify-start items-center lg:gap-4" style="padding-bottom: 10px;">
-                            <img src="/assets/favicons/icons8-clock-26.png" class="w-5 h-5"><p>Monday – Friday, 7 AM – 5 PM</p>
-                        </a>
-                        <a class="flex gap-2 justify-start lg:gap-4 items-center"  style="padding-bottom: 10px;">
-                            <img src="/assets/favicons/icons8-phone-48.png" class="w-5 h-5"><p>780-667-7169</p>
-                        </a>
-                        <a class="flex gap-2 lg:gap-4 justify-start items-center" style="padding-bottom: 10px;">
-                            <img src="/assets/favicons/icons8-email-50.png" class="w-5 h-5"><p>SQUADV726@gmail.com</p>
-                        </a>
-                        <a class="flex gap-2 justify-start lg:gap-4  items-center" style="padding-bottom: 10px;">
-                            <img src="/assets/favicons/icons8-location-50.png" class="w-5 h-5"><p>432 Dunluce Rd.<br class="lg:hidden">
-                                NW, Edmonton, AB</p>
-                        </a>
+                        <li class="cs-nav-li">
+                            <span class="flex gap-2 justify-start items-center lg:gap-4" style="padding-bottom: 10px;">
+                                <img src="/assets/favicons/icons8-clock-26.png" class="w-5 h-5" alt="" width="20" height="20" aria-hidden="true"><p>Monday – Friday, 7 AM – 5 PM</p>
+                            </span>
+                        </li>
+                        <li class="cs-nav-li">
+                            <a href="tel:+17806677169" class="flex gap-2 justify-start lg:gap-4 items-center" style="padding-bottom: 10px;">
+                                <img src="/assets/favicons/icons8-phone-48.png" class="w-5 h-5" alt="" width="20" height="20" aria-hidden="true"><p>780-667-7169</p>
+                            </a>
+                        </li>
+                        <li class="cs-nav-li">
+                            <a href="mailto:SQUADV726@gmail.com" class="flex gap-2 lg:gap-4 justify-start items-center" style="padding-bottom: 10px;">
+                                <img src="/assets/favicons/icons8-email-50.png" class="w-5 h-5" alt="" width="20" height="20" aria-hidden="true"><p>SQUADV726@gmail.com</p>
+                            </a>
+                        </li>
+                        <li class="cs-nav-li">
+                            <a href="https://maps.app.goo.gl/bgxAMTNBtFAxm4H47" class="flex gap-2 justify-start lg:gap-4 items-center" style="padding-bottom: 10px;" target="_blank" rel="noopener">
+                                <img src="/assets/favicons/icons8-location-50.png" class="w-5 h-5" alt="" width="20" height="20" aria-hidden="true"><p>432 Dunluce Rd.<br class="lg:hidden">
+                                    NW, Edmonton, AB</p>
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
-                
-                   
+
+
         </div>
 
-           
+
             <!-- </p>
             <a class="flex gap-2 justify-start items-center">
                 <img src="/assets/favicons/icons8-clock-26.png" class="w-5 h-5"><p>Monday – Friday, 7 AM – 5 PM</p>
@@ -104,21 +112,21 @@
                 <img src="/assets/favicons/icons8-location-50.png" class="w-5 h-5"><p>432 Dunluce Rd.<br>
                     NW, Edmonton, AB</p>
             </a> -->
-     
+
 
         <!-- Quick Links -->
-        
+
 
         <!-- Contact Info -->
-        
+
     </div>
      <div class="w-full h-[3px] bg-[var(--primary)]"></div>
         <div class="w-full flex flex-col md:flex-row items-center justify-evenly gap-4 py-6">
             <!-- Left Section -->
             <p class="text-black">
-                © Copyright 2025 SquadV Plumbing & Heating  
-                  I Digital Marketing by 
-               <a href="https://www.facebook.com/bespokewebdesignEdmonton/" class="text-blue-700 hover:underline" target="_blank" rel="noopener noreferrer">
+                © Copyright 2025 SquadV Plumbing & Heating
+                  I Digital Marketing by
+               <a href="https://www.facebook.com/bespokewebdesignEdmonton/" class="text-blue-700 underline hover:underline" target="_blank" rel="noopener noreferrer">
     Bespoke Web Design Edmonton
 </a>
 
@@ -126,9 +134,9 @@
 
             <!-- Right Section -->
             <div class="flex items-center gap-3">
-                <a href="/privacy-policy/" class="text-blue-700 hover:underline">Privacy Policy</a>
+                <a href="/privacy-policy/" class="text-blue-700 underline hover:underline">Privacy Policy</a>
                 <span>|</span>
-                <a href="/terms-of-service/" class="text-blue-700 hover:underline">Terms Of Service</a>
+                <a href="/terms-of-service/" class="text-blue-700 underline hover:underline">Terms Of Service</a>
             </div>
         </div>
 </footer>

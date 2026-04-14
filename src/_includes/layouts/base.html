@@ -3,18 +3,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager: deferred until user interaction to keep initial load light -->
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NLZ33VG3");
+      window.dataLayer = window.dataLayer || [];
+      function loadGoogleTagManager() {
+        if (window.__gtmLoaded) return;
+        window.__gtmLoaded = true;
+        window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var firstScript = document.getElementsByTagName("script")[0];
+        var tagManagerScript = document.createElement("script");
+        tagManagerScript.async = true;
+        tagManagerScript.src = "https://www.googletagmanager.com/gtm.js?id=GTM-NLZ33VG3";
+        firstScript.parentNode.insertBefore(tagManagerScript, firstScript);
+      }
+      ["pointerdown", "keydown", "touchstart", "scroll"].forEach(function (eventName) {
+        window.addEventListener(eventName, loadGoogleTagManager, { once: true, passive: true });
+      });
     </script>
     <!-- End Google Tag Manager -->
 
@@ -113,7 +117,6 @@
     {% include "sections/header.html" %}
     <main id="main">{% block body %}{% endblock %}</main>
     {% include "sections/footer.html" %}
-    <script src="/assets/js/accordion.js"></script>
     <script>
       // Accordion functionality
       const toggles = document.querySelectorAll(".cs-accordion-toggle");

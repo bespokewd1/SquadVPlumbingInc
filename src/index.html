@@ -64,7 +64,7 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | avif %}" type="image/avif">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | webp %}" type="image/webp">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | jpeg %}" alt="" width="1920" height="1080" loading="eager" decoding="async">
+            <img src="{% getUrl "/assets/images/gallery/commercial/6.webp" | resize({ width: 1920, height: 1080 }) | jpeg %}" alt="" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async">
         </picture>
     </section>
 
@@ -136,7 +136,7 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
                 <!-- Card 1 -->
                 <a href="/services" class=" group block bg-white rounded-xl shadow-md transition-transform transform hover:scale-105 p-4! hover:shadow-xl hover:bg-[#165ca0]" >
 
-                    <img src="/assets/images/gallery/residential/6.webp" alt="Fixture Installation" width="225" height="192" class="w-full h-48! object-cover rounded-sm! mb-4!">
+                    <img src="{% getUrl "/assets/images/gallery/residential/6.webp" | resize({ width: 640, height: 384 }) | webp %}" alt="Fixture Installation" width="640" height="384" loading="lazy" decoding="async" class="w-full h-48! object-cover rounded-sm! mb-4!">
                     <div class="mb-4! ">
                     <!-- <picture class="cs-icon">
                         <img class="hover-white-image" loading="lazy" decoding="async" src="/assets/svgs/plumbing.png" alt="icon" width="52" height="52" aria-hidden="true">
@@ -151,7 +151,7 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
                 <!-- Card 2 -->
                 <a href="/services" class="group block bg-white rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#165ca0] p-4!" >
 
-                <img src="/assets/images/gallery/residential/3.webp" alt="New Construction Plumbing" width="225" height="192" class="w-full h-48! object-cover rounded-sm! mb-4!">
+                <img src="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 640, height: 384 }) | webp %}" alt="New Construction Plumbing" width="640" height="384" loading="lazy" decoding="async" class="w-full h-48! object-cover rounded-sm! mb-4!">
                 <!-- <div class="text-blue-900 mb-4">
      <picture class="cs-icon">
                     <img class="hover-white-image" loading="lazy" decoding="async" src="/assets/svgs/renovation.png" alt="icon" width="52" height="52" aria-hidden="true">
@@ -166,7 +166,7 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
                 <!-- Card 3 -->
                 <a href="/gasfitting/" class="group block bg-white rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#165ca0] p-4!" >
 
-                    <img src="/assets/images/gallery/commercial/20.webp" alt="Residential & Commercial Plumbing" width="225" height="192" class="w-full h-48! object-cover rounded-sm! mb-4!">
+                    <img src="{% getUrl "/assets/images/gallery/commercial/20.webp" | resize({ width: 640, height: 384 }) | webp %}" alt="Residential & Commercial Plumbing" width="640" height="384" loading="lazy" decoding="async" class="w-full h-48! object-cover rounded-sm! mb-4!">
                 <!-- <div class="text-blue-900 mb-4">
      <picture class="cs-icon">
                     <img class="hover-white-image" loading="lazy" decoding="async" src="/assets/svgs/gasfitting.png" alt="icon" width="52" height="52" aria-hidden="true">
@@ -196,7 +196,7 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
             <!-- Accordion Item 1: Plumbing Services -->
             <div class=" rounded-lg card overflow-hidden px-5! py-2! m-4!" >
 
-                <img src="/assets/images/gallery/residential/6.webp" alt="Fixture Installation" class="w-full h-48! object-cover">
+                <img src="{% getUrl "/assets/images/gallery/residential/6.webp" | resize({ width: 640, height: 384 }) | webp %}" alt="Fixture Installation" width="640" height="384" loading="lazy" decoding="async" class="w-full h-48! object-cover">
                 <button class=" w-full flex items-center justify-between px-4! py-3! bg-white hover:bg-blue-100 focus:outline-none border-none" onclick="toggleAccordion(this)">
 
                     <div class="flex items-center gap-4">
@@ -238,7 +238,7 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
             <!-- Accordion Item 2: Renovation & Improvement -->
             <div class="card rounded-lg overflow-hidden px-5! py-2! m-4!">
 
-                <img src="/assets/images/gallery/residential/3.webp" alt="New Construction Plumbing" class="w-full h-48! object-cover">
+                <img src="{% getUrl "/assets/images/gallery/residential/3.webp" | resize({ width: 640, height: 384 }) | webp %}" alt="New Construction Plumbing" width="640" height="384" loading="lazy" decoding="async" class="w-full h-48! object-cover">
                 <button class="border-none w-full flex items-center justify-between px-4! py-3! bg-white hover:bg-blue-100 focus:outline-none" onclick="toggleAccordion(this)">
                     <div class="flex items-center gap-4">
                         <!-- <img src="/assets/svgs/renovation.png" alt="Renovation" class="w-10 h-10"> -->
@@ -275,7 +275,7 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
             <!-- Accordion Item 3: gasfitting-->
             <div class="card rounded-lg overflow-hidden px-5! py-2! m-4!">
 
-                <img src="/assets/images/gallery/commercial/20.webp" alt="New Construction Plumbing" class="w-full h-48! object-cover">
+                <img src="{% getUrl "/assets/images/gallery/commercial/20.webp" | resize({ width: 640, height: 384 }) | webp %}" alt="New Construction Plumbing" width="640" height="384" loading="lazy" decoding="async" class="w-full h-48! object-cover">
                 <button class="border-none w-full flex items-center justify-between px-4! py-3! bg-white hover:bg-blue-100 focus:outline-none" onclick="toggleAccordion(this)">
                     <div class="flex items-center gap-4">
                         <!-- <img src="/assets/svgs/renovation.png" alt="Renovation" class="w-10 h-10"> -->
@@ -436,23 +436,27 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
             <h2 class="text-3xl font-semibold mb-4! text-left" >
             Quality You Can Trust
             </h2>
-         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 items-center">
 
                 <!-- Card 1 -->
-                <a href="/services" class="group bg-white rounded-xl flex flex-col items-center lg:p-5! justify-evenly aspect-square! " >
+                <a href="/services" class="group bg-white rounded-xl flex flex-col items-center lg:p-5! justify-evenly aspect-square! " aria-label="View Red Seal certified plumbing services">
                     <div class="text-blue-900 mb-4">
                         <picture class="cs-icon">
-                        <img loading="lazy" decoding="async" src="/assets/images/redSeal.png" alt="icon" width="150" height="210" aria-hidden="true" class="object-contain! size-full! max-w-37.5!">
+                        <source srcset="{% getUrl "/assets/images/redSeal.png" | resize({ width: 150, height: 210, fit: "contain" }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl "/assets/images/redSeal.png" | resize({ width: 150, height: 210, fit: "contain" }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/redSeal.png" | resize({ width: 150, height: 210, fit: "contain" }) | webp %}" alt="" width="150" height="210" aria-hidden="true" class="object-contain! size-full! max-w-37.5!">
                     </picture>
                     </div>
 
                 </a>
 
                 <!-- Card 2 -->
-                <a href="/services" class="group bg-white rounded-xl flex flex-col items-center lg:p-5! justify-evenly aspect-square! " >
+                <a href="/services" class="group bg-white rounded-xl flex flex-col items-center lg:p-5! justify-evenly aspect-square! " aria-label="View licensed plumbing services">
                     <div class="text-blue-900 mb-4">
                         <picture class="cs-icon">
-                        <img loading="lazy" decoding="async" src="/assets/images/licensed.png" alt="icon" width="150" height="150" aria-hidden="true" class="object-contain! size-full! max-w-37.5!">
+                        <source srcset="{% getUrl "/assets/images/licensed.png" | resize({ width: 150, height: 150, fit: "contain" }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl "/assets/images/licensed.png" | resize({ width: 150, height: 150, fit: "contain" }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/licensed.png" | resize({ width: 150, height: 150, fit: "contain" }) | webp %}" alt="" width="150" height="150" aria-hidden="true" class="object-contain! size-full! max-w-37.5!">
                     </picture>
                     </div>
 
@@ -460,10 +464,12 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
 
 
                 <!-- Card 3 -->
-                <a href="/services" class="group bg-white rounded-xl flex flex-col items-center justify-evenly lg:p-5! aspect-square! " >
+                <a href="/services" class="group bg-white rounded-xl flex flex-col items-center justify-evenly lg:p-5! aspect-square! " aria-label="View warranty backed plumbing services">
                     <div class="text-blue-900 mb-4">
                         <picture class="cs-icon">
-                        <img loading="lazy" decoding="async" src="/assets/images/warranty.png" alt="icon" width="150" height="150" aria-hidden="true" class="object-contain! size-full! max-w-37.5!">
+                        <source srcset="{% getUrl "/assets/images/warranty.png" | resize({ width: 150, height: 150, fit: "contain" }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl "/assets/images/warranty.png" | resize({ width: 150, height: 150, fit: "contain" }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/warranty.png" | resize({ width: 150, height: 150, fit: "contain" }) | webp %}" alt="" width="150" height="150" aria-hidden="true" class="object-contain! size-full! max-w-37.5!">
                     </picture>
                     </div>
 
@@ -471,10 +477,12 @@ ctaImg: "/assets/images/gallery/residential/6.webp"
 
 
                 <!-- Card 4 -->
-                <a href="/services" class="group bg-white rounded-xl flex flex-col items-center justify-evenly lg:p-5! aspect-square! " >
+                <a href="/services" class="group bg-white rounded-xl flex flex-col items-center justify-evenly lg:p-5! aspect-square! " aria-label="View satisfaction guaranteed plumbing services">
                     <div class="text-blue-900 mb-4">
                         <picture class="cs-icon">
-                        <img loading="lazy" decoding="async" src="/assets/images/satisfaction (2).png" alt="icon" width="150" height="150" aria-hidden="true" class="object-contain! size-full! max-w-37.5!">
+                        <source srcset="{% getUrl "/assets/images/satisfaction (2).png" | resize({ width: 150, height: 150, fit: "contain" }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl "/assets/images/satisfaction (2).png" | resize({ width: 150, height: 150, fit: "contain" }) | webp %}" type="image/webp">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/satisfaction (2).png" | resize({ width: 150, height: 150, fit: "contain" }) | webp %}" alt="" width="150" height="150" aria-hidden="true" class="object-contain! size-full! max-w-37.5!">
                     </picture>
                     </div>
 
