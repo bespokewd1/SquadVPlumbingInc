@@ -1,0 +1,195 @@
+---
+title: "Sump Pump Services | Squad V Plumbing Inc."
+description: "Sump pump installation, replacement, repair, and backup sump pump service in Edmonton from Squad V Plumbing Inc."
+permalink: "/sump-pump/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Sump Pump Services</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home > Services</a>
+                <a href="/sump-pump/" class="cs-link cs-active">Sump Pump Services</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/sump_pump/flooded-living-room.webp" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="basement water damage" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Service Intro                -->
+    <!-- ============================================ -->
+
+    <section
+        class="relative bg-no-repeat bg-cover py-12! px-2! lg:py-18!"
+        style="background-image: linear-gradient(to right, oklch(from var(--primary) 92% c h / 0.78), rgba(255,255,255,0.74)), url('/assets/images/sump_pump/flooded-living-room.webp'); background-attachment: scroll, fixed; background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="flex flex-col items-start justify-start w-[90%] lg:w-[80%]" style="margin: 0 auto;">
+            <span class="cs-topper" style="color: var(--secondary);">Sump pump installation, replacement, and repair</span>
+            <h1 class="cs-title mb-3!" style="margin: 0;text-align: start;">
+                Protect Your Basement From Water Damage
+            </h1>
+            <p class="cs-text mb-4!" style="text-align: start;font-size: 16px;">
+                A working sump pump helps move water away from your basement before heavy rain, snowmelt, or groundwater turns into a bigger problem. Squad V Plumbing Inc. installs, replaces, and troubleshoots sump pump systems for Edmonton homes and properties.
+            </p>
+            <div class="flex-col lg:flex-row flex gap-8" style="margin: 1rem 0 2rem 0;">
+                <a href="tel:+17806677169" class="cs-button-solid">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Problem                    -->
+    <!-- ============================================ -->
+
+    <section class="py-12! px-2!" style="background-color: #fff;">
+        <div class="cs-container w-full" style="margin: 0 auto;">
+            <div class="cs-content" style="margin: 0 auto 2rem auto;text-align: center;">
+                <span class="cs-topper">The Problem</span>
+                <h2 class="cs-title">Common Sump Pump Problems</h2>
+                <p class="cs-text">
+                    Small pump issues can become expensive water damage fast. Call when you notice the warning signs.
+                </p>
+            </div>
+
+            <div class="w-[90%] lg:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style="margin: 0 auto;">
+                <div class="bg-white rounded-xl shadow-md" style="padding: 1.25rem;border-top: 4px solid var(--primary);">
+                    <h3 class="font-semibold text-lg mb-3!" style="color: black;">Water After Rain or Snowmelt</h3>
+                    <p class="text-gray-600 text-sm">If water is collecting around the basement, the pump may be undersized, blocked, or no longer moving water out properly.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md" style="padding: 1.25rem;border-top: 4px solid var(--primary);">
+                    <h3 class="font-semibold text-lg mb-3!" style="color: black;">Pump Will Not Turn On</h3>
+                    <p class="text-gray-600 text-sm">A failed float switch, power issue, stuck pump, or burned-out motor can leave your basement unprotected.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md" style="padding: 1.25rem;border-top: 4px solid var(--primary);">
+                    <h3 class="font-semibold text-lg mb-3!" style="color: black;">Runs Too Often</h3>
+                    <p class="text-gray-600 text-sm">Constant cycling can point to a drainage issue, check valve problem, or a pump working harder than it should.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md" style="padding: 1.25rem;border-top: 4px solid var(--primary);">
+                    <h3 class="font-semibold text-lg mb-3!" style="color: black;">Strange Noise or Vibration</h3>
+                    <p class="text-gray-600 text-sm">Grinding, rattling, or heavy vibration can mean the pump is worn, clogged, or sitting incorrectly in the pit.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md" style="padding: 1.25rem;border-top: 4px solid var(--primary);">
+                    <h3 class="font-semibold text-lg mb-3!" style="color: black;">Old or Weak Pump</h3>
+                    <p class="text-gray-600 text-sm">Older pumps can lose performance over time and may fail when you need them most.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md" style="padding: 1.25rem;border-top: 4px solid var(--primary);">
+                    <h3 class="font-semibold text-lg mb-3!" style="color: black;">No Backup Protection</h3>
+                    <p class="text-gray-600 text-sm">A power outage during a storm can stop a standard sump pump. A backup system adds extra protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Solution                    -->
+    <!-- ============================================ -->
+
+    <section class="py-12! px-2!" style="background-color: #f7f7f7;">
+        <div class="cs-container w-full" style="margin: 0 auto;">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-[90%] lg:w-[80%]" style="margin: 0 auto;align-items: center;">
+                <div>
+                    <span class="cs-topper">The Solution</span>
+                    <h2 class="cs-title" style="text-align: start;">Sump Pump Installation, Replacement & Repair</h2>
+                    <p class="cs-text" style="text-align: start;font-size: 16px;">
+                        We inspect the pump, pit, float switch, check valve, discharge line, and power setup so the right fix is clear. If replacement is the better move, we install a dependable system sized for the space.
+                    </p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4" style="padding: 0;margin: 1.5rem 0;list-style: none;">
+                        <li class="bg-white shadow-md" style="padding: 1rem;border-left: 4px solid var(--secondary);">New sump pump installation</li>
+                        <li class="bg-white shadow-md" style="padding: 1rem;border-left: 4px solid var(--secondary);">Sump pump replacement</li>
+                        <li class="bg-white shadow-md" style="padding: 1rem;border-left: 4px solid var(--secondary);">Repair and troubleshooting</li>
+                        <li class="bg-white shadow-md" style="padding: 1rem;border-left: 4px solid var(--secondary);">Battery backup options</li>
+                        <li class="bg-white shadow-md" style="padding: 1rem;border-left: 4px solid var(--secondary);">Check valve review</li>
+                        <li class="bg-white shadow-md" style="padding: 1rem;border-left: 4px solid var(--secondary);">Discharge line review</li>
+                    </ul>
+                    <a href="tel:+17806677169" class="cs-button-solid">Call Now</a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="/assets/images/sump_pump/liberty_pumps_1_hp_sewage_grinder_pump.webp" alt="sump pump system" class="w-full h-56! object-contain" style="background-color: white;padding: 1rem;">
+                        <div style="padding: 1rem;">
+                            <h3 class="font-semibold text-lg mb-3!" style="color: black;">Dependable Pump Setup</h3>
+                            <p class="text-gray-600 text-sm">A proper installation helps water move out efficiently and keeps the pump easier to service.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="/assets/images/sump_pump/liberty_pumps_battery_powered_emergency_sump_pump_system.webp" alt="battery backup sump pump system" class="w-full h-56! object-contain" style="background-color: white;padding: 1rem;">
+                        <div style="padding: 1rem;">
+                            <h3 class="font-semibold text-lg mb-3!" style="color: black;">Backup Protection</h3>
+                            <p class="text-gray-600 text-sm">A battery backup can keep water moving when a storm knocks out power.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Why Call                    -->
+    <!-- ============================================ -->
+
+    <section class="py-12! px-2!" style="background-color: #fff;">
+        <div class="cs-container w-full" style="margin: 0 auto;">
+            <div class="cs-content" style="margin: 0 auto 2rem auto;text-align: center;">
+                <span class="cs-topper">Why Call Squad V</span>
+                <h2 class="cs-title">Clean, Clear Plumbing Help</h2>
+                <p class="cs-text">
+                    We keep the service straightforward: inspect the issue, explain the options, and complete the work with care.
+                </p>
+            </div>
+            <div class="w-[90%] lg:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4" style="margin: 0 auto;">
+                <div class="bg-white shadow-md" style="padding: 1rem;text-align: center;border-bottom: 4px solid var(--primary);">Licensed plumbing service</div>
+                <div class="bg-white shadow-md" style="padding: 1rem;text-align: center;border-bottom: 4px solid var(--primary);">Residential and commercial support</div>
+                <div class="bg-white shadow-md" style="padding: 1rem;text-align: center;border-bottom: 4px solid var(--primary);">Clean installation</div>
+                <div class="bg-white shadow-md" style="padding: 1rem;text-align: center;border-bottom: 4px solid var(--primary);">Clear communication</div>
+                <div class="bg-white shadow-md" style="padding: 1rem;text-align: center;border-bottom: 4px solid var(--primary);">Fast help for water issues</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    CTA                       -->
+    <!-- ============================================ -->
+
+    <section
+        class="relative bg-no-repeat bg-cover py-12! px-2!"
+        style="background-image: linear-gradient(to right, oklch(from var(--primary) 34% c h / 0.9), rgba(0,0,0,0.35)), url('/assets/images/sump_pump/flooded-living-room.webp'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="flex flex-col items-start justify-start w-[90%] lg:w-[80%]" style="margin: 0 auto;">
+            <span class="cs-topper" style="color: var(--secondary);">Need sump pump help?</span>
+            <h2 class="cs-title" style="margin: 0;text-align: start;color: white;">
+                Call Before the Next Heavy Rain
+            </h2>
+            <p class="cs-text" style="text-align: start;font-size: 16px;color: white;">
+                If your pump is not working, sounds wrong, or your basement has signs of water, call Squad V Plumbing Inc. today.
+            </p>
+            <a href="tel:+17806677169" class="cs-button-solid">Call Now</a>
+        </div>
+    </section>
+
+    {% include 'sections/reviews.html' %}
+    {% include 'sections/floating-buttons.html' %}
+
+{% endblock %}
