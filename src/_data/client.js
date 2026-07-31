@@ -1,6 +1,7 @@
 module.exports = {
   name: "Squad V Plumbing Inc.",
   email: "SQUADV726@gmail.com",
+  officeEmail: "office@squadvplumbing.ca",
   phoneForTel: "+17806677169",
   phoneFormatted: "(780)-667-7169",
   whatsappLink: "https://wa.me/17806677169",

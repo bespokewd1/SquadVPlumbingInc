@@ -112,7 +112,8 @@
                 <a href="mailto:{{ client.email }}" aria-label="Email Squad V Plumbing"><img src="/assets/favicons/icons8-email-50.png" alt="" width="24" height="24" aria-hidden="true"></a>
                 <div class=" flex flex-col">
                     <p class="text-inherit! font-semibold">Send a Message</p>
-                    <p>{{ client.email }}</p>
+                    <a href="mailto:{{ client.email }}">{{ client.email }}</a>
+                    <a href="mailto:{{ client.officeEmail }}">{{ client.officeEmail }}</a>
                 </div>
             </div>
             <!-- <div class="flex-row flex items-center bg-[var(--primary)] gap-4" style="padding: 12px;">
