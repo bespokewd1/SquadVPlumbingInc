@@ -1,0 +1,215 @@
+/* Drain Cleaning & Camera Inspection service page */
+@blue: #165ca0;
+@blue-dark: #0b365f;
+@red: #df2529;
+@ink: #172333;
+@muted: #52606d;
+@soft: #f4f7fa;
+@line: #dce4eb;
+
+.sv-drain {
+  --drain-blue: @blue;
+  --drain-blue-dark: @blue-dark;
+  --drain-red: @red;
+  --drain-ink: @ink;
+  --drain-muted: @muted;
+  --drain-soft: @soft;
+  --drain-line: @line;
+  background: #fff;
+  color: var(--drain-ink);
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  h1, h2, h3, p, blockquote { margin-top: 0; }
+  h1, h2, h3 { color: var(--drain-ink); text-wrap: balance; }
+  h2 { font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.08; margin-bottom: 1rem; }
+  h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); line-height: 1.2; }
+  p, li, blockquote { font-size: clamp(1rem, 1.25vw, 1.075rem); line-height: 1.65; }
+  p { color: var(--drain-muted); }
+
+  .sv-drain-wrap { width: min(100% - 2rem, 74rem); margin-inline: auto; }
+  .sv-drain-section { padding: clamp(4rem, 8vw, 7rem) 0; }
+  .sv-drain-eyebrow, .sv-drain-kicker {
+    display: inline-block;
+    margin-bottom: .7rem;
+    color: var(--drain-red);
+    font-size: .82rem;
+    font-weight: 900;
+    letter-spacing: .11em;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+  .sv-drain-section-heading { max-width: 34rem; }
+  .sv-drain-section-heading > p:last-child { margin-bottom: 0; }
+  .sv-drain-centered-heading { max-width: 46rem; margin: 0 auto clamp(2rem, 5vw, 3.5rem); text-align: center; }
+  .sv-drain-centered-heading p { max-width: 42rem; margin: 0 auto; }
+
+  .sv-drain-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
+  .sv-drain-button {
+    display: inline-flex;
+    min-height: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: .85rem 1.35rem;
+    border: 2px solid transparent;
+    border-radius: .75rem;
+    font-size: .95rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .2s, border-color .2s, color .2s, transform .2s;
+  }
+  .sv-drain-button:hover { transform: translateY(-2px); }
+  .sv-drain-button:focus-visible, .sv-drain-text-link:focus-visible, .sv-drain-google-link:focus-visible {
+    outline: 3px solid #ffba43;
+    outline-offset: 3px;
+  }
+  .sv-drain-button-primary { background: var(--drain-blue); color: #fff; }
+  .sv-drain-button-primary:hover { background: var(--drain-red); }
+  .sv-drain-button-secondary { border-color: var(--drain-blue); background: #fff; color: var(--drain-blue); }
+  .sv-drain-button-secondary:hover { background: var(--drain-blue); color: #fff; }
+  .sv-drain-button-light { background: #fff; color: var(--drain-blue-dark); }
+  .sv-drain-button-light:hover { background: #ffba43; color: #10283d; }
+  .sv-drain-button-outline-light { border-color: rgba(255,255,255,.85); color: #fff; }
+  .sv-drain-button-outline-light:hover { background: #fff; color: var(--drain-blue-dark); }
+  .sv-drain-text-link, .sv-drain-google-link {
+    color: var(--drain-blue);
+    font-weight: 900;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: .3em;
+  }
+
+  .sv-drain-hero {
+    padding: clamp(7.75rem, 14vw, 10rem) 0 clamp(4rem, 8vw, 6.5rem);
+    background:
+      radial-gradient(circle at 8% 15%, rgba(22,92,160,.12), transparent 32%),
+      linear-gradient(145deg, #f9fbfd 0%, #edf4f9 100%);
+    overflow: hidden;
+  }
+  .sv-drain-hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(18rem, .85fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+  .sv-drain-hero-copy h1 { max-width: 15ch; margin-bottom: 1rem; font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.02; letter-spacing: -.035em; }
+  .sv-drain-hero-copy > p { max-width: 39rem; }
+  .sv-drain-hero-copy .sv-drain-lead { max-width: 34rem; margin-bottom: .65rem; color: var(--drain-blue-dark); font-size: clamp(1.2rem, 2.15vw, 1.65rem); line-height: 1.35; }
+  .sv-drain-hero-copy .sv-drain-actions { margin: 1.6rem 0 1.4rem; }
+  .sv-drain-hero-points { display: flex; flex-wrap: wrap; gap: .55rem 1.2rem; margin: 0; padding: 0; }
+  .sv-drain-hero-points li { position: relative; padding-left: 1.2rem; color: var(--drain-muted); font-size: .9rem; font-weight: 700; }
+  .sv-drain-hero-points li::before { content: ""; position: absolute; top: .58rem; left: 0; width: .48rem; height: .48rem; border-radius: 50%; background: var(--drain-red); }
+  .sv-drain-hero-picture { position: relative; display: block; min-height: 28rem; border-radius: 1.5rem .5rem 1.5rem .5rem; overflow: hidden; box-shadow: 0 1.5rem 3.5rem rgba(14,50,79,.18); }
+  .sv-drain-hero-picture::after { content: "Local plumbing service"; position: absolute; right: 1rem; bottom: 1rem; padding: .65rem .85rem; border-radius: .5rem; background: rgba(11,54,95,.92); color: #fff; font-size: .78rem; font-weight: 900; letter-spacing: .07em; text-transform: uppercase; }
+  .sv-drain-hero-picture img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 58% center; }
+
+  .sv-drain-problem { background: #fff; }
+  .sv-drain-split { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+  .sv-drain-emphasis { color: var(--drain-blue-dark) !important; font-weight: 900; }
+  .sv-drain-issue-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin: 0; padding: 0; }
+  .sv-drain-issue-grid li { display: grid; grid-template-columns: auto 1fr; gap: .8rem; align-items: center; min-height: 5rem; padding: 1rem; border: 1px solid var(--drain-line); border-radius: .75rem; color: var(--drain-ink); font-weight: 800; }
+  .sv-drain-issue-grid span { color: var(--drain-red); font-size: .75rem; font-weight: 900; letter-spacing: .08em; }
+
+  .sv-drain-services { background: var(--drain-soft); }
+  .sv-drain-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .sv-drain-card { min-height: 18rem; padding: clamp(1.4rem, 3vw, 2rem); border-top: .3rem solid var(--drain-blue); border-radius: .35rem .35rem 1rem 1rem; background: #fff; box-shadow: 0 .7rem 2rem rgba(14,50,79,.07); }
+  .sv-drain-card-number { display: block; margin-bottom: clamp(2.5rem, 5vw, 4.5rem); color: var(--drain-red); font-size: .85rem; font-weight: 900; }
+  .sv-drain-card h3 { margin-bottom: .65rem; }
+  .sv-drain-card p { margin-bottom: 0; }
+  .sv-drain-inline-cta { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; margin-top: 2rem; padding: 1.25rem 1.5rem; border-left: .3rem solid var(--drain-red); background: #e7eef5; }
+  .sv-drain-inline-cta p { margin: 0; color: var(--drain-ink); }
+  .sv-drain-inline-cta .sv-drain-text-link { flex: none; }
+
+  .sv-drain-process { background: linear-gradient(135deg, #082032, #165ca0); }
+  .sv-drain-heading-light h2, .sv-drain-heading-light p { color: #fff; }
+  .sv-drain-heading-light p { opacity: .86; }
+  .sv-drain-process .sv-drain-eyebrow { color: #ffba43; }
+  .sv-drain-process-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0; padding: 0; counter-reset: steps; }
+  .sv-drain-process-list li { position: relative; padding: clamp(1.4rem, 3vw, 2rem); border: 1px solid rgba(255,255,255,.2); border-radius: 1rem; background: rgba(255,255,255,.07); }
+  .sv-drain-process-list li:not(:last-child)::after { content: "→"; position: absolute; top: 1.45rem; right: -1rem; z-index: 2; width: 2rem; color: #ffba43; font-size: 1.5rem; font-weight: 900; text-align: center; }
+  .sv-drain-process-list h3 { margin: 2rem 0 .6rem; color: #fff; font-size: 1.55rem; text-transform: uppercase; }
+  .sv-drain-process-list p { margin: 0; color: #fff; opacity: .84; }
+  .sv-drain-step { display: inline-grid; width: 2.7rem; height: 2.7rem; place-items: center; border-radius: 50%; background: #fff; color: var(--drain-blue-dark); font-size: .8rem; font-weight: 900; }
+
+  .sv-drain-camera { background: #fff; }
+  .sv-drain-camera-grid { display: grid; grid-template-columns: minmax(18rem, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+  .sv-drain-camera-picture { display: block; height: clamp(24rem, 42vw, 34rem); border-radius: 1.2rem; overflow: hidden; box-shadow: 1rem 1rem 0 #e7eef5; }
+  .sv-drain-camera-picture img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .sv-drain-camera-copy > p { max-width: 39rem; }
+  .sv-drain-check-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem 1rem; margin: 1.5rem 0 2rem; padding: 0; }
+  .sv-drain-check-list li { position: relative; padding-left: 1.65rem; color: var(--drain-ink); font-weight: 800; }
+  .sv-drain-check-list li::before { content: "✓"; position: absolute; left: 0; color: var(--drain-red); font-weight: 900; }
+
+  .sv-drain-signs { background: var(--drain-soft); }
+  .sv-drain-signs-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+  .sv-drain-signs .sv-drain-button { margin-top: 1rem; }
+  .sv-drain-sign-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin: 0; padding: 0; }
+  .sv-drain-sign-list li { position: relative; min-height: 4.5rem; padding: 1rem 1rem 1rem 3rem; border: 1px solid var(--drain-line); border-radius: .7rem; background: #fff; color: var(--drain-ink); font-weight: 800; }
+  .sv-drain-sign-list li::before { content: "!"; position: absolute; top: 1rem; left: 1rem; display: grid; width: 1.35rem; height: 1.35rem; place-items: center; border-radius: 50%; background: var(--drain-red); color: #fff; font-size: .75rem; }
+
+  .sv-drain-properties { background: #fff; }
+  .sv-drain-property-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; max-width: 52rem; margin: auto; }
+  .sv-drain-property-grid article { padding: clamp(1.5rem, 4vw, 2.5rem); border: 1px solid var(--drain-line); border-radius: 1rem; text-align: center; }
+  .sv-drain-property-grid h3 { margin: .9rem 0 .45rem; }
+  .sv-drain-property-grid p { margin: 0; }
+  .sv-drain-property-icon { display: inline-grid; width: 3.5rem; height: 3.5rem; place-items: center; border-radius: 50%; background: var(--drain-blue); color: #fff; font-size: 1.7rem; font-weight: 900; }
+
+  .sv-drain-trust { background: #0e293e; }
+  .sv-drain-trust h2, .sv-drain-trust p { color: #fff; }
+  .sv-drain-trust .sv-drain-eyebrow { color: #ffba43; }
+  .sv-drain-trust-intro { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: end; margin-bottom: 2.5rem; }
+  .sv-drain-trust-intro p { margin: 0; opacity: .84; }
+  .sv-drain-review-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 1rem; }
+  .sv-drain-review-stack { display: grid; gap: 1rem; }
+  .sv-drain-review { padding: clamp(1.3rem, 3vw, 2rem); border-radius: .8rem; background: #fff; }
+  .sv-drain-review-featured { display: flex; flex-direction: column; justify-content: center; }
+  .sv-drain-review blockquote { margin: 1rem 0 1.25rem; color: var(--drain-ink); font-size: clamp(1rem, 1.6vw, 1.18rem); line-height: 1.65; }
+  .sv-drain-review-author { margin: 0; color: var(--drain-blue-dark) !important; font-weight: 900; }
+  .sv-drain-stars { color: #f3a712; font-size: 1.1rem; letter-spacing: .1em; }
+  .sv-drain-google-link { display: inline-block; margin-top: 1.5rem; color: #fff; }
+
+  .sv-drain-faq { background: #fff; }
+  .sv-drain-faq-grid { display: grid; grid-template-columns: minmax(15rem, .7fr) minmax(0, 1.3fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+  .sv-drain-faq-list { border-top: 1px solid var(--drain-line); }
+  .sv-drain-faq-list article { padding: 1.4rem 0; border-bottom: 1px solid var(--drain-line); }
+  .sv-drain-faq-list h3 { margin-bottom: .55rem; }
+  .sv-drain-faq-list p { margin: 0; }
+
+  .sv-drain-final { padding: clamp(3.5rem, 7vw, 5.5rem) 0; background: linear-gradient(105deg, #165ca0, #0b365f); }
+  .sv-drain-final-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: center; }
+  .sv-drain-final h2, .sv-drain-final p { color: #fff; }
+  .sv-drain-final h2 { max-width: 17ch; margin-bottom: .7rem; }
+  .sv-drain-final p { margin: 0; opacity: .9; }
+  .sv-drain-final .sv-drain-eyebrow { color: #ffba43; }
+}
+
+@media (max-width: 56rem) {
+  .sv-drain {
+    .sv-drain-hero-grid, .sv-drain-split, .sv-drain-camera-grid, .sv-drain-signs-grid, .sv-drain-trust-intro, .sv-drain-faq-grid, .sv-drain-final-grid { grid-template-columns: 1fr; }
+    .sv-drain-hero-picture { min-height: 25rem; }
+    .sv-drain-card-grid, .sv-drain-process-list { grid-template-columns: 1fr; }
+    .sv-drain-card { min-height: 0; }
+    .sv-drain-card-number { margin-bottom: 2rem; }
+    .sv-drain-process-list li:not(:last-child)::after { content: "↓"; top: auto; right: 1.25rem; bottom: -1.2rem; }
+    .sv-drain-trust-intro { align-items: start; }
+    .sv-drain-review-grid { grid-template-columns: 1fr; }
+    .sv-drain-final-grid { align-items: start; }
+  }
+}
+
+@media (max-width: 40rem) {
+  .sv-drain {
+    h2 { font-size: clamp(1.85rem, 9vw, 2.5rem); }
+    .sv-drain-wrap { width: min(100% - 1.5rem, 74rem); }
+    .sv-drain-section { padding: 3.75rem 0; }
+    .sv-drain-hero { padding-top: 3.75rem; }
+    .sv-drain-hero-copy h1 { font-size: clamp(2.35rem, 11vw, 3.3rem); }
+    .sv-drain-actions { align-items: stretch; }
+    .sv-drain-button { width: 100%; min-height: 3.75rem; }
+    .sv-drain-hero-picture { min-height: 20rem; border-radius: 1rem; }
+    .sv-drain-hero-picture::after { right: .7rem; bottom: .7rem; font-size: .68rem; }
+    .sv-drain-issue-grid, .sv-drain-check-list, .sv-drain-sign-list, .sv-drain-property-grid { grid-template-columns: 1fr; }
+    .sv-drain-inline-cta { flex-direction: column; align-items: flex-start; }
+    .sv-drain-camera-picture { height: 22rem; box-shadow: .55rem .55rem 0 #e7eef5; }
+    .sv-drain-camera-copy .sv-drain-text-link { display: inline-block; padding: .75rem 0; text-align: center; }
+    .sv-drain-final .sv-drain-actions { width: 100%; }
+  }
+}

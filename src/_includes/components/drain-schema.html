@@ -1,0 +1,40 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ client.domain }}/drain-cleaning-edmonton/#service",
+  "name": "Drain Cleaning & Camera Inspection",
+  "serviceType": "Drain cleaning, drain camera inspection, and sewer line inspection",
+  "url": "{{ client.domain }}/drain-cleaning-edmonton/",
+  "description": "Professional drain cleaning and camera inspection for residential and commercial properties in Edmonton and surrounding areas.",
+  "areaServed": "{{ client.serviceArea }}",
+  "provider": {
+    "@type": "Plumber",
+    "@id": "{{ client.domain }}/#business",
+    "name": "{{ client.name }}",
+    "telephone": "{{ client.phoneForTel }}",
+    "email": "{{ client.primaryEmail }}",
+    "url": "{{ client.domain }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ client.address.lineOne }}",
+      "addressLocality": "{{ client.address.city }}",
+      "addressRegion": "{{ client.address.state }}",
+      "addressCountry": "{{ client.address.country }}"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How do I know if I need drain cleaning?","acceptedAnswer":{"@type":"Answer","text":"Slow drainage, recurring clogs, backups and unusual drain activity can indicate that your drain needs professional attention."}},
+    {"@type":"Question","name":"What can a drain camera inspection find?","acceptedAnswer":{"@type":"Answer","text":"A camera inspection can help identify potential blockages, root intrusion, pipe damage and other issues inside the drain or sewer line."}},
+    {"@type":"Question","name":"Why does my drain keep clogging?","acceptedAnswer":{"@type":"Answer","text":"Recurring clogs can have several causes, including buildup, damaged pipes, roots or other obstructions."}},
+    {"@type":"Question","name":"Do you provide residential and commercial drain services?","acceptedAnswer":{"@type":"Answer","text":"Yes, SquadV provides drain services for residential and commercial properties in Edmonton and surrounding areas."}},
+    {"@type":"Question","name":"Do I need a camera inspection for every clogged drain?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. Camera inspection can be particularly useful when a blockage keeps returning or the cause is unclear."}}
+  ]
+}
+</script>

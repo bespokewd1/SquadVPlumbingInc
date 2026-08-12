@@ -1,0 +1,278 @@
+---
+title: "Drain Cleaning & Camera Inspection Edmonton | SquadV Plumbing"
+description: "Professional drain cleaning and camera inspection in Edmonton, AB. Find the cause of clogged, slow or recurring drains. Contact SquadV Plumbing today."
+permalink: "/drain-cleaning-edmonton/"
+ogTitle: "Drain Cleaning & Camera Inspection in Edmonton | SquadV Plumbing"
+ogDescription: "Professional drain cleaning and camera inspection for clogged, slow, or recurring drains in Edmonton and surrounding areas."
+ogImage: "/assets/images/squadVlanding.png"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+{% include "components/drain-schema.html" %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 520 }) | avif %}" type="image/avif">
+    <link rel="stylesheet" href="/assets/css/drain-cleaning.css">
+{% endblock %}
+
+{% block body %}
+<div class="sv-drain">
+    <section class="sv-drain-hero" aria-labelledby="drain-page-title">
+        <div class="sv-drain-wrap sv-drain-hero-grid">
+            <div class="sv-drain-hero-copy">
+                <span class="sv-drain-kicker">Residential &amp; commercial drain service</span>
+                <h1 id="drain-page-title">Drain Cleaning &amp; Camera Inspection in Edmonton</h1>
+                <p class="sv-drain-lead"><strong>Clear the blockage. Find the cause. Get the right solution.</strong></p>
+                <p>Professional drain cleaning and camera inspection for residential and commercial properties in Edmonton and surrounding areas.</p>
+                <div class="sv-drain-actions">
+                    <a class="sv-drain-button sv-drain-button-primary" href="tel:{{ client.phoneForTel }}">Call SquadV Plumbing</a>
+                    <a class="sv-drain-button sv-drain-button-secondary" href="/contact/?service=drain-cleaning">Request Service</a>
+                </div>
+                <ul class="sv-drain-hero-points" aria-label="Service approach">
+                    <li>Clear, practical assessment</li>
+                    <li>Camera inspection when useful</li>
+                    <li>Recommended next step explained</li>
+                </ul>
+            </div>
+            <!-- Temporary general plumbing photo. Priority replacement: authentic SquadV drain-service photo. -->
+            <picture class="sv-drain-hero-picture" data-image-slot="drain-hero" data-image-status="temporary-existing-asset" data-replacement-priority="authentic-squadv">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 520 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 520 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 520 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1200, height: 1000 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1200, height: 1000 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1200, height: 1000 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1200, height: 1000 }) | jpeg %}" alt="SquadV plumber working beneath a kitchen sink" width="600" height="500" loading="eager" fetchpriority="high" decoding="async">
+            </picture>
+        </div>
+    </section>
+
+    <section class="sv-drain-section sv-drain-problem" aria-labelledby="drain-problem-title">
+        <div class="sv-drain-wrap sv-drain-split">
+            <div class="sv-drain-section-heading">
+                <span class="sv-drain-eyebrow">Look beyond the symptom</span>
+                <h2 id="drain-problem-title">Recurring Clogs? There May Be More Than Meets the Eye.</h2>
+                <p>A slow or clogged drain can sometimes be a sign of a deeper plumbing issue. An assessment can help determine whether cleaning is enough or a closer look may be useful.</p>
+                <p class="sv-drain-emphasis">Don’t just treat the symptom. Find the cause.</p>
+            </div>
+            <ul class="sv-drain-issue-grid">
+                <li><span aria-hidden="true">01</span>Clogged drains and blockages</li>
+                <li><span aria-hidden="true">02</span>Grease and buildup</li>
+                <li><span aria-hidden="true">03</span>Root intrusion</li>
+                <li><span aria-hidden="true">04</span>Damaged or cracked pipes</li>
+                <li><span aria-hidden="true">05</span>Recurring blockages</li>
+                <li><span aria-hidden="true">06</span>Sewer-line problems</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sv-drain-section sv-drain-services" aria-labelledby="drain-services-title">
+        <div class="sv-drain-wrap">
+            <div class="sv-drain-centered-heading">
+                <span class="sv-drain-eyebrow">Focused drain help</span>
+                <h2 id="drain-services-title">Professional Drain Services</h2>
+                <p>SquadV Plumbing uses the service that fits the symptoms and explains the next step in plain language.</p>
+            </div>
+            <div class="sv-drain-card-grid">
+                <article class="sv-drain-card">
+                    <span class="sv-drain-card-number" aria-hidden="true">01</span>
+                    <h3>Drain Cleaning</h3>
+                    <p>Professional drain cleaning to help clear blockages and restore proper drainage.</p>
+                </article>
+                <article class="sv-drain-card">
+                    <span class="sv-drain-card-number" aria-hidden="true">02</span>
+                    <h3>Drain Camera / Borescope Inspection</h3>
+                    <p>A camera or borescope inspection may help provide a closer look inside the pipe and identify potential problems.</p>
+                </article>
+                <article class="sv-drain-card">
+                    <span class="sv-drain-card-number" aria-hidden="true">03</span>
+                    <h3>Sewer Line Inspection</h3>
+                    <p>Inspect sewer lines for potential blockages, roots, damage, and other issues that may need attention.</p>
+                </article>
+            </div>
+            <div class="sv-drain-inline-cta">
+                <p><strong>Not sure which service you need?</strong> Tell us what the drain is doing and we’ll discuss the appropriate first step.</p>
+                <a class="sv-drain-text-link" href="tel:{{ client.phoneForTel }}">Call SquadV Plumbing <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sv-drain-section sv-drain-process" aria-labelledby="drain-process-title">
+        <div class="sv-drain-wrap">
+            <div class="sv-drain-centered-heading sv-drain-heading-light">
+                <span class="sv-drain-eyebrow">A clear service journey</span>
+                <h2 id="drain-process-title">From Inspection to Solution</h2>
+                <p>Inspect → Identify → Solve keeps the process focused on what is happening and what should happen next.</p>
+            </div>
+            <ol class="sv-drain-process-list">
+                <li>
+                    <span class="sv-drain-step">01</span>
+                    <h3>Inspect</h3>
+                    <p>Assess the drain, listen to the symptoms, and determine what is happening.</p>
+                </li>
+                <li>
+                    <span class="sv-drain-step">02</span>
+                    <h3>Identify</h3>
+                    <p>Use camera inspection when needed to locate potential blockages, roots, or pipe damage.</p>
+                </li>
+                <li>
+                    <span class="sv-drain-step">03</span>
+                    <h3>Solve</h3>
+                    <p>Recommend the appropriate cleaning, repair, or next step based on the assessment.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="sv-drain-section sv-drain-camera" aria-labelledby="drain-camera-title">
+        <div class="sv-drain-wrap sv-drain-camera-grid">
+            <!-- Temporary general plumbing photo; it does not depict or claim to depict camera inspection. Priority replacement: authentic SquadV camera-inspection photo. -->
+            <picture class="sv-drain-camera-picture" data-image-slot="camera-section" data-image-status="temporary-existing-general-plumbing-asset" data-replacement-priority="authentic-squadv">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 560, height: 480 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 560, height: 480 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 560, height: 480 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 900, height: 760 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 900, height: 760 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 900, height: 760 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 900, height: 760 }) | jpeg %}" alt="Plumber completing general pipe work beneath a sink" width="450" height="380" loading="lazy" decoding="async">
+            </picture>
+            <div class="sv-drain-camera-copy">
+                <span class="sv-drain-eyebrow">When the problem keeps returning</span>
+                <h2 id="drain-camera-title">See What’s Happening Inside Your Pipes</h2>
+                <p>When a drain problem keeps coming back, a camera inspection can help provide a clearer view of what may be happening inside the pipe. It does not guarantee a finding, but it may help identify potential problems and support a more informed recommendation.</p>
+                <ul class="sv-drain-check-list">
+                    <li>Blockages and buildup</li>
+                    <li>Root intrusion</li>
+                    <li>Potential pipe damage</li>
+                    <li>Recurring clog causes</li>
+                    <li>Sewer-line issues</li>
+                </ul>
+                <div class="sv-drain-actions">
+                    <a class="sv-drain-button sv-drain-button-primary" href="tel:{{ client.phoneForTel }}">Call SquadV Plumbing</a>
+                    <a class="sv-drain-text-link" href="/contact/?service=drain-cleaning">Request Service <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sv-drain-section sv-drain-signs" aria-labelledby="drain-signs-title">
+        <div class="sv-drain-wrap sv-drain-signs-grid">
+            <div class="sv-drain-section-heading">
+                <span class="sv-drain-eyebrow">Know when to call</span>
+                <h2 id="drain-signs-title">Signs You May Need Drain Cleaning or Inspection</h2>
+                <p>One symptom may be a simple blockage. Repeated or widespread symptoms can point to a problem worth assessing professionally.</p>
+                <a class="sv-drain-button sv-drain-button-primary" href="/contact/?service=drain-cleaning">Request Service</a>
+            </div>
+            <ul class="sv-drain-sign-list">
+                <li>Slow-draining sinks or tubs</li>
+                <li>Recurring clogged drains</li>
+                <li>Water backing up</li>
+                <li>Unusual drain smells</li>
+                <li>Gurgling drains</li>
+                <li>Multiple drains having problems</li>
+                <li>A blockage that keeps coming back</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sv-drain-section sv-drain-properties" aria-labelledby="drain-properties-title">
+        <div class="sv-drain-wrap">
+            <div class="sv-drain-centered-heading">
+                <span class="sv-drain-eyebrow">Local plumbing support</span>
+                <h2 id="drain-properties-title">Residential &amp; Commercial Drain Services</h2>
+                <p>SquadV Plumbing provides professional plumbing and drain services for homes and businesses in Edmonton and surrounding areas.</p>
+            </div>
+            <div class="sv-drain-property-grid">
+                <article>
+                    <span class="sv-drain-property-icon" aria-hidden="true">⌂</span>
+                    <h3>Residential</h3>
+                    <p>Drain help for Edmonton homeowners, including slow, blocked, or recurring drain concerns.</p>
+                </article>
+                <article>
+                    <span class="sv-drain-property-icon" aria-hidden="true">▦</span>
+                    <h3>Commercial</h3>
+                    <p>Clear communication and practical drain service for businesses and commercial properties.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="sv-drain-section sv-drain-trust" aria-labelledby="drain-trust-title">
+        <div class="sv-drain-wrap">
+            <div class="sv-drain-trust-intro">
+                <div>
+                    <span class="sv-drain-eyebrow">General SquadV customer feedback</span>
+                    <h2 id="drain-trust-title">Why Choose SquadV Plumbing?</h2>
+                </div>
+                <p>SquadV is led by a Journeyman Plumber and Certified Gasfitter, is licensed and insured, and has served residential and commercial properties in Edmonton since 2018. The reviews below are general customer feedback and are not presented as drain-cleaning reviews.</p>
+            </div>
+            <div class="sv-drain-review-grid">
+                <article class="sv-drain-review sv-drain-review-featured" data-review-source="google">
+                    <span class="sv-drain-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></span>
+                    <blockquote>“Highly recommend! We had a major leak in our basement and SquadV Plumbing came out the same day. Allan and Eugene was incredibly professional, explained exactly what went wrong, and fixed it quickly. They keep everything clean and the final price matched the estimate perfectly. It is hard to find honest, reliable plumbing service, but these guys nailed it. Will absolutely call them again for any heating or plumbing needs!”</blockquote>
+                    <p class="sv-drain-review-author">Mervin Jude Herbano</p>
+                </article>
+                <div class="sv-drain-review-stack">
+                    <article class="sv-drain-review" data-review-source="google">
+                        <span class="sv-drain-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></span>
+                        <blockquote>“Called for a consultation and was provided with free advise that immediately solved my small leak. Thank you so much!”</blockquote>
+                        <p class="sv-drain-review-author">Michael Varkovetski (Gonsar)</p>
+                    </article>
+                    <article class="sv-drain-review" data-review-source="google">
+                        <span class="sv-drain-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></span>
+                        <blockquote>“Eugene is fast to respond and provides a fast turn around time. Will definitely use in the future.”</blockquote>
+                        <p class="sv-drain-review-author">Martin Szijjarto</p>
+                    </article>
+                </div>
+            </div>
+            <a class="sv-drain-google-link" href="{{ client.googleBusiness }}" target="_blank" rel="noopener noreferrer">Read More Reviews on Google <span aria-hidden="true">↗</span></a>
+        </div>
+    </section>
+
+    <section class="sv-drain-section sv-drain-faq" aria-labelledby="drain-faq-title">
+        <div class="sv-drain-wrap sv-drain-faq-grid">
+            <div class="sv-drain-section-heading">
+                <span class="sv-drain-eyebrow">Common questions</span>
+                <h2 id="drain-faq-title">Drain Cleaning &amp; Camera Inspection FAQs</h2>
+                <p>These answers explain when professional attention or a closer inspection may be useful.</p>
+            </div>
+            <div class="sv-drain-faq-list">
+                <article data-faq-item="drain">
+                    <h3>How do I know if I need drain cleaning?</h3>
+                    <p>Slow drainage, recurring clogs, backups and unusual drain activity can indicate that your drain needs professional attention.</p>
+                </article>
+                <article data-faq-item="drain">
+                    <h3>What can a drain camera inspection find?</h3>
+                    <p>A camera inspection can help identify potential blockages, root intrusion, pipe damage and other issues inside the drain or sewer line.</p>
+                </article>
+                <article data-faq-item="drain">
+                    <h3>Why does my drain keep clogging?</h3>
+                    <p>Recurring clogs can have several causes, including buildup, damaged pipes, roots or other obstructions.</p>
+                </article>
+                <article data-faq-item="drain">
+                    <h3>Do you provide residential and commercial drain services?</h3>
+                    <p>Yes, SquadV provides drain services for residential and commercial properties in Edmonton and surrounding areas.</p>
+                </article>
+                <article data-faq-item="drain">
+                    <h3>Do I need a camera inspection for every clogged drain?</h3>
+                    <p>Not necessarily. Camera inspection can be particularly useful when a blockage keeps returning or the cause is unclear.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="sv-drain-final" aria-labelledby="drain-final-title">
+        <div class="sv-drain-wrap sv-drain-final-grid">
+            <div>
+                <span class="sv-drain-eyebrow">Serving Edmonton &amp; surrounding areas</span>
+                <h2 id="drain-final-title">Have a Clogged or Recurring Drain?</h2>
+                <p>Let SquadV Plumbing assess the problem and help determine the right solution.</p>
+            </div>
+            <div class="sv-drain-actions">
+                <a class="sv-drain-button sv-drain-button-light" href="tel:{{ client.phoneForTel }}">Call SquadV Plumbing</a>
+                <a class="sv-drain-button sv-drain-button-outline-light" href="/contact/?service=drain-cleaning">Request Service</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

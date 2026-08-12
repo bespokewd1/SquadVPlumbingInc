@@ -1,25 +1,34 @@
 module.exports = {
   name: "Squad V Plumbing Inc.",
-  email: "SQUADV726@gmail.com",
+  brandName: "SquadV Plumbing",
+  primaryEmail: "office@squadvplumbing.ca",
+  secondaryEmail: "SQUADV726@gmail.com",
+  // Backward-compatible aliases while templates move to the explicit names.
+  email: "office@squadvplumbing.ca",
   officeEmail: "office@squadvplumbing.ca",
   phoneForTel: "+17806677169",
   phoneFormatted: "(780)-667-7169",
+  phoneDisplay: "780-667-7169",
   whatsappLink: "https://wa.me/17806677169",
   address: {
-    lineOne: "First Address Line",
-    lineTwo: "Second Address Line",
-    city: "Denver",
-    state: "CO",
-    zip: "80206",
-    country: "US",
-    mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
+    lineOne: "432 Dunluce Rd. NW",
+    lineTwo: "",
+    city: "Edmonton",
+    state: "AB",
+    country: "CA",
+    display: "432 Dunluce Rd. NW, Edmonton, AB",
+    mapLink: "https://maps.app.goo.gl/bgxAMTNBtFAxm4H47",
   },
+  hours: {
+    display: "Monday – Friday, 7 AM – 5 PM",
+    weekdays: "Mo-Fr 07:00-17:00",
+  },
+  serviceArea: "Edmonton and surrounding areas",
+  googleBusiness: "https://maps.app.goo.gl/bgxAMTNBtFAxm4H47",
   socials: {
     facebook: "https://www.facebook.com/squadvplumbing/",
-    instagram: "https://www.instagram.com/",
   },
-  //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
   domain: "https://www.squadvplumbing.ca",
-  // Passing the isProduction variable for use in HTML templates
+  defaultOgImage: "/assets/images/OG.webp",
   isProduction: process.env.ELEVENTY_ENV === "PROD",
 };

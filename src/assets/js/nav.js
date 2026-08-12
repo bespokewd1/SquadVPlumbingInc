@@ -95,6 +95,10 @@
 			[elements.hamburger, elements.navigation].forEach((el) => el.classList.toggle(CONFIG.CLASSES.active));
 			elements.body.classList.toggle(CONFIG.CLASSES.menuOpen);
 			toggleAttribute(elements.hamburger, "aria-expanded");
+			elements.hamburger.setAttribute(
+				"aria-label",
+				elements.hamburger.getAttribute("aria-expanded") === "true" ? "Close main menu" : "Open main menu",
+			);
 
 			// Only manage inert state on mobile devices
 			if (elements.menuWrapper && isMobile()) {

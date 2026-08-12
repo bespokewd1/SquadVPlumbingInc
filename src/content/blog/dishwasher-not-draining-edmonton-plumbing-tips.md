@@ -38,7 +38,7 @@ If the filter is damaged or the appliance still will not drain, the issue may be
 
 If your kitchen sink is slow, gurgling, or backing up, your dishwasher may struggle to drain too. The dishwasher often drains through the same kitchen plumbing path. A partial clog under the sink can affect both.
 
-For Edmonton kitchen drain issues, Squad V can inspect the plumbing side, clear accessible blockages, repair leaks, and confirm whether the issue is in the drain line rather than the dishwasher.
+For Edmonton kitchen drain issues, Squad V can inspect the plumbing side, clear accessible blockages, repair leaks, and confirm whether the issue is in the drain line rather than the dishwasher. Learn more about our <a href="/drain-cleaning-edmonton/" data-drain-link-location="dishwasher-article">Drain Cleaning &amp; Camera Inspection</a> service for professional help with blocked or recurring drains.
 
 ### 3. Look for a kinked or pinched drain hose
 
@@ -79,5 +79,3 @@ Scrape food into the garbage before loading dishes. Clean the filter regularly. 
 During kitchen renovations, make sure the dishwasher drain hose, sink drain, water line, and shutoff access are planned before cabinets and countertops are installed. It is easier and cleaner to fix plumbing layout before the finish work is done.
 
 ## Local help for dishwasher drain plumbing in Edmonton
-
-If your dishwasher will not drain and the kitchen plumbing is part of the problem, call Squad V Plumbing Inc. at (780)-667-7169. We serve Edmonton homes and businesses with plumbing repairs, fixture installation, leak repair, pipe maintenance, water heater work, gasfitting, and renovation plumbing.

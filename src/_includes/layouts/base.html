@@ -22,7 +22,7 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Standard meta tags -->
+    <!-- Standard and page-specific metadata -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,22 +30,11 @@
     <link rel="canonical" href="{{ client.domain }}{{ page.url }}" />
     <meta name="generator" content="{{ eleventy.generator }}" />
 
-    <!--Social Media Display-->
-    <meta
-      property="og:title"
-      content="Squadv Plumbing Inc. | Reliable Residential, Commercial & Construction Plumbing in Edmonton"
-    />
-    <meta
-      property="og:description"
-      content="Professional plumbing, gasfitting, renovations, water heater installation, and new construction services. 7+ years trusted by Edmonton homeowners, builders and property managers. Fast, honest and flexible service. Call now: (780) 667-7169."
-    />
-    <meta property="og:url" content="https://www.squadvplumbing.ca" />
+    <meta property="og:title" content="{{ ogTitle or title }}" />
+    <meta property="og:description" content="{{ ogDescription or description }}" />
+    <meta property="og:url" content="{{ ogUrl or (client.domain + page.url) }}" />
     <meta property="og:type" content="website" />
-    <meta
-      name="description"
-      content="Squadv Plumbing Inc. offers certified plumbing, gasfitting, water heater installation, renovations, and new construction services in Edmonton. Call (780) 667-7169 for fast and reliable service."
-    />
-    <meta property="og:image" content="/assets/images/OG.webp" />
+    <meta property="og:image" content="{{ client.domain }}{{ ogImage or client.defaultOgImage }}" />
 
     <!--Favicons-->
     <!-- https://realfavicongenerator.net/ -->
@@ -97,7 +86,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <title>{{ title }}</title>
   </head>
-  <body>
+  <body class="has-mobile-actions">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -115,7 +104,7 @@
     >
 
     {% include "sections/header.html" %}
-    <main id="main">{% block body %}{% endblock %}</main>
+    <main id="main" class="site-main">{% block body %}{% endblock %}</main>
     {% include "sections/footer.html" %}
     <script>
       // Accordion functionality

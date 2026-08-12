@@ -2,288 +2,82 @@
 <!--                 Navigation                   -->
 <!-- ============================================ -->
 
-<header id="cs-navigation" style="padding: 0;">
-<style>
-    #cs-navigation .sv-header-phone {
-        display: none;
-    }
+<header id="cs-navigation" class="sv-site-header">
+  <div class="sv-positioning-strip">
+    <p>Residential <span aria-hidden="true">|</span> Commercial</p>
+  </div>
 
-    @media only screen and (min-width: 1024px) {
-        #cs-navigation .sv-header-nav-shell {
-            width: 100%;
-        }
-
-        #cs-navigation .sv-header-nav-shell .cs-container {
-            max-width: none;
-            padding-inline: 2rem;
-            gap: 3rem;
-        }
-
-        #cs-navigation .cs-ul-wrapper {
-            flex: 1 1 auto;
-            min-width: 0;
-            width: 100%;
-        }
-
-        #cs-navigation .cs-ul {
-            justify-content: space-between;
-            gap: 1rem;
-        }
-
-        #cs-navigation .cs-li {
-            flex: 0 1 auto;
-        }
-
-        #cs-navigation .cs-li-link {
-            white-space: nowrap;
-        }
-
-        #cs-navigation .sv-header-phone {
-            flex: 0 0 auto;
-            min-width: 10rem;
-            padding: 0;
-            color: var(--primary);
-            text-align: right;
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: center;
-        }
-
-        #cs-navigation .sv-header-phone-number {
-            font-size: 1.4rem;
-            font-weight: 800;
-            line-height: 1;
-            letter-spacing: 0;
-            color: var(--primary);
-        }
-
-        #cs-navigation .sv-header-phone-label {
-            margin-top: .25rem;
-            font-size: .75rem;
-            font-weight: 700;
-            line-height: 1;
-            letter-spacing: 0;
-            text-transform: uppercase;
-            color: var(--bodyTextColor);
-        }
-    }
-
-    @media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
-        #cs-navigation .sv-header-nav-shell .cs-container {
-            padding-inline: 1rem;
-            gap: 1.5rem;
-        }
-
-        #cs-navigation .cs-ul {
-            gap: .75rem;
-        }
-
-        #cs-navigation .cs-li-link {
-            font-size: .875rem;
-        }
-
-        #cs-navigation .sv-header-phone {
-            min-width: 8.5rem;
-        }
-
-        #cs-navigation .sv-header-phone-number {
-            font-size: 1.05rem;
-        }
-
-        #cs-navigation .sv-header-phone-label {
-            font-size: .7rem;
-        }
-    }
-</style>
-<div class="w-full bg-[var(--primary)] text-white py-4 overflow-hidden" style="padding: .8rem;margin-bottom: 4px;">
-    <div class="flex flex-row items-center justify-center md:justify-between whitespace-nowrap" style="margin: auto;">
-        <p class="text-xl! font-semibold px-4!" style="color:#ffe1a3;">Residential | Commercial</p>
-        <p id="weather" class="hidden md:block text-sm opacity-90 px-4" style="color:white;">Loading weather...</p>
+  <div class="sv-desktop-contact">
+    <a href="/" class="cs-logo" aria-label="SquadV Plumbing home page">
+      <img src="{% getUrl "/assets/svgs/squadVlogo.png" | resize({ width: 210 }) | webp %}" alt="" width="210" height="79" aria-hidden="true" decoding="async">
+    </a>
+    <div class="sv-email-contact">
+      <a href="mailto:{{ client.primaryEmail }}" aria-label="Email SquadV Plumbing">
+        <img src="/assets/favicons/icons8-email-50.png" alt="" width="24" height="24" aria-hidden="true">
+      </a>
+      <div>
+        <p>Send a Message</p>
+        <a href="mailto:{{ client.primaryEmail }}">{{ client.primaryEmail }}</a>
+        <a href="mailto:{{ client.secondaryEmail }}">{{ client.secondaryEmail }}</a>
+      </div>
     </div>
-</div>
-    <div class="hidden justify-between lg:flex lg:border-b-2 border-[var(--primary)] " style="margin: auto; padding-inline: 0.8rem;">
-        <a href="/" class="cs-logo" aria-label="Squad V Plumbing home page">
-            <img src="{% getUrl "/assets/svgs/squadVlogo.png" | resize({ width: 210 }) | webp %}" alt="" width="210" height="79" aria-hidden="true" decoding="async">
-        </a>
-        <div class="flex flex-row gap-8">
-             <div class="flex-row flex items-center gap-4">
-                <a href="mailto:{{ client.email }}" aria-label="Email Squad V Plumbing"><img src="/assets/favicons/icons8-email-50.png" alt="" width="24" height="24" aria-hidden="true"></a>
-                <div class=" flex flex-col">
-                    <p class="text-inherit! font-semibold">Send a Message</p>
-                    <a href="mailto:{{ client.email }}">{{ client.email }}</a>
-                    <a href="mailto:{{ client.officeEmail }}">{{ client.officeEmail }}</a>
-                </div>
-            </div>
-            <!-- <div class="flex-row flex items-center bg-[var(--primary)] gap-4" style="padding: 12px;">
-                <a class="text-white">Schedule Appointment</a>
+  </div>
 
-            </div> -->
+  <div class="sv-header-nav-shell">
+    <div class="cs-container">
+      <a href="/" class="cs-logo cs-mobile-logo" aria-label="SquadV Plumbing home page">
+        <img class="cs-mobile-logo-img" src="{% getUrl "/assets/svgs/squadVlogo.png" | resize({ width: 210 }) | webp %}" alt="" width="210" height="79" aria-hidden="true" decoding="async">
+      </a>
+
+      <button class="cs-toggle" id="cs-toggle" type="button" aria-expanded="false" aria-controls="cs-ul-wrapper" aria-label="Open main menu">
+        <span class="cs-box" aria-hidden="true">
+          <span class="cs-line cs-line1"></span>
+          <span class="cs-line cs-line2"></span>
+          <span class="cs-line cs-line3"></span>
+        </span>
+      </button>
+
+      <nav class="cs-nav" aria-label="Main navigation">
+        <div class="cs-ul-wrapper" id="cs-ul-wrapper">
+          <ul id="cs-expanded" class="cs-ul">
+            <li class="cs-li"><a href="/" class="cs-li-link {% if page.url == "/" %}cs-active{% endif %}" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
+            <li class="relative group hidden lg:block cs-li">
+              <a href="/plumbing/" class="cs-li-link flex items-center gap-1">Plumbing Services <span aria-hidden="true">&#9656;</span></a>
+              <ul class="absolute left-0 mt-2 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-300 z-50 min-w-[200px]" style="padding: .5rem;">
+                <li><a href="/plumbing/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Residential &amp; Commercial Plumbing</a></li>
+                <li><a href="/plumbing/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Leak Repair &amp; Pipe Maintenance</a></li>
+                <li><a href="/plumbing/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Fixture Installation</a></li>
+                <li><a href="/drain-cleaning-edmonton/" data-drain-link-location="desktop-navigation" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Drain Cleaning &amp; Camera Inspection</a></li>
+                <li><a href="/sump-pump/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Sump Pump Services</a></li>
+                <li><a href="/blog/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Plumbing Tips &amp; Guides</a></li>
+              </ul>
+            </li>
+            <li class="relative group hidden lg:block cs-li">
+              <a href="/renovation/" class="cs-li-link flex items-center gap-1">Renovation &amp; Improvement <span aria-hidden="true">&#9656;</span></a>
+              <ul class="absolute left-0 mt-2 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-300 z-50 min-w-[200px]" style="padding: .5rem;">
+                <li><a href="/renovation/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Basement Improvement</a></li>
+                <li><a href="/renovation/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Kitchen &amp; Bathroom Renovation</a></li>
+                <li><a href="/renovation/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">New Construction Plumbing</a></li>
+              </ul>
+            </li>
+            <li class="cs-li hidden lg:block"><a href="/gasfitting/" class="cs-li-link {% if page.url == "/gasfitting/" %}cs-active{% endif %}">Gasfitting</a></li>
+            <li class="cs-li lg:hidden"><a href="/plumbing/" class="cs-li-link {% if page.url == "/plumbing/" %}cs-active{% endif %}">Plumbing Services</a></li>
+            <li class="cs-li lg:hidden"><a href="/drain-cleaning-edmonton/" data-drain-link-location="mobile-navigation" class="cs-li-link {% if page.url == "/drain-cleaning-edmonton/" %}cs-active{% endif %}">Drain Cleaning &amp; Camera Inspection</a></li>
+            <li class="cs-li lg:hidden"><a href="/sump-pump/" class="cs-li-link {% if page.url == "/sump-pump/" %}cs-active{% endif %}">Sump Pump Services</a></li>
+            <li class="cs-li lg:hidden"><a href="/renovation/" class="cs-li-link {% if page.url == "/renovation/" %}cs-active{% endif %}">Renovation &amp; Improvement</a></li>
+            <li class="cs-li lg:hidden"><a href="/gasfitting/" class="cs-li-link {% if page.url == "/gasfitting/" %}cs-active{% endif %}">Gasfitting</a></li>
+            <li class="cs-li"><a href="/gallery/" class="cs-li-link {% if page.url == "/gallery/" %}cs-active{% endif %}">Gallery</a></li>
+            <li class="cs-li"><a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %}cs-active{% endif %}">Latest News</a></li>
+            <li class="cs-li"><a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %}cs-active{% endif %}">Contact Us</a></li>
+            <li class="cs-li lg:hidden"><a href="tel:{{ client.phoneForTel }}" class="mobile-button cs-nav-button" aria-label="Call SquadV Plumbing at {{ client.phoneDisplay }}">Call for Service<br>{{ client.phoneDisplay }}</a></li>
+          </ul>
         </div>
+      </nav>
 
+      <a href="tel:{{ client.phoneForTel }}" class="sv-header-phone" aria-label="Call SquadV Plumbing at {{ client.phoneDisplay }}">
+        <span class="sv-header-phone-number">{{ client.phoneDisplay }}</span>
+        <span class="sv-header-phone-label">Call for Service</span>
+      </a>
     </div>
-    <div class="sv-header-nav-shell">
-        <div class="cs-container ">
-            <!--Nav Logo-->
-            <!--Navigation List-->
-            <!-- <nav class="cs-nav" aria-label="main navigation">
-                <a href="/" class="cs-logo " aria-label="Company Name Home page">
-            <img src="/assets/svgs/squadVlogo.png" alt="" width="210" height="29" aria-hidden="true" decoding="async">
-        </a> -->
-                <!--Mobile Nav Toggle-->
-                <button class="cs-toggle" id="cs-toggle" aria-expanded="false" aria-controls="cs-ul-wrapper" aria-label="mobile menu toggle" aria-haspopup="menu">
-                    <span class="cs-box" aria-hidden="true">
-                        <span class="cs-line cs-line1" aria-hidden="true"></span>
-                        <span class="cs-line cs-line2" aria-hidden="true"></span>
-                        <span class="cs-line cs-line3" aria-hidden="true"></span>
-                    </span>
-                </button>
-                <div class="lg:hidden">
-            <a href="/" class="cs-logo cs-mobile-logo" aria-label="Squad V Plumbing home page">
-                <img class="cs-mobile-logo-img" src="{% getUrl "/assets/svgs/squadVlogo.png" | resize({ width: 210 }) | webp %}" alt="" width="210" height="79" aria-hidden="true" decoding="async">
-            </a>
-            </div>
-                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-                <div class="cs-ul-wrapper" id="cs-ul-wrapper">
-                    <ul id="cs-expanded" class="cs-ul">
-                        <li class="cs-li">
-                            <a href="/" class="cs-li-link {% if page.url == "/" %} cs-active {% endif %}" {% if page.url == "/" %} aria-current="page" {% endif %}>
-                                Home
-                            </a>
-                        </li>
-                        <li class="relative group hidden lg:block cs-li">
-                            <a href="/plumbing/" class="cs-li-link flex items-center gap-1">
-                                Plumbing Services
-                                <span class="transition-transform duration-200 group-hover:rotate-180">&#9656;</span>
-                            </a>
-
-                            <!-- Dropdown Items -->
-                            <ul class="absolute left-0 mt-2 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 min-w-[200px]" style="padding: .5rem;">
-                                <li><a href="/plumbing/" class="block px-4 py-2 hover:bg-gray-100 " style="color: var(--headerColor);padding: .5rem;">Residential & Commercial Plumbing</a></li>
-                                <li><a href="/plumbing/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Leak Repair & Pipe Maintenance</a></li>
-                                <li><a href="/plumbing/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Fixture Installation (sinks, toilets, faucets)</a></li>
-                                <li><a href="/plumbing/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Hot Water Tanks & Tankless Water Heaters (Electric & Gas)</a></li>
-                                <li><a href="/sump-pump/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Sump Pump Services</a></li>
-                                <li><a href="/plumbing/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Furnace Replacement & Repair</a></li>
-                                <li><a href="/blog/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">💡Plumbing Tips, Guides & Updates </a></li>
-                            </ul>
-                        </li>
-                        <li class="relative group hidden lg:block cs-li">
-                            <a href="/renovation/" class="cs-li-link flex items-center gap-1">
-                                Renovation & Improvement
-                                <span class="transition-transform duration-200 group-hover:rotate-180">&#9656;</span>
-                            </a>
-
-                            <!-- Dropdown Items -->
-                            <ul class="absolute left-0 mt-2 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 min-w-[200px]" style="padding: .5rem;">
-                                <li><a href="/renovation/" class="block px-4 py-2 hover:bg-gray-100 " style="color: var(--headerColor);padding: .5rem;">Basement Improvement (Tub/Shower Replacement, Rough-ins)</a></li>
-                                <li><a href="/renovation/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Kitchen & Bathroom Renovation</a></li>
-                                <li><a href="/renovation/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">New Construction Plumbing</a></li>
-                            </ul>
-                        </li>
-                        <!-- <li class="relative group hidden lg:block cs-li">
-                            <a href="/concrete/" class="cs-li-link flex items-center gap-1">
-                                Concrete & Support Work
-                                <span class="transition-transform duration-200 group-hover:rotate-180">&#9656;</span>
-                            </a>
-
-                            <ul class="absolute left-0 mt-2 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 min-w-[200px]" style="padding: .5rem;">
-                                <li><a href="/concrete/" class="block px-4 py-2 hover:bg-gray-100 " style="color: var(--headerColor);padding: .5rem;">Concrete Cutting & Breaking</a></li>
-                                <li><a href="/concrete/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Excavation & Digging</a></li>
-                                <li><a href="/concrete/" class="block px-4 py-2 hover:bg-gray-100" style="color: var(--headerColor);padding: .5rem;">Cementing / Paving</a></li>
-                            </ul>
-                        </li> -->
-                        <li class="cs-li hidden lg:block">
-                            <a href="/gasfitting/" class="cs-li-link {% if page.url == "/gasfitting/" %} cs-active {% endif %}" {% if page.url == "/gasfitting/" %} aria-current="page" {% endif %}>
-                                Gasfitting
-                            </a>
-                        </li>
-                        <li class="cs-li lg:hidden">
-                            <a href="/plumbing/" class="cs-li-link {% if page.url == "/plumbing/" %} cs-active {% endif %}" {% if page.url == "/plumbing/" %} aria-current="page" {% endif %}>
-                                Plumbing Services
-                            </a>
-                        </li>
-                        <li class="cs-li lg:hidden">
-                            <a href="/sump-pump/" class="cs-li-link {% if page.url == "/sump-pump/" %} cs-active {% endif %}" {% if page.url == "/sump-pump/" %} aria-current="page" {% endif %}>
-                                Sump Pump Services
-                            </a>
-                        </li>
-                        <li class="cs-li lg:hidden">
-                            <a href="/renovation/" class="cs-li-link {% if page.url == "/renovation/" %} cs-active {% endif %}" {% if page.url == "/renovation/" %} aria-current="page" {% endif %}>
-                                Renovation & Improvement
-                            </a>
-                        </li>
-                        <li class="cs-li lg:hidden">
-                            <a href="/gasfitting/" class="cs-li-link {% if page.url == "/gasfitting/" %} cs-active {% endif %}" {% if page.url == "/gasfitting/" %} aria-current="page" {% endif %}>
-                                Gasfitting
-                            </a>
-                        </li>
-                        <!-- <li class="cs-li lg:hidden">
-                            <a href="/concrete/" class="cs-li-link {% if page.url == "/concrete/" %} cs-active {% endif %}" {% if page.url == "/concrete/" %} aria-current="page" {% endif %}>
-                                Concrete & Support Work
-                            </a>
-                        </li> -->
-                        <li class="cs-li">
-                            <a href="/gallery/" class="cs-li-link {% if page.url == "/gallery/" %} cs-active {% endif %}" {% if page.url == "/gallery/" %} aria-current="page" {% endif %}>
-                                Gallery
-                            </a>
-                        </li>
-                        <li class="cs-li hidden lg:block">
-                            <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" %} aria-current="page" {% endif %}>
-                                Latest News
-                            </a>
-                        </li>
-                        <li class="cs-li lg:hidden">
-                            <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" %} aria-current="page" {% endif %}>
-                                Latest News
-                            </a>
-                        </li>
-                        <li class="cs-li hidden lg:block" >
-                            <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>
-                                Contact Us
-                            </a>
-                        </li>
-                        <li class="lg:hidden">
-                            <a href="/contact/" class="mobile-button cs-nav-button"><p class="text-sm" style="color: white;">Call for Service</p>
-                            <h2 style="color: white;">(780) 667-7169</h2></a>
-                        </li>
-
-                    </ul>
-                </div>
-            </nav>
-            <a href="tel:+17806677169" class="sv-header-phone" aria-label="Call Squad V Plumbing at (780) 667-7169">
-                <span class="sv-header-phone-number">(780) 667-7169</span>
-                <span class="sv-header-phone-label">Call for Service</span>
-            </a>
-            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
-                <img class="cs-moon" aria-hidden="true" src="/assets/svgs/moon.svg" decoding="async" alt="" width="15" height="15">
-                <img class="cs-sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="" width="15" height="15">
-            </button> -->
-        </div>
-    </div>
-
-   <script>
-    async function loadWeather() {
-        const weather = document.getElementById("weather");
-        if (!weather || !window.matchMedia("(min-width: 768px)").matches) return;
-
-        const apiKey = "d1ce37947713b76408122f28038b18af"; // Replace with real key
-        const city = "Edmonton"; // Change the city here
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            const temp = Math.round(data.main.temp);
-
-            weather.textContent = `Current Weather: ${temp}°C in ${city}`;
-        } catch (error) {
-            weather.textContent = "Unable to load weather";
-       }
-    }
-
-    loadWeather();
-</script>
+  </div>
 </header>

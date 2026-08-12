@@ -1,0 +1,17 @@
+---
+title: "Service Request Received | SquadV Plumbing"
+description: "Thank you for contacting SquadV Plumbing. Your service request has been submitted."
+permalink: "/thank-you/"
+---
+{% extends "layouts/base.html" %}
+{% block head %}<link rel="stylesheet" href="/assets/css/contact.css">{% endblock %}
+{% block body %}
+<section class="sv-thank-you">
+  <div class="cs-container">
+    <span class="cs-topper">Request Received</span>
+    <h1 class="cs-title">Thank You for Contacting SquadV Plumbing</h1>
+    <p class="cs-text">Your service request has been submitted. If you would rather speak with us, call <a href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a> during our posted business hours.</p>
+    <div class="sv-thank-actions"><a class="cs-button-solid" href="/">Return Home</a><a class="cs-button-secondary" href="tel:{{ client.phoneForTel }}">Call SquadV Plumbing</a></div>
+  </div>
+</section>
+{% endblock %}

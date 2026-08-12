@@ -1,6 +1,6 @@
 ---
 title: "Contact | Squad V Plumbing Inc."
-description: "Meta description for the page"
+description: "Contact SquadV Plumbing for residential and commercial plumbing service in Edmonton and surrounding areas."
 permalink: "/contact/"
 ---
 
@@ -8,6 +8,7 @@ permalink: "/contact/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
+    <script defer src="/assets/js/contact.js"></script>
     <link rel="preload" as="image" href="{% getUrl "/assets/images/gallery/commercial/8.webp" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="preload" as="image" href="{% getUrl "/assets/images/gallery/commercial/8.webp" | resize({ width: 576, height: 640 }) | avif %}"/>
 {% endblock %}
@@ -55,46 +56,64 @@ permalink: "/contact/"
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">
-                       Have a project or need a quote? Message us and we’ll get back to you quickly. For emergencies, call us immediately at (780) 667-7169.
+                        Tell us about the plumbing service you need. Submit the form below or call us to discuss your project.
                     </p>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post">
-                    <label>
+                <form id="cs-form-265" name="request-service" method="POST" action="/thank-you/" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="request-service">
+                    <input type="hidden" name="subject" value="New SquadV Plumbing website service inquiry">
+                    <p class="sv-honeypot" aria-hidden="true">
+                        <label>Do not fill this out if you are human <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+                    </p>
+                    <label for="name-265">
                         Name
-                        <input required type="text" id="name-265" name="name" placeholder="Name">
+                        <input required type="text" id="name-265" name="name" placeholder="Your name" autocomplete="name">
                     </label>
-                    <label>
-                        Email
-                        <input required type="text" id="email-265" name="email" placeholder="Email">
-                    </label>
-                    <label>
+                    <label for="phone-265">
                         Phone
-                        <input required type="text" id="phone-265" name="phone" placeholder="Phone">
+                        <input required type="tel" id="phone-265" name="phone" placeholder="Phone number" autocomplete="tel">
                     </label>
-                    <label>
-                        How Did You Find Us
-                        <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
+                    <label for="email-265">
+                        Email
+                        <input required type="email" id="email-265" name="email" placeholder="Email address" autocomplete="email">
                     </label>
-                    <label class="cs-label-message">
+                    <label for="service-265">
+                        Service Needed
+                        <select required id="service-265" name="service">
+                            <option value="">Choose a service</option>
+                            <option value="drain-cleaning">Drain Cleaning</option>
+                            <option value="plumbing">Plumbing Service</option>
+                            <option value="sump-pump">Sump Pump Service</option>
+                            <option value="gasfitting">Gasfitting</option>
+                            <option value="renovation">Renovation & Improvement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                    <label for="find-265">
+                        How Did You Find Us <span>(optional)</span>
+                        <input type="text" id="find-265" name="referral" placeholder="How did you find us?" autocomplete="off">
+                    </label>
+                    <label class="cs-label-message" for="message-265">
                         Message
-                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
+                        <textarea required name="message" id="message-265" placeholder="Tell us how we can help"></textarea>
                     </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
+                    <p class="sv-form-privacy">By submitting, you agree that SquadV Plumbing may contact you about this request. Review our <a href="/privacy-policy/">Privacy Policy</a>.</p>
+                    <button class="cs-button-solid cs-submit" type="submit">Request Service</button>
                 </form>
             </div>
             <div class="cs-right-section">
                 <!--Email-->
                 <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
-                <a class="cs-link" href="mailto:{{ client.officeEmail }}">{{ client.officeEmail }}</a>
+                <a class="cs-link" href="mailto:{{ client.primaryEmail }}">{{ client.primaryEmail }}</a>
+                <a class="cs-link" href="mailto:{{ client.secondaryEmail }}">{{ client.secondaryEmail }}</a>
                 <!--Phone-->
                 <span class="cs-header">Phone</span>
                 <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
                 <!--Address-->
                 <span class="cs-header">Address</span>
                 <a class="cs-link " href="{{ client.address.mapLink }}">
-                    <p class="text-xl!" style="color: white;">432 Dunluce Rd. </p>
-                      <p class="text-xl!" style="color: white;">NW, Edmonton, AB</p> <br>
+                    <p class="text-xl!" style="color: white;">{{ client.address.lineOne }}</p>
+                      <p class="text-xl!" style="color: white;">{{ client.address.city }}, {{ client.address.state }}</p> <br>
 
                 </a>
                 <!-- Background Image-->
