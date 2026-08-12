@@ -27,7 +27,8 @@
   p, li, blockquote { font-size: clamp(1rem, 1.25vw, 1.075rem); line-height: 1.65; }
   p { color: var(--drain-muted); }
 
-  .sv-drain-wrap { width: min(100% - 2rem, 74rem); margin-inline: auto; }
+  // Keep responsive content gutters until the desktop max-width takes over.
+  .sv-drain-wrap { width: min(calc(100% - clamp(2.5rem, 8vw, 4rem)), 74rem); margin-inline: auto; }
   .sv-drain-section { padding: clamp(4rem, 8vw, 7rem) 0; }
   .sv-drain-eyebrow, .sv-drain-kicker {
     display: inline-block;
@@ -119,7 +120,7 @@
   .sv-drain-inline-cta .sv-drain-text-link { flex: none; }
 
   .sv-drain-process { background: linear-gradient(135deg, #082032, #165ca0); }
-  .sv-drain-process .sv-drain-wrap { width: min(100% - 4rem, 74rem); }
+  .sv-drain-process .sv-drain-wrap { width: min(calc(100% - clamp(2.5rem, 8vw, 4rem)), 74rem); }
   .sv-drain-heading-light h2, .sv-drain-heading-light p { color: #fff; }
   .sv-drain-heading-light p { opacity: .9; }
   .sv-drain-process .sv-drain-centered-heading { max-width: 42rem; }
@@ -275,7 +276,7 @@
 @media (max-width: 40rem) {
   .sv-drain {
     h2 { font-size: clamp(1.85rem, 9vw, 2.5rem); }
-    .sv-drain-wrap { width: min(100% - 2rem, 74rem); }
+    .sv-drain-wrap { width: min(calc(100% - 2.5rem), 74rem); }
     .sv-drain-section { padding: 3.75rem 0; }
     .sv-drain-hero { padding-top: 3.75rem; }
     .sv-drain-hero-copy h1 { font-size: clamp(2.35rem, 11vw, 3.3rem); }
@@ -285,7 +286,7 @@
     .sv-drain-hero-picture::after { right: .7rem; bottom: .7rem; font-size: .68rem; }
     .sv-drain-issue-grid, .sv-drain-check-list, .sv-drain-sign-list, .sv-drain-property-grid { grid-template-columns: 1fr; }
     .sv-drain-inline-cta { flex-direction: column; align-items: flex-start; }
-    .sv-drain-process .sv-drain-wrap { width: min(100% - 2.5rem, 74rem); }
+    .sv-drain-process .sv-drain-wrap { width: min(calc(100% - 2.5rem), 74rem); }
     .sv-drain-process .sv-drain-centered-heading { margin-bottom: 2.5rem; }
     .sv-drain-process .sv-drain-centered-heading p { max-width: 19rem; line-height: 1.55; }
     .sv-drain-process-list { --process-gap: 3rem; gap: var(--process-gap); }
