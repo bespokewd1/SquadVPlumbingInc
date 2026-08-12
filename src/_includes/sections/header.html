@@ -5,6 +5,7 @@
 <header id="cs-navigation" class="sv-site-header">
   <div class="sv-positioning-strip">
     <p>Residential <span aria-hidden="true">|</span> Commercial</p>
+    <p id="weather" class="sv-weather" aria-live="polite">Loading weather...</p>
   </div>
 
   <div class="sv-desktop-contact">
@@ -80,4 +81,32 @@
       </a>
     </div>
   </div>
+
+  <script>
+    (() => {
+      const weather = document.getElementById("weather");
+      const desktopWeather = window.matchMedia("(min-width: 768px)");
+
+      async function loadWeather() {
+        if (!weather || !desktopWeather.matches || weather.dataset.loaded === "true") return;
+
+        try {
+          const response = await fetch(
+            "https://api.openweathermap.org/data/2.5/weather?q=Edmonton&units=metric&appid=d1ce37947713b76408122f28038b18af"
+          );
+          if (!response.ok) throw new Error("Weather request failed");
+
+          const data = await response.json();
+          const temperature = Math.round(data.main.temp);
+          weather.textContent = `Current Weather: ${temperature}°C in Edmonton`;
+          weather.dataset.loaded = "true";
+        } catch (error) {
+          weather.textContent = "Unable to load weather";
+        }
+      }
+
+      loadWeather();
+      desktopWeather.addEventListener("change", loadWeather);
+    })();
+  </script>
 </header>

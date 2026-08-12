@@ -2068,6 +2068,7 @@
 /* Ticket 03: shared header clearance and compact responsive navigation */
 :root {
   --sv-mobile-header-height: 5rem;
+  --sv-tablet-header-height: 7.75rem;
   --sv-desktop-header-height: 13.25rem;
   --sv-mobile-action-clearance: 7rem;
 }
@@ -2082,6 +2083,34 @@
 
 .sv-desktop-contact {
   display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .site-main {
+    padding-top: var(--sv-tablet-header-height);
+  }
+
+  .sv-positioning-strip {
+    min-height: 2.75rem;
+    padding: .7rem 1rem;
+    color: #fff;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sv-positioning-strip p {
+    color: #ffe1a3;
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  .sv-positioning-strip .sv-weather {
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 400;
+  }
 }
 
 @media only screen and (max-width: 1023.5px) {
@@ -2202,6 +2231,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  #cs-navigation {
+    padding-inline: 0;
+  }
+
   .site-main {
     padding-top: var(--sv-desktop-header-height);
   }
@@ -2213,13 +2246,19 @@
     background: var(--primary);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .sv-positioning-strip p {
     color: #ffe1a3;
     font-size: 1.15rem;
     font-weight: 700;
+  }
+
+  .sv-positioning-strip .sv-weather {
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 400;
   }
 
   .sv-desktop-contact {
