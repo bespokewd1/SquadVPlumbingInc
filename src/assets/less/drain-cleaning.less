@@ -119,15 +119,67 @@
   .sv-drain-inline-cta .sv-drain-text-link { flex: none; }
 
   .sv-drain-process { background: linear-gradient(135deg, #082032, #165ca0); }
+  .sv-drain-process .sv-drain-wrap { width: min(100% - 4rem, 74rem); }
   .sv-drain-heading-light h2, .sv-drain-heading-light p { color: #fff; }
-  .sv-drain-heading-light p { opacity: .86; }
+  .sv-drain-heading-light p { opacity: .9; }
+  .sv-drain-process .sv-drain-centered-heading { max-width: 42rem; }
   .sv-drain-process .sv-drain-eyebrow { color: #ffba43; }
-  .sv-drain-process-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0; padding: 0; counter-reset: steps; }
-  .sv-drain-process-list li { position: relative; padding: clamp(1.4rem, 3vw, 2rem); border: 1px solid rgba(255,255,255,.2); border-radius: 1rem; background: rgba(255,255,255,.07); }
-  .sv-drain-process-list li:not(:last-child)::after { content: "→"; position: absolute; top: 1.45rem; right: -1rem; z-index: 2; width: 2rem; color: #ffba43; font-size: 1.5rem; font-weight: 900; text-align: center; }
-  .sv-drain-process-list h3 { margin: 2rem 0 .6rem; color: #fff; font-size: 1.55rem; text-transform: uppercase; }
-  .sv-drain-process-list p { margin: 0; color: #fff; opacity: .84; }
-  .sv-drain-step { display: inline-grid; width: 2.7rem; height: 2.7rem; place-items: center; border-radius: 50%; background: #fff; color: var(--drain-blue-dark); font-size: .8rem; font-weight: 900; }
+  .sv-drain-process-list {
+    --process-gap: clamp(2.25rem, 4vw, 3.5rem);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--process-gap);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .sv-drain-process-list li {
+    position: relative;
+    min-width: 0;
+    padding: clamp(1.5rem, 2.5vw, 2rem);
+    border: 1px solid rgba(255,255,255,.24);
+    border-radius: 1rem;
+    background: rgba(255,255,255,.08);
+    box-shadow: 0 1rem 2.5rem rgba(3,19,31,.12);
+  }
+  .sv-drain-process-list li::marker { content: ""; }
+  .sv-drain-process-list li:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 2.8rem;
+    left: calc(100% + .65rem);
+    width: calc(var(--process-gap) - 1.3rem);
+    height: 2px;
+    background: rgba(255,186,67,.78);
+  }
+  .sv-drain-process-list li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: calc(2.8rem - 4px);
+    left: calc(100% + var(--process-gap) - 1.2rem);
+    z-index: 2;
+    width: .55rem;
+    height: .55rem;
+    border-top: 2px solid #ffba43;
+    border-right: 2px solid #ffba43;
+    transform: rotate(45deg);
+  }
+  .sv-drain-step-heading { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+  .sv-drain-process-list h3 { margin: 0; color: #fff; font-size: 1.55rem; text-transform: uppercase; }
+  .sv-drain-process-list p { margin: 0; color: #fff; opacity: .88; }
+  .sv-drain-step {
+    display: inline-grid;
+    flex: 0 0 auto;
+    width: 2.7rem;
+    height: 2.7rem;
+    place-items: center;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--drain-blue-dark);
+    box-shadow: 0 0 0 .3rem rgba(255,255,255,.08);
+    font-size: .8rem;
+    font-weight: 900;
+  }
 
   .sv-drain-camera { background: #fff; }
   .sv-drain-camera-grid { display: grid; grid-template-columns: minmax(18rem, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
@@ -181,14 +233,39 @@
   .sv-drain-final .sv-drain-eyebrow { color: #ffba43; }
 }
 
+@media (max-width: 60rem) {
+  .sv-drain {
+    .sv-drain-process-list {
+      --process-gap: 3.5rem;
+      grid-template-columns: 1fr;
+      gap: var(--process-gap);
+      max-width: 52rem;
+      margin-inline: auto;
+    }
+    .sv-drain-process-list li { display: grid; grid-template-columns: minmax(10rem, .42fr) minmax(0, 1fr); gap: 1.25rem 2rem; align-items: center; padding: 1.6rem 1.9rem; }
+    .sv-drain-step-heading { margin-bottom: 0; }
+    .sv-drain-process-list li:not(:last-child)::before {
+      top: calc(100% + .65rem);
+      left: 50%;
+      width: 2px;
+      height: calc(var(--process-gap) - 1.3rem);
+      transform: translateX(-50%);
+    }
+    .sv-drain-process-list li:not(:last-child)::after {
+      top: calc(100% + var(--process-gap) - 1.2rem);
+      left: calc(50% - .275rem);
+      transform: rotate(135deg);
+    }
+  }
+}
+
 @media (max-width: 56rem) {
   .sv-drain {
     .sv-drain-hero-grid, .sv-drain-split, .sv-drain-camera-grid, .sv-drain-signs-grid, .sv-drain-trust-intro, .sv-drain-faq-grid, .sv-drain-final-grid { grid-template-columns: 1fr; }
     .sv-drain-hero-picture { min-height: 25rem; }
-    .sv-drain-card-grid, .sv-drain-process-list { grid-template-columns: 1fr; }
+    .sv-drain-card-grid { grid-template-columns: 1fr; }
     .sv-drain-card { min-height: 0; }
     .sv-drain-card-number { margin-bottom: 2rem; }
-    .sv-drain-process-list li:not(:last-child)::after { content: "↓"; top: auto; right: 1.25rem; bottom: -1.2rem; }
     .sv-drain-trust-intro { align-items: start; }
     .sv-drain-review-grid { grid-template-columns: 1fr; }
     .sv-drain-final-grid { align-items: start; }
@@ -198,7 +275,7 @@
 @media (max-width: 40rem) {
   .sv-drain {
     h2 { font-size: clamp(1.85rem, 9vw, 2.5rem); }
-    .sv-drain-wrap { width: min(100% - 1.5rem, 74rem); }
+    .sv-drain-wrap { width: min(100% - 2rem, 74rem); }
     .sv-drain-section { padding: 3.75rem 0; }
     .sv-drain-hero { padding-top: 3.75rem; }
     .sv-drain-hero-copy h1 { font-size: clamp(2.35rem, 11vw, 3.3rem); }
@@ -208,6 +285,16 @@
     .sv-drain-hero-picture::after { right: .7rem; bottom: .7rem; font-size: .68rem; }
     .sv-drain-issue-grid, .sv-drain-check-list, .sv-drain-sign-list, .sv-drain-property-grid { grid-template-columns: 1fr; }
     .sv-drain-inline-cta { flex-direction: column; align-items: flex-start; }
+    .sv-drain-process .sv-drain-wrap { width: min(100% - 2.5rem, 74rem); }
+    .sv-drain-process .sv-drain-centered-heading { margin-bottom: 2.5rem; }
+    .sv-drain-process .sv-drain-centered-heading p { max-width: 19rem; line-height: 1.55; }
+    .sv-drain-process-list { --process-gap: 3rem; gap: var(--process-gap); }
+    .sv-drain-process-list li { display: block; padding: 1.5rem; }
+    .sv-drain-step-heading { gap: .85rem; margin-bottom: 1rem; }
+    .sv-drain-process-list h3 { font-size: 1.4rem; }
+    .sv-drain-process-list p { line-height: 1.55; }
+    .sv-drain-process-list li:not(:last-child)::before { height: calc(var(--process-gap) - 1.3rem); }
+    .sv-drain-process-list li:not(:last-child)::after { top: calc(100% + var(--process-gap) - 1.2rem); }
     .sv-drain-camera-picture { height: 22rem; box-shadow: .55rem .55rem 0 #e7eef5; }
     .sv-drain-camera-copy .sv-drain-text-link { display: inline-block; padding: .75rem 0; text-align: center; }
     .sv-drain-final .sv-drain-actions { width: 100%; }
