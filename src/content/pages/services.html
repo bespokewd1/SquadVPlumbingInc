@@ -33,37 +33,35 @@ permalink: "/services/"
     <!-- ============================================ -->
 
     <section id="hero-143">
-        <div class="flex flex-col items-start justify-start w-[90%] lg:w-[80%]" style="margin: auto;">
-            <span class="cs-topper" style="color: var(--secondary);">Squad V Plumbing Inc. </span>
-            <h1 class="cs-title" style="margin: 0;text-align: start;">
-                Professional Plumbing & Home Improvement Services
+        <div class="cs-content">
+            <span class="cs-topper">Squad V Plumbing Inc.</span>
+            <h1 class="cs-title">
+                Professional Plumbing &amp; Home Improvement Services
             </h1>
-            <p class="cs-text" style="margin: 1rem 0 2.5rem;text-align: start;">
+            <p class="cs-text">
                 Trusted, licensed, and ready to handle projects of any size.
             </p>
-            <a href="/contact/" class="cs-button-solid">Call for Service</a>
-            <a href="/drain-cleaning-edmonton/" data-drain-link-location="services-page" class="cs-button-solid">Drain Cleaning &amp; Camera Inspection</a>
+            <div class="cs-button-group">
+                <a href="/contact/" class="cs-button-solid">Call for Service</a>
+                <a href="/drain-cleaning-edmonton/" data-drain-link-location="services-page" class="cs-button-solid">Drain Cleaning &amp; Camera Inspection</a>
+            </div>
         </div>
 
         <!-- Background Image -->
         <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1, height: 1 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="eager" decoding="async">
+            <!-- Mobile Image -->
+            <source media="(max-width: 767px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 750 }) | avif %}" type="image/avif">
+            <source media="(max-width: 767px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 750 }) | webp %}" type="image/webp">
+            <source media="(max-width: 767px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 750 }) | jpeg %}" type="image/jpeg">
+            <!-- Tablet Image -->
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1536 }) | avif %}" type="image/avif">
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1536 }) | webp %}" type="image/webp">
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1536 }) | jpeg %}" type="image/jpeg">
+            <!-- Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1878 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1878 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1878 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1878 }) | jpeg %}" alt="Licensed plumber repairing pipes underneath a kitchen sink" width="1878" height="1056" loading="eager" decoding="async">
         </picture>
     </section>
 
