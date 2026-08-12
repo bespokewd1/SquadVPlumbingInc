@@ -11,7 +11,7 @@ ogImage: "/assets/images/squadVlanding.png"
 
 {% block head %}
 {% include "components/drain-schema.html" %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 520 }) | avif %}" type="image/avif">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/drain-cleaning/drain-camera.jpg" | resize({ width: 640, height: 520 }) | avif %}" type="image/avif">
     <link rel="stylesheet" href="/assets/css/drain-cleaning.css">
 {% endblock %}
 
@@ -34,15 +34,14 @@ ogImage: "/assets/images/squadVlanding.png"
                     <li>Recommended next step explained</li>
                 </ul>
             </div>
-            <!-- Temporary general plumbing photo. Priority replacement: authentic SquadV drain-service photo. -->
-            <picture class="sv-drain-hero-picture" data-image-slot="drain-hero" data-image-status="temporary-existing-asset" data-replacement-priority="authentic-squadv">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 520 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 520 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 640, height: 520 }) | jpeg %}" type="image/jpeg">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1200, height: 1000 }) | avif %}" type="image/avif">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1200, height: 1000 }) | webp %}" type="image/webp">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1200, height: 1000 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/squadVlanding.png" | resize({ width: 1200, height: 1000 }) | jpeg %}" alt="SquadV plumber working beneath a kitchen sink" width="600" height="500" loading="eager" fetchpriority="high" decoding="async">
+            <picture class="sv-drain-hero-picture" data-image-slot="drain-hero">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drain-cleaning/drain-camera.jpg" | resize({ width: 640, height: 520 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drain-cleaning/drain-camera.jpg" | resize({ width: 640, height: 520 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drain-cleaning/drain-camera.jpg" | resize({ width: 640, height: 520 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drain-cleaning/drain-camera.jpg" | resize({ width: 1200, height: 1000 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drain-cleaning/drain-camera.jpg" | resize({ width: 1200, height: 1000 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drain-cleaning/drain-camera.jpg" | resize({ width: 1200, height: 1000 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/drain-cleaning/drain-camera.jpg" | resize({ width: 1200, height: 1000 }) | jpeg %}" alt="Drain camera inspection equipment beside an open drain pipe" width="600" height="500" loading="eager" fetchpriority="high" decoding="async">
             </picture>
         </div>
     </section>
@@ -132,15 +131,14 @@ ogImage: "/assets/images/squadVlanding.png"
 
     <section class="sv-drain-section sv-drain-camera" aria-labelledby="drain-camera-title">
         <div class="sv-drain-wrap sv-drain-camera-grid">
-            <!-- Temporary general plumbing photo; it does not depict or claim to depict camera inspection. Priority replacement: authentic SquadV camera-inspection photo. -->
-            <picture class="sv-drain-camera-picture" data-image-slot="camera-section" data-image-status="temporary-existing-general-plumbing-asset" data-replacement-priority="authentic-squadv">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 560, height: 480 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 560, height: 480 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 560, height: 480 }) | jpeg %}" type="image/jpeg">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 900, height: 760 }) | avif %}" type="image/avif">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 900, height: 760 }) | webp %}" type="image/webp">
-                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 900, height: 760 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/plumbingInAction.png" | resize({ width: 900, height: 760 }) | jpeg %}" alt="Plumber completing general pipe work beneath a sink" width="450" height="380" loading="lazy" decoding="async">
+            <picture class="sv-drain-camera-picture" data-image-slot="camera-section">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drain-cleaning/pipe-inspection.jpg" | resize({ width: 560, height: 480 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drain-cleaning/pipe-inspection.jpg" | resize({ width: 560, height: 480 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drain-cleaning/pipe-inspection.jpg" | resize({ width: 560, height: 480 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drain-cleaning/pipe-inspection.jpg" | resize({ width: 900, height: 760 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drain-cleaning/pipe-inspection.jpg" | resize({ width: 900, height: 760 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drain-cleaning/pipe-inspection.jpg" | resize({ width: 900, height: 760 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/drain-cleaning/pipe-inspection.jpg" | resize({ width: 900, height: 760 }) | jpeg %}" alt="Plumber inspecting the inside of a pipe with a drain camera" width="450" height="380" loading="lazy" decoding="async">
             </picture>
             <div class="sv-drain-camera-copy">
                 <span class="sv-drain-eyebrow">When the problem keeps returning</span>
