@@ -7,7 +7,7 @@ date: 2026-04-13T00:00:00.000Z
 tags:
     - post
     - featured
-image: /assets/images/gallery/commercial/15.webp
+image: /assets/images/gallery/plumbing/commercial-15.webp
 alt: Commercial kitchen equipment and plumbing fixtures in a service area
 imageAlt: Commercial kitchen equipment and plumbing fixtures in a service area
 ---
@@ -53,7 +53,7 @@ Look under the sink for moisture, loose fittings, or signs of water staining. A 
 Small leaks can turn into bigger plumbing repairs. If you see water, shut off the fixture if needed and call a plumber.
 
 <figure>
-  <img src="/assets/images/gallery/commercial/25.webp" alt="Commercial kitchen plumbing and equipment area with sinks and appliances" loading="lazy" decoding="async">
+  <img src="/assets/images/gallery/plumbing/commercial-25.webp" alt="Commercial kitchen plumbing and equipment area with sinks and appliances" loading="lazy" decoding="async">
   <figcaption>Project image reference: Squad V Plumbing website gallery, commercial kitchen plumbing and equipment area.</figcaption>
 </figure>
 

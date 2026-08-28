@@ -10,7 +10,7 @@ blogPinned: true
 tags:
     - post
     - featured
-image: /assets/images/gallery/residential/7.webp
+image: /assets/images/gallery/plumbing/residential-07.webp
 alt: Exposed residential plumbing pipes installed along a basement wall
 imageAlt: Exposed residential plumbing pipes installed along a basement wall
 ogCard: true

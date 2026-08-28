@@ -7,7 +7,7 @@ date: 2026-04-13T00:00:00.000Z
 tags:
     - post
     - featured
-image: /assets/images/gallery/commercial/1.webp
+image: /assets/images/gallery/plumbing/commercial-01.webp
 alt: Rinnai tankless water heaters installed in a mechanical room by Squad V Plumbing
 imageAlt: Rinnai tankless water heaters installed in a mechanical room by Squad V Plumbing
 ---
@@ -43,7 +43,7 @@ Tankless units are much smaller than many storage tanks. Rinnai describes them a
 In Edmonton renovations, this can be useful when homeowners want more usable space or need a cleaner mechanical layout.
 
 <figure>
-  <img src="/assets/images/gallery/commercial/5.webp" alt="Technician working on Rinnai tankless water heater units in a mechanical room" loading="lazy" decoding="async">
+  <img src="/assets/images/gallery/plumbing/commercial-05.webp" alt="Technician working on Rinnai tankless water heater units in a mechanical room" loading="lazy" decoding="async">
   <figcaption>Project image reference: Squad V Plumbing website gallery, commercial mechanical room tankless installation.</figcaption>
 </figure>
 

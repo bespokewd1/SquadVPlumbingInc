@@ -7,7 +7,7 @@ date: 2026-04-13T00:00:00.000Z
 tags:
     - post
     - featured
-image: /assets/images/gallery/residential/5.webp
+image: /assets/images/gallery/plumbing/residential-05.webp
 alt: Bathroom framing with rough-in plumbing in progress
 imageAlt: Bathroom framing with rough-in plumbing in progress
 ---
