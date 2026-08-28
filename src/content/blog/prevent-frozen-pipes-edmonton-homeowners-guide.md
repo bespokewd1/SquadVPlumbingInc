@@ -4,6 +4,7 @@ url: prevent-frozen-pipes-edmonton-homeowners-guide
 description: Learn how to prevent frozen pipes in Edmonton, protect vulnerable water lines, spot early warning signs, and know when to call a plumber.
 author: Squad V Plumbing Inc.
 date: 2026-09-01T00:00:00.000Z
+blogPinned: true
 tags:
     - post
     - featured

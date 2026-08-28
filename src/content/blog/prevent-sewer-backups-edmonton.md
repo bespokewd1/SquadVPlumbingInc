@@ -4,6 +4,7 @@ url: prevent-sewer-backups-edmonton
 description: Learn how Edmonton homeowners can reduce sewer-backup risk with backwater valves, sump pumps, drain maintenance, and sewer-camera inspections.
 author: Squad V Plumbing Inc.
 date: 2026-09-15T00:00:00.000Z
+blogPinned: true
 tags:
     - post
     - featured

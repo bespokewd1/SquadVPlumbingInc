@@ -4,6 +4,7 @@ url: fall-plumbing-checklist-edmonton
 description: Use this 10-point fall plumbing checklist to prepare your Edmonton home for winter, including pipes, drains, sump pumps, and outdoor faucets.
 author: Squad V Plumbing Inc.
 date: 2026-09-08T00:00:00.000Z
+blogPinned: true
 tags:
     - post
     - featured
