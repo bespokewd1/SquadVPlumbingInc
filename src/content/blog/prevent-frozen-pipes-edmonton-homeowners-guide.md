@@ -1,7 +1,9 @@
 ---
 title: "How to Prevent Frozen Pipes in Edmonton: A Homeowner's Guide Before Winter"
+metaTitle: "Prevent Frozen Pipes Edmonton | SquadV Plumbing"
+ogTitle: "How to Prevent Frozen Pipes in Edmonton"
 url: prevent-frozen-pipes-edmonton-homeowners-guide
-description: Learn how to prevent frozen pipes in Edmonton, protect vulnerable water lines, spot early warning signs, and know when to call a plumber.
+description: Protect your Edmonton home from frozen pipes by checking water lines, insulation, drafts, shutoffs, and early warning signs.
 author: Squad V Plumbing Inc.
 date: 2026-09-01T00:00:00.000Z
 blogPinned: true
@@ -11,6 +13,10 @@ tags:
 image: /assets/images/gallery/residential/7.webp
 alt: Exposed residential plumbing pipes installed along a basement wall
 imageAlt: Exposed residential plumbing pipes installed along a basement wall
+ogCard: true
+ogImage: /assets/images/blog/prevent-frozen-pipes-edmonton-homeowners-guide-og.png
+ogImageAlt: "Exposed residential plumbing beside the headline How to Prevent Frozen Pipes in Edmonton"
+ogImagePosition: "center center"
 ---
 
 Edmonton winters are hard on plumbing. Water expands as it freezes, and the pressure trapped inside a water line can split a pipe or fitting. The damage may stay hidden until the ice thaws and water begins leaking into a wall, ceiling, cabinet, or basement.

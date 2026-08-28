@@ -1,7 +1,9 @@
 ---
 title: "Frozen Pipe Burst in Your Edmonton Home? What to Do Before the Plumber Arrives"
+metaTitle: "Burst Pipe in Edmonton: What to Do | SquadV Plumbing"
+ogTitle: "Frozen Pipe Burst in Edmonton? What to Do First"
 url: frozen-pipe-burst-edmonton-what-to-do
-description: Learn what to do when a frozen pipe bursts in an Edmonton home, how to stop the water, and whether to call EPCOR or a plumber.
+description: Learn how to stop the water, limit damage, and decide whether to call EPCOR or a plumber after a frozen pipe bursts.
 author: Squad V Plumbing Inc.
 date: 2027-01-06T00:00:00.000Z
 tags:
@@ -9,6 +11,10 @@ tags:
 image: /assets/images/leak.png
 alt: Plumber working on a leaking pipe beneath a sink
 imageAlt: Plumber working on a leaking pipe beneath a sink
+ogCard: true
+ogImage: /assets/images/blog/frozen-pipe-burst-edmonton-what-to-do-og.png
+ogImageAlt: "Leaking sink pipe repair beside the headline Frozen Pipe Burst in Edmonton? What to Do First"
+ogImagePosition: "center center"
 ---
 
 A frozen pipe does not always leak while it is still frozen. Ice can hold back the water until the pipe begins to thaw. The first warning may be a stain, dripping behind a cabinet, water on the basement floor, or the sound of water moving when every fixture is off.

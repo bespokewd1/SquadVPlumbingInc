@@ -1,7 +1,9 @@
 ---
 title: "Kitchen Sink Clogged After a Holiday Meal? An Edmonton Homeowner's Next Steps"
+metaTitle: "Holiday Sink Clog Edmonton | SquadV Plumbing"
+ogTitle: "Holiday Kitchen Sink Clog in Edmonton: What to Do"
 url: holiday-kitchen-sink-clog-edmonton
-description: Learn what causes holiday kitchen clogs, how to tell a sink blockage from a sewer-line problem, and when to call an Edmonton plumber.
+description: Find out what causes holiday kitchen clogs, what to stop using, and when a blocked sink may signal a sewer line problem.
 author: Squad V Plumbing Inc.
 date: 2026-12-16T00:00:00.000Z
 tags:
@@ -9,6 +11,10 @@ tags:
 image: /assets/images/drain-cleaning/drain-camera-inspection.jpg
 alt: Drain camera equipment at a plumbing inspection inside a home
 imageAlt: Drain camera equipment at a plumbing inspection inside a home
+ogCard: true
+ogImage: /assets/images/blog/holiday-kitchen-sink-clog-edmonton-og.png
+ogImageAlt: "Drain camera inspection beside the headline Holiday Kitchen Sink Clog in Edmonton: What to Do"
+ogImagePosition: "left center"
 ---
 
 A busy holiday kitchen sends more food scraps, grease, and dishwater through the sink than it sees on an ordinary day. When the sink suddenly drains slowly or stops altogether, the immediate question is whether the blockage is close to the fixture or farther down the home's drainage system.

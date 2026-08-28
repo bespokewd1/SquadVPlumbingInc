@@ -21,6 +21,8 @@ collections:
       slug: "{{slug}}"
       fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Search Title", name: "metaTitle", widget: "string", required: false, hint: "Keep this under 60 characters. This does not replace the visible article headline." }
+          - { label: "Social Title", name: "ogTitle", widget: "string", required: false, hint: "Short title used in social previews and on the branded OG card." }
           - {
                 label: "URL Slug",
                 name: "url",
@@ -33,4 +35,8 @@ collections:
           - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
           - { label: "Featured Image", name: "image", widget: "image" }
           - { label: "Image Caption", name: "imageAlt", widget: "string" }
+          - { label: "Create Branded OG Card", name: "ogCard", widget: "boolean", default: false, required: false }
+          - { label: "OG Image", name: "ogImage", widget: "image", required: false }
+          - { label: "OG Image Description", name: "ogImageAlt", widget: "string", required: false }
+          - { label: "OG Hero Position", name: "ogImagePosition", widget: "string", default: "center center", required: false, hint: "CSS object-position used by the OG image studio, for example center center or left center." }
           - { label: "Body", name: "body", widget: "markdown" }
