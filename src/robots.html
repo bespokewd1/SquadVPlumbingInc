@@ -3,9 +3,28 @@ permalink: /robots.txt
 layout: null
 eleventyExcludeFromCollections: true
 ---
+User-agent: OAI-SearchBot
+Disallow: /admin/
+Allow: /
+
+User-agent: Claude-SearchBot
+Disallow: /admin/
+Allow: /
+
+User-agent: Claude-User
+Disallow: /admin/
+Allow: /
+
+User-agent: PerplexityBot
+Disallow: /admin/
+Allow: /
+
+User-agent: Google-Extended
+Disallow: /admin/
+Allow: /
+
 User-agent: *
 Disallow: /admin/
 Allow: /
 
 Sitemap: {{ client.domain }}/sitemap.xml
- 

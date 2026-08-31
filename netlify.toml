@@ -10,3 +10,6 @@ package = "netlify-plugin-cache"
     "public/assets/images", # Processed images - adjust to match your outputDir
     ".cache" # Remote Assets
   ]
+
+[[context.production.plugins]]
+package = "./plugins/netlify-plugin-indexnow"

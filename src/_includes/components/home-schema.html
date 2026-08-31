@@ -1,12 +1,17 @@
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "Plumber",
         "@id": "{{ client.domain }}/#business",
-        "name": "{{ client.name }}",
-        {% if preloadImg %}"image": "{{ client.domain }}{{ preloadImg }}",{% endif %}
+        "name": "{{ client.name | escape }}",
+        "legalName": "{{ client.name | escape }}",
+        "alternateName": "{{ client.brandName | escape }}",
+        "description": "Licensed and insured plumbing, gasfitting, and renovation services for homes and businesses in Edmonton and surrounding areas.",
+        "url": "{{ client.domain }}",
+        "logo": "{{ client.domain }}/assets/svgs/logo-black.svg",
+        "image": "{{ client.domain }}{{ client.defaultOgImage }}",
         "telephone": "{{ client.phoneForTel }}",
-        "email": "{{ client.email }}",
+        "email": "{{ client.primaryEmail }}",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "{{ client.address.lineOne }}",
@@ -15,9 +20,19 @@
             "addressCountry": "{{ client.address.country }}"
         },
         "areaServed": "{{ client.serviceArea }}",
-        "openingHours": ["{{ client.hours.weekdays }}"],
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "07:00",
+            "closes": "17:00"
+        },
         "hasMap": "{{ client.googleBusiness }}",
-        "url": "{{ client.domain }}",
         "sameAs": ["{{ client.socials.facebook }}"]
     }
 </script>
