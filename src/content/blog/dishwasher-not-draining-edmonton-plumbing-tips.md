@@ -1,4 +1,15 @@
 ---
+metaTitle: "Dishwasher Not Draining Edmonton | Squad V Plumbing"
+ogCard: true
+ogTitle: "Dishwasher Not Draining? Checks for Edmonton Homes"
+ogDescription: "Check the filter, hose, sink drain, and visible leaks before deciding if your dishwasher needs a plumber or appliance repair."
+ogHeadline: "Dishwasher not draining? Start here."
+ogDetail: "Simple checks before you book a service call"
+ogAction: "Read the checks"
+ogPhoto: "/assets/images/gallery/plumbing/commercial-15.webp"
+ogPhotoAlt: "Commercial kitchen with stainless steel sinks, preparation counters, and cooking equipment"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with commercial kitchen with stainless steel sinks, preparation counters, and cooking equipment. Headline: Dishwasher not draining? Start here. Simple checks before you book a service call. Read the checks at squadvplumbing.ca."
 title: Dishwasher Not Draining? Edmonton Plumbing Tips Before You Call
 url: dishwasher-not-draining-edmonton-plumbing-tips
 description: Dishwasher not draining in Edmonton? Learn simple plumbing checks, when to stop DIY, and when to call Squad V Plumbing for kitchen drain help.

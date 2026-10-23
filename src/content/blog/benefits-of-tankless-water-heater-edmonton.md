@@ -1,4 +1,15 @@
 ---
+metaTitle: "Tankless Water Heater Benefits Edmonton | Squad V Plumbing"
+ogCard: true
+ogTitle: "Tankless Water Heater Benefits for Edmonton Homes"
+ogDescription: "Compare tankless water heater comfort, efficiency, sizing, and space benefits before choosing a system for an Edmonton home."
+ogHeadline: "Is tankless right for your Edmonton home?"
+ogDetail: "Hot water comfort, sizing & space savings"
+ogAction: "Read the guide"
+ogPhoto: "/assets/images/gallery/plumbing/commercial-01.webp"
+ogPhotoAlt: "Tankless water heater units with pipework and venting in a mechanical room"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with tankless water heater units with pipework and venting in a mechanical room. Headline: Is tankless right for your Edmonton home? Hot water comfort, sizing & space savings. Read the guide at squadvplumbing.ca."
 title: Benefits of a Tankless Water Heater for Edmonton Homes
 url: benefits-of-tankless-water-heater-edmonton
 description: Learn tankless water heater benefits for Edmonton homes, including hot water comfort, energy savings, compact size, and Rinnai installation.

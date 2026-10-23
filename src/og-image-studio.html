@@ -8,8 +8,14 @@ eleventyExcludeFromCollections: true
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>OG Image Studio</title>
+    <meta name="robots" content="noindex, follow" />
+    <title>Open Graph image studio | Squad V Plumbing</title>
+    <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any" />
+    <script>
+      if (new URLSearchParams(window.location.search).get("export") === "1") {
+        document.documentElement.dataset.ogExport = "true";
+      }
+    </script>
     <style>
       @font-face {
         font-family: "Roboto";
@@ -38,8 +44,12 @@ eleventyExcludeFromCollections: true
       :root {
         color-scheme: light;
         font-family: "Roboto", Arial, sans-serif;
-        background: #e8edf2;
-        color: #172433;
+        font-kerning: normal;
+        color: #0b3157;
+        background: #edf1f5;
+        --og-blue: #165ca0;
+        --og-red: #df2529;
+        --og-ink: #0b3157;
       }
 
       * {
@@ -47,244 +57,280 @@ eleventyExcludeFromCollections: true
       }
 
       body {
-        min-width: 1248px;
         margin: 0;
-        background:
-          linear-gradient(rgba(22, 92, 160, 0.04) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(22, 92, 160, 0.04) 1px, transparent 1px),
-          #e8edf2;
-        background-size: 32px 32px;
       }
 
       .studio-header,
       .studio-list {
-        width: 1200px;
+        width: min(1200px, calc(100% - 48px));
         margin-inline: auto;
       }
 
       .studio-header {
-        padding: 56px 0 34px;
+        padding-block: 48px 32px;
       }
 
       .studio-header h1 {
-        margin: 0 0 12px;
-        color: #0b3157;
-        font-size: 42px;
-        line-height: 1;
+        margin: 0 0 16px;
+        font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.025em;
+        text-wrap: balance;
       }
 
       .studio-header p {
-        max-width: 820px;
+        max-width: 68ch;
         margin: 0;
-        color: #526171;
-        font-size: 18px;
+        color: #334f68;
+        font-size: 1.125rem;
         line-height: 1.55;
+        text-wrap: pretty;
+      }
+
+      .studio-tools {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px 24px;
+        margin-top: 12px;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .studio-tools span {
+        color: #334f68;
+      }
+
+      .studio-tools a,
+      .studio-label a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        color: var(--og-blue);
+        text-underline-offset: 0.2em;
+      }
+
+      .studio-tools a:focus-visible,
+      .studio-label a:focus-visible {
+        outline: 3px solid var(--og-blue);
+        outline-offset: 4px;
       }
 
       .studio-list {
-        display: grid;
-        gap: 64px;
-        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-bottom: 64px;
       }
 
       .studio-item {
+        min-width: 0;
         margin: 0;
       }
 
       .studio-label {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        gap: 24px;
-        margin-bottom: 12px;
-        color: #526171;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.02em;
+        gap: 4px 24px;
+        margin-bottom: 8px;
+        color: var(--og-ink);
+        font-size: 1rem;
+        line-height: 1.5;
       }
 
-      .studio-label code {
-        font-family: Consolas, "Courier New", monospace;
-        font-weight: 400;
+      .studio-label span {
+        font-weight: 700;
+      }
+
+      .studio-label a {
+        overflow-wrap: anywhere;
+      }
+
+      .studio-preview {
+        width: 100%;
+        aspect-ratio: 1200 / 630;
+        overflow: hidden;
+        background: #ffffff;
       }
 
       .og-card {
-        position: relative;
-        isolation: isolate;
         display: grid;
         grid-template-columns: 56% 44%;
         width: 1200px;
         height: 630px;
         overflow: hidden;
-        border: 1px solid #c8d3dd;
-        background: #f8fafb;
+        background: #ffffff;
+        transform: scale(var(--og-scale, 1));
+        transform-origin: top left;
       }
 
       .og-card-copy {
-        position: relative;
-        z-index: 2;
         display: flex;
         flex-direction: column;
         min-width: 0;
-        padding: 54px 62px 50px 64px;
-        background:
-          radial-gradient(circle at 6% 94%, rgba(22, 92, 160, 0.09) 0 3px, transparent 4px),
-          linear-gradient(135deg, #ffffff 0%, #f6f8fa 68%, #eef3f7 100%);
-        background-size: 20px 20px, auto;
-      }
-
-      .og-card-copy::after {
-        position: absolute;
-        top: 0;
-        right: -22px;
-        width: 44px;
-        height: 100%;
-        background: #f6f8fa;
-        clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%, 50% 50%);
-        content: "";
+        padding: 52px 56px;
+        background: #ffffff;
       }
 
       .og-card-brand {
-        width: 238px;
+        display: block;
+        width: 244px;
         height: auto;
-        margin-bottom: 44px;
-      }
-
-      .og-card-kicker {
-        display: flex;
-        align-items: center;
-        gap: 13px;
-        margin-bottom: 18px;
-        color: #165ca0;
-        font-size: 17px;
-        font-weight: 900;
-        letter-spacing: 0.13em;
-        text-transform: uppercase;
-      }
-
-      .og-card-kicker::before {
-        width: 38px;
-        height: 5px;
-        background: #df2529;
-        content: "";
+        margin-bottom: 36px;
       }
 
       .og-card-title {
-        max-width: 540px;
         margin: 0;
-        color: #0b3157;
-        font-size: 56px;
+        color: var(--og-ink);
+        font-size: 60px;
         font-weight: 900;
-        line-height: 1.04;
-        letter-spacing: -0.035em;
+        line-height: 1.06;
+        letter-spacing: -0.025em;
         text-wrap: balance;
+      }
+
+      .og-card-detail {
+        margin: 16px 0 0;
+        color: #334f68;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.3;
+        text-wrap: pretty;
       }
 
       .og-card-footer {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
         gap: 24px;
         margin-top: auto;
+        padding-top: 24px;
       }
 
-      .og-card-cta {
+      .og-card-action {
         display: inline-flex;
         align-items: center;
-        gap: 13px;
-        min-height: 48px;
-        padding: 0 21px;
-        background: #df2529;
+        justify-content: center;
+        min-height: 56px;
+        padding: 12px 24px;
+        border-radius: 4px;
+        background: var(--og-red);
         color: #ffffff;
-        font-size: 16px;
-        font-weight: 900;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-      }
-
-      .og-card-cta span {
         font-size: 24px;
-        line-height: 1;
+        font-weight: 700;
+        line-height: 1.25;
+        white-space: nowrap;
       }
 
       .og-card-domain {
-        padding-bottom: 4px;
-        color: #496277;
-        font-size: 16px;
+        margin: 0;
+        color: var(--og-blue);
+        font-size: 24px;
         font-weight: 700;
+        line-height: 1.25;
+        white-space: nowrap;
+      }
+
+      .og-card[data-kind="utility"] .og-card-action {
+        background: var(--og-blue);
       }
 
       .og-card-image {
-        position: relative;
         min-width: 0;
-        background: #0b3157;
-      }
-
-      .og-card-image::before,
-      .og-card-image::after {
-        position: absolute;
-        z-index: 1;
-        content: "";
-        pointer-events: none;
-      }
-
-      .og-card-image::before {
-        inset: 0;
-        background:
-          linear-gradient(90deg, rgba(11, 49, 87, 0.18), transparent 22%),
-          linear-gradient(180deg, transparent 66%, rgba(11, 49, 87, 0.42));
-      }
-
-      .og-card-image::after {
-        top: 32px;
-        right: 0;
-        width: 116px;
-        height: 13px;
-        border-left: 40px solid #165ca0;
-        background: #df2529;
+        min-height: 0;
+        background: var(--og-ink);
       }
 
       .og-card-image img {
+        display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
 
-      .og-card-service {
-        position: absolute;
-        z-index: 2;
-        right: 32px;
-        bottom: 30px;
-        padding: 11px 15px;
-        border: 1px solid rgba(255, 255, 255, 0.7);
-        background: rgba(11, 49, 87, 0.82);
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+      @media (max-width: 600px) {
+        .studio-header,
+        .studio-list {
+          width: calc(100% - 32px);
+        }
+
+        .studio-header {
+          padding-block: 32px 24px;
+        }
+
+        .studio-list {
+          gap: 32px;
+          padding-bottom: 40px;
+        }
+
+        .studio-label {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+
+      html[data-og-export="true"],
+      html[data-og-export="true"] body {
+        width: 1200px;
+        margin: 0;
+        background: #ffffff;
+      }
+
+      html[data-og-export="true"] .studio-header,
+      html[data-og-export="true"] .studio-label {
+        display: none;
+      }
+
+      html[data-og-export="true"] .studio-list {
+        display: block;
+        width: 1200px;
+        margin: 0;
+        padding: 0;
+      }
+
+      html[data-og-export="true"] .studio-preview {
+        width: 1200px;
+        height: 630px;
+        aspect-ratio: auto;
+      }
+
+      html[data-og-export="true"] .og-card {
+        transform: none;
       }
     </style>
   </head>
   <body>
     <header class="studio-header">
-      <h1>Squad V OG Image Studio</h1>
+      <h1>Open Graph image studio</h1>
       <p>
-        Each card is exactly 1200 x 630 CSS pixels. At 100% browser zoom, inspect
-        the card element and select <strong>Capture node screenshot</strong>. Save
-        it using the filename shown above the card.
+        Review the images used when Squad V pages are shared. Each card keeps its
+        1200 &times; 630 layout and scales to fit this screen.
       </p>
+      <nav class="studio-tools" aria-label="Studio views">
+        <span>{{ collections.ogCards | length }} cards</span>
+        <a href="/og-image-studio/?export=1">Open full-size export layout</a>
+      </nav>
     </header>
 
-    <main class="studio-list">
-      {% for post in collections.post %}
-        {% if post.data.ogCard %}
-          <figure class="studio-item">
-            <figcaption class="studio-label">
-              <span>{{ post.data.ogTitle }}</span>
-              <code>{{ post.data.ogImage }}</code>
-            </figcaption>
-            <article class="og-card" aria-label="Open Graph card for {{ post.data.ogTitle | escape }}">
+    <main class="studio-list" aria-label="Open Graph card previews">
+      {% for card in collections.ogCards %}
+        <figure class="studio-item">
+          <figcaption class="studio-label">
+            <span>{{ card.title | escape }}</span>
+            <a href="{{ card.route | escape }}">{{ card.route | escape }}</a>
+          </figcaption>
+          <div class="studio-preview">
+            <article
+              class="og-card"
+              data-og-card="{{ card.key | escape }}"
+              data-kind="{{ card.kind | escape }}"
+              aria-labelledby="og-title-{{ card.key | escape }}"
+              {% if card.detail %}aria-describedby="og-detail-{{ card.key | escape }}"{% endif %}
+            >
               <div class="og-card-copy">
                 <img
                   class="og-card-brand"
@@ -293,27 +339,48 @@ eleventyExcludeFromCollections: true
                   width="500"
                   height="176"
                 />
-                <div class="og-card-kicker">Edmonton homeowner guide</div>
-                <h2 class="og-card-title">{{ post.data.ogTitle }}</h2>
+                <h2 class="og-card-title" id="og-title-{{ card.key | escape }}" data-og-text="title">{{ card.headline | escape }}</h2>
+                {% if card.detail %}
+                  <p class="og-card-detail" id="og-detail-{{ card.key | escape }}" data-og-text="detail">{{ card.detail | escape }}</p>
+                {% endif %}
                 <div class="og-card-footer">
-                  <div class="og-card-cta">Read the guide <span aria-hidden="true">&rarr;</span></div>
-                  <div class="og-card-domain">squadvplumbing.ca</div>
+                  <span class="og-card-action" data-og-text="action">{{ card.action | escape }}</span>
+                  <p class="og-card-domain" data-og-text="domain">squadvplumbing.ca</p>
                 </div>
               </div>
               <div class="og-card-image">
                 <img
-                  src="{{ post.data.image }}"
-                  alt="{{ post.data.alt | escape }}"
-                  style="object-position: {{ post.data.ogImagePosition or 'center center' }}"
+                  src="{{ card.photo | escape }}"
+                  alt="{{ card.photoAlt | escape }}"
+                  style="object-position: {{ card.photoPosition | escape }}"
                   width="528"
                   height="630"
                 />
-                <div class="og-card-service">Local plumbing advice</div>
               </div>
             </article>
-          </figure>
-        {% endif %}
+          </div>
+        </figure>
       {% endfor %}
     </main>
+
+    <script type="application/json" id="og-card-data">{{ collections.ogCards | ogJson | safe }}</script>
+    <script>
+      if (document.documentElement.dataset.ogExport !== "true") {
+        const previews = document.querySelectorAll(".studio-preview");
+        const scalePreview = (preview, width) => {
+          preview.style.setProperty("--og-scale", Math.min(width / 1200, 1));
+        };
+        const previewObserver = new ResizeObserver((entries) => {
+          for (const entry of entries) {
+            scalePreview(entry.target, entry.contentRect.width);
+          }
+        });
+
+        for (const preview of previews) {
+          scalePreview(preview, preview.getBoundingClientRect().width);
+          previewObserver.observe(preview);
+        }
+      }
+    </script>
   </body>
 </html>

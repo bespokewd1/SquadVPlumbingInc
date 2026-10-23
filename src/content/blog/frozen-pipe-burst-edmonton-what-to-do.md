@@ -1,7 +1,16 @@
 ---
-title: "Frozen Pipe Burst in Your Edmonton Home? What to Do Before the Plumber Arrives"
-metaTitle: "Burst Pipe in Edmonton: What to Do | SquadV Plumbing"
+metaTitle: "Burst Pipe in Edmonton: What to Do | Squad V Plumbing"
+ogCard: true
 ogTitle: "Frozen Pipe Burst in Edmonton? What to Do First"
+ogDescription: "Learn how to stop water, limit damage, avoid hazards, and choose between EPCOR and a plumber after a frozen pipe bursts."
+ogHeadline: "Frozen pipe burst? What to do first"
+ogDetail: "Stop the water. Limit damage. Get the right help."
+ogAction: "Read the next steps"
+ogPhoto: "/assets/images/leak.png"
+ogPhotoAlt: "Hands using a wrench on chrome drain pipe connections beneath a sink"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with hands using a wrench on chrome drain pipe connections beneath a sink. Headline: Frozen pipe burst? What to do first. Stop the water. Limit damage. Get the right help. Read the next steps at squadvplumbing.ca."
+title: "Frozen Pipe Burst in Your Edmonton Home? What to Do Before the Plumber Arrives"
 url: frozen-pipe-burst-edmonton-what-to-do
 description: Learn how to stop the water, limit damage, and decide whether to call EPCOR or a plumber after a frozen pipe bursts.
 author: Squad V Plumbing Inc.
@@ -11,10 +20,6 @@ tags:
 image: /assets/images/leak.png
 alt: Plumber working on a leaking pipe beneath a sink
 imageAlt: Plumber working on a leaking pipe beneath a sink
-ogCard: true
-ogImage: /assets/images/blog/frozen-pipe-burst-edmonton-what-to-do-og.png
-ogImageAlt: "Leaking sink pipe repair beside the headline Frozen Pipe Burst in Edmonton? What to Do First"
-ogImagePosition: "center center"
 ---
 
 A frozen pipe does not always leak while it is still frozen. Ice can hold back the water until the pipe begins to thaw. The first warning may be a stain, dripping behind a cabinet, water on the basement floor, or the sound of water moving when every fixture is off.

@@ -1,7 +1,16 @@
 ---
+metaTitle: "Holiday Sink Clog Edmonton | Squad V Plumbing"
+ogCard: true
+ogTitle: "Holiday Kitchen Sink Clog in Edmonton: Next Steps"
+ogDescription: "Learn what to stop using after a sink clog, how grease blocks drains, and when other fixtures point to a sewer problem."
+ogHeadline: "Holiday meal over. Kitchen sink blocked?"
+ogDetail: "What to stop using & when to call a plumber"
+ogAction: "Read the next steps"
+ogPhoto: "/assets/images/drain-cleaning/drain-camera.jpg"
+ogPhotoAlt: "Drain inspection camera with a monitor and cable equipment beside an open pipe"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with drain inspection camera with a monitor and cable equipment beside an open pipe. Headline: Holiday meal over. Kitchen sink blocked? What to stop using & when to call a plumber. Read the next steps at squadvplumbing.ca."
 title: "Kitchen Sink Clogged After a Holiday Meal? An Edmonton Homeowner's Next Steps"
-metaTitle: "Holiday Sink Clog Edmonton | SquadV Plumbing"
-ogTitle: "Holiday Kitchen Sink Clog in Edmonton: What to Do"
 url: holiday-kitchen-sink-clog-edmonton
 description: Find out what causes holiday kitchen clogs, what to stop using, and when a blocked sink may signal a sewer line problem.
 author: Squad V Plumbing Inc.
@@ -11,10 +20,6 @@ tags:
 image: /assets/images/drain-cleaning/drain-camera-inspection.jpg
 alt: Drain camera equipment at a plumbing inspection inside a home
 imageAlt: Drain camera equipment at a plumbing inspection inside a home
-ogCard: true
-ogImage: /assets/images/blog/holiday-kitchen-sink-clog-edmonton-og.png
-ogImageAlt: "Drain camera inspection beside the headline Holiday Kitchen Sink Clog in Edmonton: What to Do"
-ogImagePosition: "left center"
 ---
 
 A busy holiday kitchen sends more food scraps, grease, and dishwater through the sink than it sees on an ordinary day. When the sink suddenly drains slowly or stops altogether, the immediate question is whether the blockage is close to the fixture or farther down the home's drainage system.

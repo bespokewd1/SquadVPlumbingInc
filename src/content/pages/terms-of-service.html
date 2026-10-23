@@ -1,18 +1,22 @@
 ---
-title: "Terms Of Service | Squad V Plumbing Inc."
-description: |
-  Squad V Plumbing Inc. - Providing efficient, reliable plumbing, heating, and gas services with 15+ years of experience. Trusted solutions for homes and businesses in Edmonton.
+title: "Terms of Service | Squad V Plumbing Inc."
+description: "Read the terms for using the Squad V Plumbing Inc. website and services, including estimates, payments, site content, and limitations of liability."
+ogCard: true
+ogTitle: "Terms of Service for the Squad V Plumbing Website"
+ogDescription: "Read the terms for using the Squad V Plumbing website and services, including estimates, payments, and site content."
+ogHeadline: "Website & service terms"
+ogDetail: "Estimates, payments & website use"
+ogAction: "Read the terms"
+ogPhoto: "/assets/images/plumbingInAction.png"
+ogPhotoAlt: "A plumber working on the drain connections beneath a bathroom sink"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with a plumber working on the drain connections beneath a bathroom sink. Headline: Website & service terms. Estimates, payments & website use. Read the terms at squadvplumbing.ca."
+ogKind: "utility"
 permalink: "terms-of-service/"
 eleventyNavigation:
 ---
 
 {% block head %}
-<meta property="og:title" content="{{ title }}" />
-<meta property="og:description" content="{{ description }}" />
-<meta
-  property="og:image"
-  content="{{ client.domain }}/assets/images/og_image.jpg"
-/>
 
     <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if client.isProduction %}

@@ -1,4 +1,15 @@
 ---
+metaTitle: "Renovation Plumbing Tips Edmonton | Squad V Plumbing"
+ogCard: true
+ogTitle: "Plumbing Tips Before Your Edmonton Renovation"
+ogDescription: "Plan fixture locations, rough-ins, shutoff access, water heater needs, and gasfitting before your Edmonton renovation begins."
+ogHeadline: "Plan the plumbing before you renovate"
+ogDetail: "Kitchens, bathrooms & basement rough-ins"
+ogAction: "Read the planning tips"
+ogPhoto: "/assets/images/gallery/plumbing/residential-05.webp"
+ogPhotoAlt: "Bathroom wall framing with water lines and drain rough-ins before the walls are closed"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with bathroom wall framing with water lines and drain rough-ins before the walls are closed. Headline: Plan the plumbing before you renovate. Kitchens, bathrooms & basement rough-ins. Read the planning tips at squadvplumbing.ca."
 title: Plumbing Tips Before a Kitchen or Bathroom Renovation in Edmonton
 url: renovation-plumbing-tips-edmonton
 description: Planning a kitchen, bathroom, or basement renovation in Edmonton? Learn plumbing tips for rough-ins, fixture placement, leaks, and water heater planning.

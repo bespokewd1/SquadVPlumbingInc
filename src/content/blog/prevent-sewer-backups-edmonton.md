@@ -1,7 +1,16 @@
 ---
+metaTitle: "Prevent Sewer Backups Edmonton | Squad V Plumbing"
+ogCard: true
+ogTitle: "Prevent Sewer Backups in Edmonton: A Home Guide"
+ogDescription: "Reduce sewer backup risk with drain care, backwater valve maintenance, sump pump checks, and inspection of recurring clogs."
+ogHeadline: "Reduce your risk of a sewer backup"
+ogDetail: "Drain care, backwater valves & sump pumps"
+ogAction: "Read the guide"
+ogPhoto: "/assets/images/drain-cleaning/drain-camera.jpg"
+ogPhotoAlt: "Sewer inspection camera monitor and equipment set up beside an open pipe"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with sewer inspection camera monitor and equipment set up beside an open pipe. Headline: Reduce your risk of a sewer backup. Drain care, backwater valves & sump pumps. Read the guide at squadvplumbing.ca."
 title: "How to Prevent Sewer Backups in Edmonton: Backwater Valves, Sump Pumps & More"
-metaTitle: "Prevent Sewer Backups Edmonton | SquadV Plumbing"
-ogTitle: "How to Prevent Sewer Backups in Edmonton"
 url: prevent-sewer-backups-edmonton
 description: Reduce sewer backup risk with backwater valve care, sump pump checks, drain maintenance, and sewer camera inspections.
 author: Squad V Plumbing Inc.
@@ -13,10 +22,6 @@ tags:
 image: /assets/images/drain-cleaning/drain-camera.jpg
 alt: Drain camera equipment used to inspect an Edmonton sewer line
 imageAlt: Drain camera equipment used to inspect an Edmonton sewer line
-ogCard: true
-ogImage: /assets/images/blog/prevent-sewer-backups-edmonton-og.png
-ogImageAlt: "Drain camera equipment beside the headline How to Prevent Sewer Backups in Edmonton"
-ogImagePosition: "center center"
 ---
 
 A sewer backup can send contaminated water through a basement floor drain, toilet, shower, or sink. The immediate cleanup is difficult, but the damage can also affect flooring, drywall, furniture, electrical equipment, and indoor air quality.

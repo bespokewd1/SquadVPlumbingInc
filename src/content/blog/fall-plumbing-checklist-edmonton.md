@@ -1,7 +1,16 @@
 ---
+metaTitle: "Fall Plumbing Checklist Edmonton | Squad V Plumbing"
+ogCard: true
+ogTitle: "Fall Plumbing Checklist for Edmonton Homeowners"
+ogDescription: "Prepare your Edmonton home for winter with ten checks for faucets, pipes, leaks, water heaters, drains, and sump pumps."
+ogHeadline: "Your fall plumbing checklist"
+ogDetail: "10 checks before Edmonton winter arrives"
+ogAction: "Read the checklist"
+ogPhoto: "/assets/images/residential.png"
+ogPhotoAlt: "Gloved hands inspecting residential pipework with a plumbing tool"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with gloved hands inspecting residential pipework with a plumbing tool. Headline: Your fall plumbing checklist. 10 checks before Edmonton winter arrives. Read the checklist at squadvplumbing.ca."
 title: "Fall Plumbing Checklist: 10 Things Edmonton Homeowners Should Check Before Winter"
-metaTitle: "Fall Plumbing Checklist Edmonton | SquadV Plumbing"
-ogTitle: "Fall Plumbing Checklist for Edmonton Homes"
 url: fall-plumbing-checklist-edmonton
 description: Prepare your Edmonton home for winter with 10 checks for pipes, drains, sump pumps, outdoor faucets, leaks, and more.
 author: Squad V Plumbing Inc.
@@ -13,10 +22,6 @@ tags:
 image: /assets/images/residential.png
 alt: Squad V Plumbing residential plumbing service in an Edmonton home
 imageAlt: Squad V Plumbing residential plumbing service in an Edmonton home
-ogCard: true
-ogImage: /assets/images/blog/fall-plumbing-checklist-edmonton-og.png
-ogImageAlt: "Plumber inspecting residential pipes beside the headline Fall Plumbing Checklist for Edmonton Homes"
-ogImagePosition: "center center"
 ---
 
 Fall is the right time to find plumbing problems that could become emergencies during an Edmonton cold snap. A loose outdoor hose, a slow basement drain, or an untested sump pump may seem minor in September. It is much harder to deal with after the ground freezes or snow begins to melt.

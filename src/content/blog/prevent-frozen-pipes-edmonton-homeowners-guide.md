@@ -1,7 +1,16 @@
 ---
+metaTitle: "Prevent Frozen Pipes Edmonton | Squad V Plumbing"
+ogCard: true
+ogTitle: "Prevent Frozen Pipes in Edmonton Before Winter"
+ogDescription: "Check vulnerable water lines, insulation, drafts, outdoor faucets, and shutoffs before an Edmonton cold snap or winter trip."
+ogHeadline: "Prevent frozen pipes before winter"
+ogDetail: "Practical checks for Edmonton homeowners"
+ogAction: "Read the guide"
+ogPhoto: "/assets/images/gallery/plumbing/residential-07.webp"
+ogPhotoAlt: "Water supply and drain lines exposed behind the framing of a bathroom wall"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with water supply and drain lines exposed behind the framing of a bathroom wall. Headline: Prevent frozen pipes before winter. Practical checks for Edmonton homeowners. Read the guide at squadvplumbing.ca."
 title: "How to Prevent Frozen Pipes in Edmonton: A Homeowner's Guide Before Winter"
-metaTitle: "Prevent Frozen Pipes Edmonton | SquadV Plumbing"
-ogTitle: "How to Prevent Frozen Pipes in Edmonton"
 url: prevent-frozen-pipes-edmonton-homeowners-guide
 description: Protect your Edmonton home from frozen pipes by checking water lines, insulation, drafts, shutoffs, and early warning signs.
 author: Squad V Plumbing Inc.
@@ -13,10 +22,6 @@ tags:
 image: /assets/images/gallery/plumbing/residential-07.webp
 alt: Exposed residential plumbing pipes installed along a basement wall
 imageAlt: Exposed residential plumbing pipes installed along a basement wall
-ogCard: true
-ogImage: /assets/images/blog/prevent-frozen-pipes-edmonton-homeowners-guide-og.png
-ogImageAlt: "Exposed residential plumbing beside the headline How to Prevent Frozen Pipes in Edmonton"
-ogImagePosition: "center center"
 ---
 
 Edmonton winters are hard on plumbing. Water expands as it freezes, and the pressure trapped inside a water line can split a pipe or fitting. The damage may stay hidden until the ice thaws and water begins leaking into a wall, ceiling, cabinet, or basement.

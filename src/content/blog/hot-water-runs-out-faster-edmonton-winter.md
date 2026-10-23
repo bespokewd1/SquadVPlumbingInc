@@ -1,7 +1,16 @@
 ---
-title: "Why Your Hot Water Runs Out Faster in an Edmonton Winter"
-metaTitle: "Winter Hot Water Problems Edmonton | SquadV Plumbing"
+metaTitle: "Winter Hot Water Problems Edmonton | Squad V Plumbing"
+ogCard: true
 ogTitle: "Why Hot Water Runs Out Faster in Edmonton Winters"
+ogDescription: "Learn how cold water, demand, fixtures, leaks, and heater faults affect winter hot water, plus safe checks you can make."
+ogHeadline: "Hot water running out faster this winter?"
+ogDetail: "Common causes & safe water heater checks"
+ogAction: "Read the guide"
+ogPhoto: "/assets/images/heater.png"
+ogPhotoAlt: "A plumber using a red wrench near the controls and connections of a water heater"
+ogImagePosition: "center center"
+ogImageAlt: "Squad V Plumbing card with a plumber using a red wrench near the controls and connections of a water heater. Headline: Hot water running out faster this winter? Common causes & safe water heater checks. Read the guide at squadvplumbing.ca."
+title: "Why Your Hot Water Runs Out Faster in an Edmonton Winter"
 url: hot-water-runs-out-faster-edmonton-winter
 description: Learn why winter affects hot water supply, what you can safely check, and when your water heater may need service.
 author: Squad V Plumbing Inc.
@@ -11,10 +20,6 @@ tags:
 image: /assets/images/heater.png
 alt: Plumber inspecting the controls and connections on a water heater
 imageAlt: Plumber inspecting the controls and connections on a water heater
-ogCard: true
-ogImage: /assets/images/blog/hot-water-runs-out-faster-edmonton-winter-og.png
-ogImageAlt: "Water heater service beside the headline Why Hot Water Runs Out Faster in Edmonton Winters"
-ogImagePosition: "center center"
 ---
 
 Hot water problems often become more noticeable in winter. The water entering the home is colder, the heater needs more time and energy to bring it up to temperature, and households may place more demand on the system.

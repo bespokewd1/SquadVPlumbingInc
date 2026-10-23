@@ -22,8 +22,36 @@ const tailwind = require("./src/config/processors/tailwind");
 const filterPostDate = require("./src/config/filters/postDate");
 const filterIsoDate = require("./src/config/filters/isoDate");
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
+const fs = require("node:fs/promises");
+const path = require("node:path");
+const { keyForRoute, cardFromItem } = require("./src/config/og-cards");
 
 module.exports = function (eleventyConfig) {
+    if (isProduction) {
+        eleventyConfig.ignores.add("src/og-image-studio.html");
+        eleventyConfig.on("eleventy.before", async ({ directories }) => {
+            await fs.rm(path.join(directories.output, "og-image-studio"), { recursive: true, force: true });
+        });
+    }
+
+    eleventyConfig.addFilter("ogKey", keyForRoute);
+    eleventyConfig.addFilter("ogJson", (value) => JSON.stringify(value).replaceAll("<", "\\u003c"));
+    eleventyConfig.addCollection("ogCards", (collectionApi) => {
+        const items = collectionApi.getAll().filter((item) => item.data.ogCard);
+        const cards = items.map(cardFromItem);
+        if (new Set(cards.map((card) => card.key)).size !== cards.length) {
+            throw new Error("OG card routes must have unique keys");
+        }
+        if (isProduction) {
+            for (const item of items) {
+                const key = keyForRoute(item.url);
+                if (!item.data.ogImages[key]) {
+                    throw new Error(`Export the OG card for ${item.url} before building production`);
+                }
+            }
+        }
+        return cards;
+    });
     // ═════════════════════════════════════════════════════════════════════════
     // LANGUAGES
     // Using Eleventy's build events to process non-template languages
