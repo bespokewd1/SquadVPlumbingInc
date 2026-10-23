@@ -51,7 +51,7 @@
         position: absolute;
         inset: 0;
         object-fit: cover;
-        object-position: 51% center;
+        object-position: center center;
       }
     }
 
@@ -129,6 +129,13 @@
   }
 }
 
+/* Wider bathroom crop - 601px */
+@media only screen and (min-width: 37.5625rem) {
+  #hero-143 .cs-background img {
+    object-position: 70% center;
+  }
+}
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero-143 {
@@ -143,10 +150,6 @@
           rgba(7, 13, 24, 0.6) 48%,
           rgba(7, 13, 24, 0.25) 100%
         );
-      }
-
-      img {
-        object-position: 57% center;
       }
     }
 
@@ -190,7 +193,7 @@
       }
 
       img {
-        object-position: 55% center;
+        object-position: center 48%;
       }
     }
 
@@ -218,12 +221,6 @@
 @media only screen and (min-width: 81.25rem) {
   #hero-143 {
     min-height: clamp(44rem, 49vw, 52rem);
-
-    .cs-background {
-      img {
-        object-position: center center;
-      }
-    }
 
     .cs-content {
       max-width: (720/16rem);
