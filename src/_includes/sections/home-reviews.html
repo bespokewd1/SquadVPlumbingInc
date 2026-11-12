@@ -1,0 +1,30 @@
+{% if customerReviews.items.length %}
+<section class="sv-home-reviews" aria-labelledby="home-reviews-title">
+    <div class="sv-home-reviews-wrap">
+        <div class="sv-home-reviews-intro">
+            <h2 id="home-reviews-title">Words from our customers</h2>
+            <a class="sv-home-reviews-link" href="{{ customerReviews.sourceUrl }}" target="_blank" rel="noopener noreferrer">Read our Google reviews <span aria-hidden="true">↗</span><span class="sv-home-reviews-sr">, opens in a new tab</span></a>
+        </div>
+        <div class="sv-home-reviews-carousel" data-home-reviews role="group" aria-roledescription="carousel" aria-label="Customer reviews">
+            <div class="sv-home-reviews-slides" id="home-review-slides">
+                {% for review in customerReviews.items %}
+                <figure class="sv-home-review" data-review role="group" aria-roledescription="slide" aria-label="{{ loop.index }} of {{ customerReviews.items.length }}">
+                    <div class="sv-home-review-source">
+                        <span class="sv-home-review-stars" data-review-rating role="img" aria-label="{{ review.rating }} out of 5 stars"><span aria-hidden="true">★★★★★</span></span>
+                        <span class="sv-home-review-google">Google review</span>
+                    </div>
+                    <blockquote><p>{{ review.text | escape }}</p></blockquote>
+                    <figcaption data-review-author>{{ review.author | escape }}</figcaption>
+                </figure>
+                {% endfor %}
+            </div>
+            <p class="sv-home-reviews-sr" data-review-status role="status" aria-atomic="true"></p>
+            <div class="sv-home-reviews-controls" data-review-controls hidden>
+                <span class="sv-home-review-position" data-review-position aria-hidden="true">1 of {{ customerReviews.items.length }}</span>
+                <button type="button" data-review-direction="-1" aria-label="Previous review" aria-controls="home-review-slides"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6"/></svg></button>
+                <button type="button" data-review-direction="1" aria-label="Next review" aria-controls="home-review-slides"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6"/></svg></button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

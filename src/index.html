@@ -22,6 +22,8 @@ ctaImg: "/assets/images/gallery/plumbing/residential-06.webp"
 {% block head %}
     <!-- Critical styles are loaded first -->
     <link rel="stylesheet" href="/assets/css/critical.css"/>
+    <link rel="stylesheet" href="/assets/css/home-reviews.css"/>
+    <script defer src="/assets/js/home-reviews.js"></script>
 
     <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if client.isProduction %}
@@ -76,6 +78,8 @@ ctaImg: "/assets/images/gallery/plumbing/residential-06.webp"
             <img src="{% getUrl "/assets/images/gallery/other-projects/commercial-14.webp" | resize({ width: 1200, withoutEnlargement: true }) | extract({ left: 0, top: 50, width: 1200, height: 800 }) | jpeg({ quality: 80 }) %}" alt="" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
         </picture>
     </section>
+
+    {% include 'sections/home-reviews.html' %}
 
     <!-- ============================================ -->
     <!--                   Services                   -->
@@ -831,7 +835,6 @@ ctaImg: "/assets/images/gallery/plumbing/residential-06.webp"
 </section>
 
 
-    {% include 'sections/reviews.html' %}
     {% include 'sections/faq.html' %}
     {% include 'sections/cta.html' %}
 {% endblock %}

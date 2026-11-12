@@ -221,23 +221,23 @@ permalink: "/drain-cleaning-edmonton/"
             <div class="sv-drain-review-grid">
                 <article class="sv-drain-review sv-drain-review-featured" data-review-source="google">
                     <span class="sv-drain-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></span>
-                    <blockquote>“Highly recommend! We had a major leak in our basement and SquadV Plumbing came out the same day. Allan and Eugene was incredibly professional, explained exactly what went wrong, and fixed it quickly. They keep everything clean and the final price matched the estimate perfectly. It is hard to find honest, reliable plumbing service, but these guys nailed it. Will absolutely call them again for any heating or plumbing needs!”</blockquote>
-                    <p class="sv-drain-review-author">Mervin Jude Herbano</p>
+                    <blockquote>“{{ customerReviews.byId.mervin.text | escape }}”</blockquote>
+                    <p class="sv-drain-review-author">{{ customerReviews.byId.mervin.author | escape }}</p>
                 </article>
                 <div class="sv-drain-review-stack">
                     <article class="sv-drain-review" data-review-source="google">
                         <span class="sv-drain-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></span>
-                        <blockquote>“Called for a consultation and was provided with free advise that immediately solved my small leak. Thank you so much!”</blockquote>
-                        <p class="sv-drain-review-author">Michael Varkovetski (Gonsar)</p>
+                        <blockquote>“{{ customerReviews.byId.michael.text | escape }}”</blockquote>
+                        <p class="sv-drain-review-author">{{ customerReviews.byId.michael.author | escape }}</p>
                     </article>
                     <article class="sv-drain-review" data-review-source="google">
                         <span class="sv-drain-stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></span>
-                        <blockquote>“Eugene is fast to respond and provides a fast turn around time. Will definitely use in the future.”</blockquote>
-                        <p class="sv-drain-review-author">Martin Szijjarto</p>
+                        <blockquote>“{{ customerReviews.byId.martin.text | escape }}”</blockquote>
+                        <p class="sv-drain-review-author">{{ customerReviews.byId.martin.author | escape }}</p>
                     </article>
                 </div>
             </div>
-            <a class="sv-drain-google-link" href="{{ client.googleBusiness }}" target="_blank" rel="noopener noreferrer">Read More Reviews on Google <span aria-hidden="true">↗</span></a>
+            <a class="sv-drain-google-link" href="{{ customerReviews.sourceUrl }}" target="_blank" rel="noopener noreferrer">Read More Reviews on Google <span aria-hidden="true">↗</span></a>
         </div>
     </section>
 

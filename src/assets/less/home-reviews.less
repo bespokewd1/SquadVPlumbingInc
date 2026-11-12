@@ -1,0 +1,121 @@
+// Homepage proof immediately after the hero. Kept separate from service-page reviews.
+.sv-home-reviews {
+    padding: clamp(2rem, 4vw, 3.5rem) 1rem;
+    border-bottom: 1px solid #dce3ea;
+    background: #fff;
+    color: var(--headerColor);
+
+    .sv-home-reviews-wrap {
+        width: 100%;
+        max-width: 80rem;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        align-items: start;
+        gap: clamp(2rem, 5vw, 5rem);
+    }
+
+    h2 {
+        max-width: 16ch;
+        margin: 0 0 1rem;
+        font-size: clamp(1.75rem, 2.7vw, 2.5rem);
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        text-wrap: balance;
+    }
+
+    .sv-home-reviews-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        min-height: 2.75rem;
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-underline-offset: 0.25em;
+        text-decoration-thickness: 1px;
+
+        &:hover { text-decoration-thickness: 2px; }
+    }
+
+    .sv-home-reviews-carousel { min-width: 0; }
+    .sv-home-review { margin: 0; overflow-wrap: anywhere; }
+    .sv-home-review + .sv-home-review { margin-top: 2rem; }
+    .sv-home-review-source {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .sv-home-review-stars { color: #986400; font-size: 1.25rem; letter-spacing: 0.08em; line-height: 1; }
+    .sv-home-review-google { color: var(--bodyTextColor); font-size: 0.875rem; line-height: 1.5; }
+    blockquote { margin: 0 0 1rem; padding: 0; border: 0; }
+    blockquote p {
+        color: var(--headerColor);
+        max-width: 65ch;
+        margin: 0;
+        font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+        line-height: 1.55;
+        font-weight: 400;
+        text-wrap: pretty;
+        white-space: pre-line;
+    }
+    figcaption { font-size: 0.9375rem; line-height: 1.5; font-weight: 700; color: var(--bodyTextColor); }
+
+    [data-enhanced] {
+        .sv-home-reviews-slides { display: grid; }
+        .sv-home-review { grid-area: 1 / 1; margin: 0; }
+        .sv-home-review[aria-hidden="true"] { visibility: hidden; }
+    }
+
+    .sv-home-reviews-controls:not([hidden]) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1.25rem;
+    }
+    .sv-home-review-position { margin-right: 0.5rem; color: var(--bodyTextColor); font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+    button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        padding: 0;
+        border: 1px solid var(--primary);
+        border-radius: 0.5rem;
+        background: #fff;
+        color: var(--primary);
+        cursor: pointer;
+        transition: background-color 150ms ease-out, color 150ms ease-out;
+
+        &:hover { background: var(--primary); color: #fff; }
+    }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--primary); outline-offset: 4px; }
+
+    .sv-home-reviews-sr {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+        border: 0;
+    }
+}
+
+@media (max-width: 47.99rem) {
+    .sv-home-reviews .sv-home-reviews-wrap { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+    .sv-home-reviews h2 { max-width: 22ch; margin-bottom: 0.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sv-home-reviews button { transition: none; }
+}
