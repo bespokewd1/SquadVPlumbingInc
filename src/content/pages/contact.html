@@ -119,8 +119,16 @@ permalink: "/contact/"
                 <a class="cs-link" href="mailto:{{ client.primaryEmail }}">{{ client.primaryEmail }}</a>
                 <a class="cs-link" href="mailto:{{ client.secondaryEmail }}">{{ client.secondaryEmail }}</a>
                 <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
+                <div class="sv-contact-phone">
+                    <div class="sv-contact-phone-details">
+                        <span class="cs-header">Phone</span>
+                        <a class="cs-link sv-contact-phone-number" href="tel:{{ client.phoneForTel }}">{{ client.phoneDisplay }}</a>
+                    </div>
+                    <a class="sv-contact-qr" href="tel:{{ client.phoneForTel }}" aria-label="Scan to call Squad V Plumbing at {{ client.phoneDisplay }}">
+                        <img src="/assets/images/contact-call-qr.svg" width="128" height="128" alt="" decoding="async">
+                        <span>Scan to call</span>
+                    </a>
+                </div>
                 <!--Address-->
                 <span class="cs-header">Address</span>
                 <a class="cs-link " href="{{ client.address.mapLink }}">

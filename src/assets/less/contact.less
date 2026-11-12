@@ -152,7 +152,7 @@
 
         .cs-right-section {
             width: 100%;
-            height: (320/16rem);
+            min-height: (320/16rem);
             /* 24px - 40px top & bottom */
             /* 20px - 40px left & right */
             padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
@@ -166,6 +166,69 @@
             align-items: flex-start;
             justify-content: flex-end;
             position: relative;
+            isolation: isolate;
+            background-color: #082032;
+            container-type: inline-size;
+        }
+
+        .sv-contact-phone {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: (16/16rem);
+            width: 100%;
+            margin-bottom: (24/16rem);
+        }
+
+        .sv-contact-phone-details {
+            min-width: 0;
+        }
+
+        .sv-contact-phone-number {
+            font-weight: 700;
+            min-height: (44/16rem);
+            display: inline-flex;
+            align-items: center;
+            overflow-wrap: anywhere;
+        }
+
+        .sv-contact-qr {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: none;
+            gap: (8/16rem);
+            color: #fff;
+            font-size: (16/16rem);
+            line-height: 1.5;
+            text-decoration: none;
+
+            img {
+                display: block;
+                width: (128/16rem);
+                height: (128/16rem);
+                background: #fff;
+            }
+
+            &:hover span {
+                text-decoration: underline;
+                text-underline-offset: 0.2em;
+            }
+        }
+
+        .sv-contact-qr:focus-visible,
+        .sv-contact-phone-number:focus-visible {
+            outline: (3/16rem) solid #fff;
+            outline-offset: (4/16rem);
+            border-radius: (2/16rem);
+        }
+
+        @container (min-width: 22rem) {
+            .sv-contact-phone {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: (24/16rem);
+            }
         }
 
         .cs-header {
@@ -236,7 +299,7 @@
                 display: block;
                 height: 100%;
                 width: 100%;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+                background: rgba(8, 32, 50, 0.82);
                 top: 0;
                 left: 0;
                 z-index: 1;
@@ -301,7 +364,7 @@
 
         .cs-right-section {
             /* changes to 578px at 1300px wide */
-            height: (686/16rem);
+            min-height: (686/16rem);
             width: 40vw;
             max-width: (542/16rem);
             /* prevents flexbox from squishing it */
@@ -337,7 +400,7 @@
         }
 
         .cs-right-section {
-            height: (578/16rem);
+            min-height: (578/16rem);
         }
     }
 }
