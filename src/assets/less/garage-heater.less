@@ -1,0 +1,93 @@
+/* Garage heater installation: real project photography and a direct quote path. */
+.sv-garage {
+  --gh-ink: #1a1a1a;
+  --gh-body: #454c55;
+  --gh-blue: #165ca0;
+  --gh-deep: #082032;
+  --gh-line: #d7dfe6;
+  background: #fff;
+  color: var(--gh-ink);
+
+  h1, h2, h3, p, figure, dl, dd { margin: 0; }
+  h1, h2, h3 { color: var(--gh-ink); text-wrap: balance; }
+  h1 { font-size: clamp(2.35rem, 4.7vw, 4.25rem); font-weight: 900; line-height: 1.06; letter-spacing: -.025em; }
+  h2 { max-width: 24ch; font-size: clamp(1.9rem, 3.1vw, 3rem); font-weight: 900; line-height: 1.12; letter-spacing: -.02em; }
+  h3 { font-size: 1.2rem; font-weight: 700; line-height: 1.3; }
+  p, dd { max-width: 65ch; color: var(--gh-body); font-size: 1.0625rem; line-height: 1.7; text-wrap: pretty; }
+  h2 + p, h3 + p, p + p { margin-top: 1rem; }
+  a { color: var(--gh-blue); }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--gh-blue); outline-offset: 5px; border-radius: 4px; }
+  .gh-wrap { width: min(calc(100% - 3rem), 75rem); margin-inline: auto; }
+  .gh-section { padding-block: clamp(3.5rem, 6.5vw, 6rem); }
+  .gh-split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+  .gh-hero { padding-block: clamp(1.75rem, 4vw, 4rem); }
+  .gh-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 4vw, 4rem); align-items: center; }
+  .gh-hero-copy { min-width: 0; }
+  .gh-breadcrumbs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.75rem; font-size: .875rem; color: var(--gh-body); line-height: 1.5; }
+  .gh-breadcrumbs a { text-underline-offset: .2em; }
+  .gh-lead { margin-top: 1.5rem; color: var(--gh-ink); font-size: clamp(1.2rem, 1.7vw, 1.45rem); line-height: 1.45; font-weight: 700; }
+  .gh-actions { display: flex; align-items: flex-start; flex-direction: column; gap: 1rem; margin-top: 1.75rem; }
+  .gh-button { display: inline-flex; align-items: center; justify-content: center; max-width: 100%; min-height: 3.5rem; padding: 1rem 1.4rem; border-radius: .5rem; background: var(--gh-blue); color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 1rem; line-height: 1.35; transition: background-color .18s ease-out, transform .18s ease-out; }
+  .gh-button:hover { background: #b91e23; }
+  .gh-button:active { transform: translateY(1px); }
+  .gh-call { display: inline-flex; align-items: center; min-height: 2.75rem; font-weight: 700; text-underline-offset: .25em; }
+  .gh-installation { min-width: 0; }
+  .gh-installation picture { display: block; aspect-ratio: 1; overflow: hidden; border-radius: .5rem; background: #eceff1; }
+  .gh-installation img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 42% 30%; }
+  .gh-installation figcaption { margin-top: .6rem; color: var(--gh-body); font-size: .8rem; line-height: 1.5; }
+  .gh-trust { border-top: 3px solid #df2529; border-bottom: 1px solid var(--gh-line); }
+  .gh-trust .gh-wrap { display: flex; flex-wrap: wrap; gap: .5rem 2rem; justify-content: space-between; align-items: center; padding-block: 1.25rem; }
+  .gh-trust p { color: var(--gh-blue); font-weight: 700; }
+  .gh-trust a { font-weight: 700; text-underline-offset: .25em; padding-block: .35rem; }
+  .gh-benefits { display: grid; gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
+  .gh-benefits li { padding-bottom: 1.5rem; border-bottom: 1px solid var(--gh-line); }
+  .gh-benefits li:last-child { padding-bottom: 0; border: 0; }
+  .gh-planning { background: #f3f6f8; }
+  .gh-section-intro { max-width: 47rem; margin-bottom: 2.5rem; }
+  .gh-section-intro h2 { max-width: 27ch; }
+  .gh-planning-list > div { display: grid; grid-template-columns: minmax(12rem, .7fr) 2fr; gap: 1rem 3rem; padding-block: 1.5rem; border-top: 1px solid var(--gh-line); }
+  .gh-planning-list dt { color: var(--gh-blue); font-size: 1.125rem; font-weight: 700; line-height: 1.5; }
+  .gh-planning-action { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; justify-content: space-between; padding-top: 2rem; }
+  .gh-planning-action p { max-width: 34ch; }
+  .gh-text-link { display: inline-block; margin-top: 1.25rem; font-weight: 700; line-height: 1.6; text-underline-offset: .25em; }
+  .gh-proof-note { padding: clamp(1.5rem, 3vw, 2.5rem); background: #f3f6f8; border-radius: .5rem; }
+  .gh-faq { border-top: 1px solid var(--gh-line); }
+  .gh-faq-list { min-width: 0; }
+  .gh-faq details { border-top: 1px solid var(--gh-line); }
+  .gh-faq details:last-child { border-bottom: 1px solid var(--gh-line); }
+  .gh-faq summary { position: relative; padding: 1.35rem 2rem 1.35rem 0; font-size: 1.1rem; font-weight: 700; line-height: 1.5; cursor: pointer; list-style: none; }
+  .gh-faq summary::-webkit-details-marker { display: none; }
+  .gh-faq summary::after { content: '+'; position: absolute; right: .25rem; top: 1.25rem; color: var(--gh-blue); font-size: 1.5rem; line-height: 1.3; }
+  .gh-faq details[open] summary::after { content: '−'; }
+  .gh-faq details[open] summary { color: var(--gh-blue); }
+  .gh-faq details p { padding-bottom: 1.5rem; }
+  .gh-final { padding-block: clamp(3rem, 6vw, 5rem); background: var(--gh-deep); }
+  .gh-final h2, .gh-final p, .gh-final a { color: #fff; }
+  .gh-final .gh-area { font-size: .9rem; color: #ccd9e4; margin-top: 1.5rem; }
+  .gh-final-action { display: flex; align-items: flex-start; flex-direction: column; gap: 1rem; }
+  .gh-final-action p { max-width: 40ch; }
+  .gh-button-light { background: #fff; color: var(--gh-deep) !important; }
+  .gh-button-light:hover { background: #e4edf5; }
+  .gh-final a:focus-visible { outline-color: #fff; }
+
+  @media (max-width: 800px) {
+    .gh-hero-grid, .gh-split { grid-template-columns: 1fr; }
+    .gh-hero-copy { max-width: 40rem; }
+    .gh-installation picture { aspect-ratio: 4 / 3; }
+    .gh-installation img { object-position: center; }
+    .gh-proof-note { max-width: 40rem; }
+    .gh-trust p { font-size: 1rem; }
+  }
+  @media (max-width: 480px) {
+    .gh-wrap { width: calc(100% - 2rem); }
+    .gh-planning-list > div { grid-template-columns: 1fr; gap: .5rem; }
+    .gh-actions, .gh-final-action { align-items: stretch; }
+    .gh-call { justify-content: flex-start; }
+    .gh-planning-action .gh-button { width: 100%; }
+    .gh-breadcrumbs { font-size: .8rem; margin-bottom: 1.25rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .gh-button { transition: none; }
+    .gh-button:active { transform: none; }
+  }
+}

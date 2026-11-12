@@ -1,0 +1,121 @@
+---
+title: "Garage Heater Installation in Edmonton | Squad V"
+description: "Make your garage more comfortable this winter. Explore garage heater installation in Edmonton and surrounding areas with Squad V Plumbing."
+ogCard: true
+ogTitle: "Garage Heater Installation in Edmonton | Squad V"
+ogDescription: "Make your garage more comfortable this winter. Explore garage heater installation from Squad V and request a quote."
+ogHeadline: "Garage heater installation"
+ogDetail: "Edmonton & surrounding areas"
+ogAction: "Request an installation quote"
+ogPhoto: "/assets/images/garage-heater/heater.jpg"
+ogPhotoAlt: "White ceiling-mounted Reznor heater installed in a garage"
+ogImagePosition: "42% 30%"
+ogImageAlt: "Squad V Plumbing. Garage heater installation in Edmonton and surrounding areas. Installed ceiling-mounted garage heater. Request an installation quote."
+ogKind: "service"
+permalink: "/garage-heater-installation-edmonton/"
+---
+
+{% extends "layouts/base.html" %}
+{% set quoteUrl = "/contact/?service=garage-heater-installation#cs-form-265" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/garage-heater.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/garage-heater/heater.jpg" | resize({ width: 900 }) | webp %}" type="image/webp">
+{% endblock %}
+
+{% block body %}
+<div class="sv-garage">
+    <section class="gh-hero" aria-labelledby="garage-title">
+        <div class="gh-wrap gh-hero-grid">
+            <div class="gh-hero-copy">
+                <nav class="gh-breadcrumbs" aria-label="Breadcrumb">
+                    <a href="/services/">Services</a><span aria-hidden="true">/</span><span>Garage heater installation</span>
+                </nav>
+                <h1 id="garage-title">Garage Heater Installation in Edmonton</h1>
+                <p class="gh-lead">Keep your garage warm, comfortable, and ready for winter.</p>
+                <p>Squad V Plumbing Inc. provides garage heater installation in Edmonton and surrounding areas, backed by professional gasfitting experience.</p>
+                <div class="gh-actions">
+                    <a class="gh-button" href="{{ quoteUrl }}">Request an Installation Quote</a>
+                    <a class="gh-call" href="tel:{{ client.phoneForTel }}">Call {{ client.phoneDisplay }}</a>
+                </div>
+            </div>
+            <figure class="gh-installation">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/garage-heater/heater.jpg" | resize({ width: 900 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/garage-heater/heater.jpg" | resize({ width: 900 }) | jpeg %}" alt="White Reznor garage heater mounted below the ceiling, with its support brackets and connected pipework visible" width="900" height="675" fetchpriority="high" loading="eager" decoding="async">
+                </picture>
+                <figcaption>Garage heater installation · Squad V Plumbing Inc.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <div class="gh-trust">
+        <div class="gh-wrap"><p>Led by a Journeyman Plumber &amp; Certified Gasfitter</p><a href="/about/">Meet Squad V <span aria-hidden="true">→</span></a></div>
+    </div>
+
+    <section class="gh-section" aria-labelledby="garage-benefits">
+        <div class="gh-wrap gh-split">
+            <div>
+                <h2 id="garage-benefits">A warmer garage.<br>More room to use.</h2>
+                <p>Cold weather can make your garage a space you hurry through. Dedicated heating can make it more comfortable for everyday use, whether you are parking, working on a project, or spending time at your workbench.</p>
+            </div>
+            <ul class="gh-benefits">
+                <li><h3>Everyday comfort</h3><p>A more comfortable place to come and go during Edmonton’s colder months.</p></li>
+                <li><h3>Space for your projects</h3><p>Make the garage a more inviting place for hobbies, tools, and time at the workbench.</p></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="gh-section gh-planning" aria-labelledby="garage-planning">
+        <div class="gh-wrap">
+            <div class="gh-section-intro">
+                <h2 id="garage-planning">Plan the installation around your garage.</h2>
+                <p>Every garage starts with a different setup. These details help us understand your project and discuss what the installation may involve.</p>
+            </div>
+            <dl class="gh-planning-list">
+                <div><dt>Size &amp; insulation</dt><dd>Share the approximate garage dimensions, ceiling height, and what you know about its insulation.</dd></div>
+                <div><dt>How you use the space</dt><dd>Tell us whether it is mainly for parking, occasional projects, or regular workshop use.</dd></div>
+                <div><dt>Existing connections</dt><dd>Let us know if there is already a heater or gas connection in the garage. If you are unsure, include that in your request.</dd></div>
+                <div><dt>Heater location</dt><dd>Describe the layout and where you would like the heater. Photos can help explain the space when you speak with the team.</dd></div>
+            </dl>
+            <div class="gh-planning-action"><p>Have a garage in mind? Start with the details you know.</p><a class="gh-button" href="{{ quoteUrl }}">Request an Installation Quote</a></div>
+        </div>
+    </section>
+
+    <section class="gh-section" aria-labelledby="garage-team">
+        <div class="gh-wrap gh-split gh-proof">
+            <div>
+                <h2 id="garage-team">Professional gasfitting experience. Local service.</h2>
+                <p>Squad V is led by Eugene Vista, a Journeyman Plumber and Certified Gasfitter. Our work includes gas line installation and appliance hookups for Edmonton properties.</p>
+                <p>Tell us about your garage so we can discuss the work and help you understand the proposed installation.</p>
+                <a class="gh-text-link" href="/gasfitting/">Explore our gasfitting services <span aria-hidden="true">→</span></a>
+            </div>
+            <aside class="gh-proof-note" aria-label="About Squad V">
+                <h3>Serving Edmonton since 2018</h3>
+                <p>A local, licensed and insured plumbing and gasfitting team serving Edmonton and surrounding areas.</p>
+                <p>Read what customers say about their experience with Squad V.</p>
+                <a class="gh-text-link" href="{{ client.googleBusiness }}" target="_blank" rel="noopener noreferrer">Read customer reviews on Google <span aria-hidden="true">↗</span></a>
+            </aside>
+        </div>
+    </section>
+
+    <section class="gh-section gh-faq" aria-labelledby="garage-faq">
+        <div class="gh-wrap gh-split">
+            <div><h2 id="garage-faq">Garage heater installation questions</h2><p>A few things to consider before requesting a quote.</p></div>
+            <div class="gh-faq-list">
+                <details><summary>What affects the installation price?</summary><p>The equipment and work needed for your garage affect the quote. Share your existing setup and ask the team to explain what is included in the proposed installation.</p></details>
+                <details><summary>Which heater would suit my garage?</summary><p>Start by sharing your garage dimensions, insulation details, and how you use the space. Discuss the available options with Squad V before choosing equipment.</p></details>
+                <details><summary>What if my garage has no existing gas connection?</summary><p>Mention this when you contact us. Squad V can discuss your existing setup and what needs to be assessed before confirming the installation scope.</p></details>
+                <details><summary>What information should I send for a quote?</summary><p>Include your location, approximate garage size, intended use, and whether you already have heating or a gas connection. You can still get in touch if you do not have every detail.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <section class="gh-final" aria-labelledby="garage-contact">
+        <div class="gh-wrap gh-split">
+            <div><h2 id="garage-contact">Ready for a warmer garage?</h2><p>Tell Squad V about your space and request an installation quote.</p><p class="gh-area">Edmonton &amp; surrounding areas</p></div>
+            <div class="gh-final-action"><p>Start with your location, garage size, and existing heating or gas connections.</p><a class="gh-button gh-button-light" href="{{ quoteUrl }}">Request an Installation Quote</a><a class="gh-call" href="tel:{{ client.phoneForTel }}">Or call {{ client.phoneDisplay }}</a></div>
+        </div>
+    </section>
+</div>
+{% endblock %}
