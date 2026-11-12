@@ -6,10 +6,10 @@ ogDescription: "Prepare your Edmonton home for winter with ten checks for faucet
 ogHeadline: "Your fall plumbing checklist"
 ogDetail: "10 checks before Edmonton winter arrives"
 ogAction: "Read the checklist"
-ogPhoto: "/assets/images/residential.png"
-ogPhotoAlt: "Gloved hands inspecting residential pipework with a plumbing tool"
+ogPhoto: "/assets/images/gallery/other-projects/commercial-24.webp"
+ogPhotoAlt: "A plumber working on exposed water lines beside a tankless water heater"
 ogImagePosition: "center center"
-ogImageAlt: "Squad V Plumbing card with gloved hands inspecting residential pipework with a plumbing tool. Headline: Your fall plumbing checklist. 10 checks before Edmonton winter arrives. Read the checklist at squadvplumbing.ca."
+ogImageAlt: "Squad V Plumbing card with a plumber working on exposed water lines beside a tankless water heater. Headline: Your fall plumbing checklist. 10 checks before Edmonton winter arrives. Read the checklist at squadvplumbing.ca."
 title: "Fall Plumbing Checklist: 10 Things Edmonton Homeowners Should Check Before Winter"
 url: fall-plumbing-checklist-edmonton
 description: Prepare your Edmonton home for winter with 10 checks for pipes, drains, sump pumps, outdoor faucets, leaks, and more.
@@ -19,9 +19,9 @@ blogPinned: true
 tags:
     - post
     - featured
-image: /assets/images/residential.png
-alt: Squad V Plumbing residential plumbing service in an Edmonton home
-imageAlt: Squad V Plumbing residential plumbing service in an Edmonton home
+image: /assets/images/gallery/other-projects/commercial-24.webp
+alt: A plumber working on exposed water lines beside a tankless water heater
+imageAlt: A plumber working on exposed water lines beside a tankless water heater
 ---
 
 Fall is the right time to find plumbing problems that could become emergencies during an Edmonton cold snap. A loose outdoor hose, a slow basement drain, or an untested sump pump may seem minor in September. It is much harder to deal with after the ground freezes or snow begins to melt.

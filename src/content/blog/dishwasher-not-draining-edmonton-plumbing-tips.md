@@ -6,10 +6,10 @@ ogDescription: "Check the filter, hose, sink drain, and visible leaks before dec
 ogHeadline: "Dishwasher not draining? Start here."
 ogDetail: "Simple checks before you book a service call"
 ogAction: "Read the checks"
-ogPhoto: "/assets/images/gallery/plumbing/commercial-15.webp"
-ogPhotoAlt: "Commercial kitchen with stainless steel sinks, preparation counters, and cooking equipment"
-ogImagePosition: "center center"
-ogImageAlt: "Squad V Plumbing card with commercial kitchen with stainless steel sinks, preparation counters, and cooking equipment. Headline: Dishwasher not draining? Start here. Simple checks before you book a service call. Read the checks at squadvplumbing.ca."
+ogPhoto: "/assets/images/gallery/plumbing/commercial-20.webp"
+ogPhotoAlt: "Stainless steel sinks and faucets in a commercial kitchen project"
+ogImagePosition: "65% center"
+ogImageAlt: "Squad V Plumbing card with stainless steel sinks and faucets in a commercial kitchen project. Headline: Dishwasher not draining? Start here. Simple checks before you book a service call. Read the checks at squadvplumbing.ca."
 title: Dishwasher Not Draining? Edmonton Plumbing Tips Before You Call
 url: dishwasher-not-draining-edmonton-plumbing-tips
 description: Dishwasher not draining in Edmonton? Learn simple plumbing checks, when to stop DIY, and when to call Squad V Plumbing for kitchen drain help.
@@ -18,9 +18,9 @@ date: 2026-04-13T00:00:00.000Z
 tags:
     - post
     - featured
-image: /assets/images/gallery/plumbing/commercial-15.webp
-alt: Commercial kitchen equipment and plumbing fixtures in a service area
-imageAlt: Commercial kitchen equipment and plumbing fixtures in a service area
+image: /assets/images/gallery/plumbing/commercial-20.webp
+alt: Stainless steel sinks and faucets in a commercial kitchen project
+imageAlt: Stainless steel sinks and faucets in a commercial kitchen project
 ---
 
 A dishwasher that will not drain can look like an appliance problem, but the cause is sometimes in the plumbing around the kitchen sink. Food debris, a blocked filter, a kinked hose, or a slow kitchen drain can leave dirty water sitting in the bottom of the dishwasher.
