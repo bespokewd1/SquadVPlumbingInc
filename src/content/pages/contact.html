@@ -70,12 +70,11 @@ permalink: "/contact/"
                         Tell us about the plumbing service you need. Submit the form below or call us to discuss your project.
                     </p>
                 </div>
-                <form id="cs-form-265" name="request-service" method="POST" action="/thank-you/" data-netlify="true" data-netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="request-service">
+                <form id="cs-form-265" name="request-service" method="POST" action="https://api.web3forms.com/submit" data-success-url="/thank-you/">
+                    <input type="hidden" name="access_key" value="{{ web3forms.accessKey }}">
+                    <input type="hidden" name="from_name" value="SquadV Plumbing Website">
                     <input type="hidden" name="subject" value="New SquadV Plumbing website service inquiry">
-                    <p class="sv-honeypot" aria-hidden="true">
-                        <label>Do not fill this out if you are human <input name="bot-field" tabindex="-1" autocomplete="off"></label>
-                    </p>
+                    <input type="checkbox" name="botcheck" class="sv-honeypot" style="display: none;" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <label for="name-265">
                         Name
                         <input required type="text" id="name-265" name="name" placeholder="Your name" autocomplete="name">
@@ -111,6 +110,7 @@ permalink: "/contact/"
                     </label>
                     <p class="sv-form-privacy">By submitting, you agree that SquadV Plumbing may contact you about this request. Review our <a href="/privacy-policy/">Privacy Policy</a>.</p>
                     <button class="cs-button-solid cs-submit" type="submit">Request Service</button>
+                    <p id="contact-form-status" class="sv-form-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
                 </form>
             </div>
             <div class="cs-right-section">
