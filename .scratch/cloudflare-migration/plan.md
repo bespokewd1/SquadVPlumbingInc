@@ -71,6 +71,17 @@ The user created `SquadV Plumbing - Service Requests` under the agency account a
 
 ## 2. Decap CMS / DecapBridge
 
+### Local configuration on 2026-11-17
+
+- User created DecapBridge site `1637ae09-68c5-4e57-9651-8f8d6a59498f` and provided its generated public configuration.
+- Applied the generated PKCE backend, claim mappings, commit messages, branding, and temporary Cloudflare site URL to `src/admin/config.yml`, preserving the media folders, blog collection/fields, and local backend support.
+- Pinned the browser-loaded Decap CMS script to `3.8.3`, the minimum version stated by DecapBridge for PKCE, replacing `3.0.0`.
+- Validation passed: YAML parsing, unchanged collection schema/media paths, production build, copied admin configuration, preserved commit-message templates, and versioned CMS script in built HTML. Interactive login/publishing are not yet verified. User authorized committing this configuration and waiting for client verification before pushing both integrations.
+- The GitHub token remains in DecapBridge, not in repository configuration. Token expiration shown during setup: 2027-02-15. Renew before expiration and update DecapBridge.
+- Pending after deployment: confirm editor has site collaborator access, test PKCE login at the Cloudflare `/admin/` URL, load existing posts/media, and verify publishing with a deliberate content change.
+- Publishing to `main` triggers both hosting pipelines. Existing production OG-card checks require exported card assets for new routes; successful CMS authentication does not remove this existing publishing requirement.
+- Before the code push, verify the Web3Forms recipient is verified and selected, since pushing the current branch also publishes that integration.
+
 - Keep the existing static CMS interface at `/admin/` in the same deployment as the website.
 - Register the site and repository with DecapBridge and use its generated backend configuration rather than inventing endpoints.
 - Configure publishing to the intended Git branch, normally `main`, and invite the client editor.
@@ -80,6 +91,17 @@ The user created `SquadV Plumbing - Service Requests` under the agency account a
 - Current DecapBridge free allowance: three sites and ten collaborators per site. Six client websites exceed one free account's site allowance; resolve agency-wide CMS hosting/authentication separately before promising a free rollout for every site.
 
 ## 3. Parallel Cloudflare deployment
+
+### Deployment status on 2026-11-17
+
+- User reports successful deployment at `https://squadvplumbinginc.bespokemusicapp.workers.dev/`.
+- Project name: `squadvplumbinginc`. Build command: `npm run build`. Build variable: `NODE_VERSION=22`.
+- Deploy command: `npx wrangler deploy --assets ./public --name squadvplumbinginc --compatibility-date 2026-11-16`.
+- Initial deployment built successfully but failed because the earlier command omitted the required compatibility date. The corrected command succeeded according to the user.
+- Compatibility date stays fixed across ordinary pushes; update intentionally when adopting newer runtime behavior, not for every deploy.
+- Preview builds disabled during initial setup. Verify production branch is `main` in branch control.
+- Public domain remains on Netlify. Web3Forms live rollout and DecapBridge are still pending.
+- Temporary Cloudflare URL could not be independently fetched using the web tool; do not describe browser QA as complete.
 
 ### Agreed behavior
 
@@ -155,6 +177,7 @@ Source: `F:/projects/part-time/bespoke-dashboard/emails/nov-16/tasks.md`.
 - [ ] Configure verified client recipient and confirm actual inbox delivery.
 - [ ] Finish browser QA and decide whether to add hCaptcha before rollout.
 - [ ] Configure and verify DecapBridge publishing.
-- [ ] Add and verify Cloudflare deployment alongside Netlify.
+- [x] Create Cloudflare deployment alongside Netlify; user reports successful deployment.
+- [ ] Verify Cloudflare routes/assets and confirm branch control; live form/CMS checks remain pending.
 - [ ] Configure IndexNow ownership and domain cutover.
 - [ ] Implement shared analytics conventions and agency reporting after site migrations.
