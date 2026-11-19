@@ -50,6 +50,8 @@
       if (!response.ok || result.success !== true) throw new Error("Submission not accepted");
 
       accepted = true;
+      // The provider accepted this request. Send no form contents to analytics.
+      document.dispatchEvent(new Event("squadv:service-request-accepted"));
       button.textContent = "Request sent";
       showStatus("Your request was submitted. Opening the thank-you page...");
       window.location.assign(form.dataset.successUrl);
