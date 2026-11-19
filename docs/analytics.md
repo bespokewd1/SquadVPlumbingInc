@@ -34,7 +34,7 @@ Every event explicitly targets Squad V's measurement ID and includes a sanitized
 
 Verified on November 20, 2026:
 
-- Enhanced measurement is off for the Squad V Web stream. Code uses `send_page_view: false` and sends manual pageviews.
+- Enhanced measurement is off for the Squad V Web stream. Code disables `send_page_view` globally before tag initialization and in the stream config, then sends manual pageviews.
 - `generate_lead` was created using Create with code and appears in the property's Key events table.
 - Counting is once per event, with no default monetary value.
 - No URL/pageview-derived lead rule was created. Phone and email clicks were not marked as key events.
@@ -44,7 +44,8 @@ Verified on November 20, 2026:
 - `npm run build` passed.
 - `node scripts/check-analytics.cjs` passed against built output. All network requests are intercepted; Google is mocked and Web3Forms responses are simulated. No real inquiry or telemetry is sent.
 - Checks cover the dedicated destination, a single script/config/pageview per initialization, page titles/referrers, normal navigation and back navigation, hash exclusion, contact clicks, invalid forms, rejected/HTTP/JSON/network errors, retry and successful submission, duplicate requests/events, thank-you reloads, omitted private data, blocked analytics, both production hosts, excluded preview hosts, and admin.
-- Deployment and production GA4 ingestion remain pending. After the user pushes, confirm pageviews and contact events in this property's Realtime report on the production custom domain.
+- The user deployed the initial tracking commit. Production Home and Services pageviews were confirmed in Squad V's GA4 Realtime report on November 20, 2026. Controlled phone/email handler checks sent events to `G-H5H4WMWS2G` and Google's collection endpoint returned HTTP 204; contact-event ingestion in Realtime is still unconfirmed. No real form submission was made.
+- A follow-up diagnostic using the real Google tag with collection requests intercepted reproduced an extra automatic pageview on each document, despite the stream config's `send_page_view: false`. Disabling it globally before initialization removed that extra event. The diagnostic compared the original code, the global-disable fix, and omission of manual pageviews. The fix still needs deployment and a production recheck. These blocked diagnostic requests did not reach GA4.
 - Coordinate a real accepted service request test with the user/client before sending one. Live lead/key-event ingestion remains pending.
 - Query stripping removes campaign parameters from reported URLs. UTM/advertising attribution has not been validated; assess it before using advertising reports.
 - No reporting dashboard, GA4-to-GSC association, or reporting connector was configured by this implementation.

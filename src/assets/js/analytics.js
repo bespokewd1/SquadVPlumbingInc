@@ -33,6 +33,8 @@
     }
   }
 
+  // Suppress automatic pageviews before Google's tag initializes its destinations.
+  window.gtag("set", "send_page_view", false);
   window.gtag("js", new Date());
   window.gtag("config", measurementId, {
     send_page_view: false,

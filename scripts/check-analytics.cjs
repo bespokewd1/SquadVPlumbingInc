@@ -81,6 +81,7 @@ async function main() {
     assert.equal(f.events("page_view").length, 1);
     assert.equal(f.commands.filter((c) => c[0] === "config").length, 1);
     assert.equal(f.commands.find((c) => c[0] === "config")[2].send_page_view, false);
+    assert.deepEqual(f.commands[0], ["set", "send_page_view", false]);
     assert.equal(f.events("page_view")[0][2].page_title, await f.page.title());
     assert.equal(f.events("page_view")[0][2].page_location, "https://www.squadvplumbing.ca/contact/");
     assert.equal(f.events("page_view")[0][2].page_referrer, "https://referrer.test/path/");
