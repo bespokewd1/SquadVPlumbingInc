@@ -9,25 +9,6 @@
     {% set socialCard = ogImages[page.url | ogKey] if ogCard else null %}
     {% set socialImage = socialCard.src if socialCard else (ogImage or client.defaultOgImage) %}
 
-    <!-- Google Tag Manager: deferred until user interaction to keep initial load light -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function loadGoogleTagManager() {
-        if (window.__gtmLoaded) return;
-        window.__gtmLoaded = true;
-        window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var firstScript = document.getElementsByTagName("script")[0];
-        var tagManagerScript = document.createElement("script");
-        tagManagerScript.async = true;
-        tagManagerScript.src = "https://www.googletagmanager.com/gtm.js?id=GTM-NLZ33VG3";
-        firstScript.parentNode.insertBefore(tagManagerScript, firstScript);
-      }
-      ["pointerdown", "keydown", "touchstart", "scroll"].forEach(function (eventName) {
-        window.addEventListener(eventName, loadGoogleTagManager, { once: true, passive: true });
-      });
-    </script>
-    <!-- End Google Tag Manager -->
-
     <!-- Standard and page-specific metadata -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -107,17 +88,6 @@
     <title>{{ (metaTitle or title) | escape }}</title>
   </head>
   <body class="has-mobile-actions">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NLZ33VG3"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <!--Screen reader skip main nav-->
     <a class="skip" aria-label="skip to main content" href="#main"
       >Click To Skip To Main Content</a
