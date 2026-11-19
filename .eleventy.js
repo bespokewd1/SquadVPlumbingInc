@@ -107,6 +107,10 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets"); // Static assets
     eleventyConfig.addPassthroughCopy("./src/admin"); // CMS admin files
     eleventyConfig.addPassthroughCopy("./src/_redirects"); // Redirect rules
+    // Keep Google's Search Console ownership file published unchanged at the site root.
+    eleventyConfig.addPassthroughCopy({
+        "./verification/googleea56b7852f7e4217.html": "googleea56b7852f7e4217.html",
+    });
     eleventyConfig.addWatchTarget("./src/tailwind/**/*.css");
 
     // ═════════════════════════════════════════════════════════════════════════
